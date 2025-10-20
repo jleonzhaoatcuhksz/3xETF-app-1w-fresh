@@ -1,0 +1,6092 @@
+{
+  "xgboost": [
+    {
+      "date": "2020-02-14",
+      "etf": "ERY",
+      "monthly_return": 0.2648223429804708,
+      "from_etf_price": null
+    },
+    {
+      "date": "2020-03-10",
+      "etf": "DRV",
+      "monthly_return": 0.18624165993654507,
+      "from_etf_price": 1224.4300537109375
+    },
+    {
+      "date": "2020-03-11",
+      "etf": "ERY",
+      "monthly_return": 1.9647916706261532,
+      "from_etf_price": 298.54315185546875
+    },
+    {
+      "date": "2020-03-26",
+      "etf": "NUGT",
+      "monthly_return": -0.7447828636162916,
+      "from_etf_price": 945.4684448242188
+    },
+    {
+      "date": "2020-04-01",
+      "etf": "ERY",
+      "monthly_return": 0.5635042491383486,
+      "from_etf_price": 34.66046142578125
+    },
+    {
+      "date": "2020-04-02",
+      "etf": "LABU",
+      "monthly_return": -0.602952300840855,
+      "from_etf_price": 941.8118896484375
+    },
+    {
+      "date": "2020-04-14",
+      "etf": "NUGT",
+      "monthly_return": 0.7011834361433154,
+      "from_etf_price": 597.4483642578125
+    },
+    {
+      "date": "2020-04-15",
+      "etf": "LABU",
+      "monthly_return": 0.7482992299911351,
+      "from_etf_price": 53.066349029541016
+    },
+    {
+      "date": "2020-04-30",
+      "etf": "NUGT",
+      "monthly_return": 0.8394120019445981,
+      "from_etf_price": 728.5474243164062
+    },
+    {
+      "date": "2020-05-01",
+      "etf": "LABU",
+      "monthly_return": 0.7836841964824959,
+      "from_etf_price": 63.69873809814453
+    },
+    {
+      "date": "2020-05-12",
+      "etf": "TNA",
+      "monthly_return": 0.11335156688144243,
+      "from_etf_price": 932.5011596679688
+    },
+    {
+      "date": "2020-05-19",
+      "etf": "NUGT",
+      "monthly_return": 0.4359828126962155,
+      "from_etf_price": 20.855030059814453
+    },
+    {
+      "date": "2020-05-20",
+      "etf": "FAS",
+      "monthly_return": 0.18821524268790912,
+      "from_etf_price": 76.3008041381836
+    },
+    {
+      "date": "2020-05-26",
+      "etf": "TNA",
+      "monthly_return": 0.37717893405291414,
+      "from_etf_price": 29.214357376098633
+    },
+    {
+      "date": "2020-05-29",
+      "etf": "LABU",
+      "monthly_return": 0.21675870280732257,
+      "from_etf_price": 25.053003311157227
+    },
+    {
+      "date": "2020-06-01",
+      "etf": "SOXL",
+      "monthly_return": 0.16174331799867314,
+      "from_etf_price": 972.186279296875
+    },
+    {
+      "date": "2020-06-05",
+      "etf": "LABU",
+      "monthly_return": 0.12544556177433264,
+      "from_etf_price": 12.53532600402832
+    },
+    {
+      "date": "2020-06-16",
+      "etf": "DRN",
+      "monthly_return": 0.6891119639156793,
+      "from_etf_price": 967.44775390625
+    },
+    {
+      "date": "2020-06-18",
+      "etf": "LABU",
+      "monthly_return": 0.06753635185938456,
+      "from_etf_price": 9.388567924499512
+    },
+    {
+      "date": "2020-06-19",
+      "etf": "TQQQ",
+      "monthly_return": 0.15950632225295025,
+      "from_etf_price": 1086.700439453125
+    },
+    {
+      "date": "2020-06-23",
+      "etf": "SOXL",
+      "monthly_return": 0.3147126272110874,
+      "from_etf_price": 23.907249450683594
+    },
+    {
+      "date": "2020-06-24",
+      "etf": "LABU",
+      "monthly_return": 0.21827925346787058,
+      "from_etf_price": 11.29855728149414
+    },
+    {
+      "date": "2020-06-25",
+      "etf": "TQQQ",
+      "monthly_return": 0.20512494625539435,
+      "from_etf_price": 1246.0330810546875
+    },
+    {
+      "date": "2020-07-02",
+      "etf": "NUGT",
+      "monthly_return": 0.1975462766666054,
+      "from_etf_price": 24.7432804107666
+    },
+    {
+      "date": "2020-07-27",
+      "etf": "TNA",
+      "monthly_return": 0.14060717523148147,
+      "from_etf_price": 105.74067687988281
+    },
+    {
+      "date": "2020-07-29",
+      "etf": "SOXL",
+      "monthly_return": 0.24984213901423935,
+      "from_etf_price": 29.55173110961914
+    },
+    {
+      "date": "2020-07-30",
+      "etf": "NUGT",
+      "monthly_return": 0.27334351037209803,
+      "from_etf_price": 14.894078254699707
+    },
+    {
+      "date": "2020-07-31",
+      "etf": "TNA",
+      "monthly_return": 0.10814875414344871,
+      "from_etf_price": 101.08423614501953
+    },
+    {
+      "date": "2020-08-06",
+      "etf": "NUGT",
+      "monthly_return": 0.2705614735104134,
+      "from_etf_price": 32.17169952392578
+    },
+    {
+      "date": "2020-08-07",
+      "etf": "TNA",
+      "monthly_return": 0.3975232440621581,
+      "from_etf_price": 100.01334381103516
+    },
+    {
+      "date": "2020-08-10",
+      "etf": "TECL",
+      "monthly_return": 0.1367143573560332,
+      "from_etf_price": 34.79167175292969
+    },
+    {
+      "date": "2020-08-11",
+      "etf": "TNA",
+      "monthly_return": 0.4015811311173578,
+      "from_etf_price": 26.92353630065918
+    },
+    {
+      "date": "2020-08-14",
+      "etf": "TECL",
+      "monthly_return": 0.20717212868779455,
+      "from_etf_price": 34.26189422607422
+    },
+    {
+      "date": "2020-08-20",
+      "etf": "LABD",
+      "monthly_return": 0.06462597065768327,
+      "from_etf_price": 30.747844696044922
+    },
+    {
+      "date": "2020-08-24",
+      "etf": "ERY",
+      "monthly_return": 0.005963562837927983,
+      "from_etf_price": 624.9669189453125
+    },
+    {
+      "date": "2020-09-01",
+      "etf": "TQQQ",
+      "monthly_return": 0.37075003539668017,
+      "from_etf_price": 475.9003601074219
+    },
+    {
+      "date": "2020-09-03",
+      "etf": "LABU",
+      "monthly_return": -0.213409757573233,
+      "from_etf_price": 35.388946533203125
+    },
+    {
+      "date": "2020-09-04",
+      "etf": "ERY",
+      "monthly_return": 0.1171921943716987,
+      "from_etf_price": 919.47021484375
+    },
+    {
+      "date": "2020-09-08",
+      "etf": "LABD",
+      "monthly_return": 0.2654837432632009,
+      "from_etf_price": 526.380126953125
+    },
+    {
+      "date": "2020-09-09",
+      "etf": "ERY",
+      "monthly_return": 0.26652164346340057,
+      "from_etf_price": 657.0235595703125
+    },
+    {
+      "date": "2020-09-24",
+      "etf": "TNA",
+      "monthly_return": -0.22212711281685693,
+      "from_etf_price": 616.458740234375
+    },
+    {
+      "date": "2020-09-25",
+      "etf": "ERY",
+      "monthly_return": 0.3152897394125058,
+      "from_etf_price": 27.538589477539062
+    },
+    {
+      "date": "2020-09-29",
+      "etf": "LABU",
+      "monthly_return": 0.04343620040444218,
+      "from_etf_price": 619.8477172851562
+    },
+    {
+      "date": "2020-09-30",
+      "etf": "ERY",
+      "monthly_return": 0.3256741134721588,
+      "from_etf_price": 1057.2821044921875
+    },
+    {
+      "date": "2020-10-01",
+      "etf": "LABU",
+      "monthly_return": 0.05613530245082843,
+      "from_etf_price": 664.1736450195312
+    },
+    {
+      "date": "2020-10-05",
+      "etf": "ERY",
+      "monthly_return": 0.2561333933572201,
+      "from_etf_price": 1177.3245849609375
+    },
+    {
+      "date": "2020-10-07",
+      "etf": "SOXL",
+      "monthly_return": 0.31790599407925013,
+      "from_etf_price": 611.9993286132812
+    },
+    {
+      "date": "2020-10-09",
+      "etf": "LABU",
+      "monthly_return": 0.4654295973531408,
+      "from_etf_price": 19.725605010986328
+    },
+    {
+      "date": "2020-10-13",
+      "etf": "SOXL",
+      "monthly_return": 0.36041226526525283,
+      "from_etf_price": 1375.9476318359375
+    },
+    {
+      "date": "2020-10-14",
+      "etf": "DUST",
+      "monthly_return": 0.05360455920962459,
+      "from_etf_price": 20.23177146911621
+    },
+    {
+      "date": "2020-10-15",
+      "etf": "SOXL",
+      "monthly_return": 0.3025419381517971,
+      "from_etf_price": 156.75323486328125
+    },
+    {
+      "date": "2020-10-21",
+      "etf": "LABU",
+      "monthly_return": 0.0035841964283240824,
+      "from_etf_price": 18.995121002197266
+    },
+    {
+      "date": "2020-10-22",
+      "etf": "SOXL",
+      "monthly_return": 0.36558169990279943,
+      "from_etf_price": 1198.4505615234375
+    },
+    {
+      "date": "2020-10-26",
+      "etf": "TNA",
+      "monthly_return": 0.27911840795137777,
+      "from_etf_price": 17.5826416015625
+    },
+    {
+      "date": "2020-10-27",
+      "etf": "FAS",
+      "monthly_return": 0.029697074306386906,
+      "from_etf_price": 34.3196907043457
+    },
+    {
+      "date": "2020-10-28",
+      "etf": "ERY",
+      "monthly_return": 0.1408634756146494,
+      "from_etf_price": 30.700862884521484
+    },
+    {
+      "date": "2020-10-29",
+      "etf": "TNA",
+      "monthly_return": 0.09379083292435708,
+      "from_etf_price": 661.5870361328125
+    },
+    {
+      "date": "2020-11-02",
+      "etf": "DRV",
+      "monthly_return": 0.11792439373809427,
+      "from_etf_price": 32.643680572509766
+    },
+    {
+      "date": "2020-11-04",
+      "etf": "ERX",
+      "monthly_return": -0.02292597110901362,
+      "from_etf_price": 119.02330017089844
+    },
+    {
+      "date": "2020-11-13",
+      "etf": "FAS",
+      "monthly_return": 0.23740836010745947,
+      "from_etf_price": 10.096437454223633
+    },
+    {
+      "date": "2020-11-16",
+      "etf": "SOXL",
+      "monthly_return": 0.19635981225480004,
+      "from_etf_price": 47.550506591796875
+    },
+    {
+      "date": "2020-11-17",
+      "etf": "ERX",
+      "monthly_return": 0.47566388944383964,
+      "from_etf_price": 23.094226837158203
+    },
+    {
+      "date": "2020-11-23",
+      "etf": "LABU",
+      "monthly_return": 0.21236776730244733,
+      "from_etf_price": 12.795225143432617
+    },
+    {
+      "date": "2020-11-27",
+      "etf": "ERX",
+      "monthly_return": 0.8987340809879114,
+      "from_etf_price": 1646.8328857421875
+    },
+    {
+      "date": "2020-11-30",
+      "etf": "LABU",
+      "monthly_return": 0.5063467613413044,
+      "from_etf_price": 11.694750785827637
+    },
+    {
+      "date": "2020-12-14",
+      "etf": "TNA",
+      "monthly_return": 0.3935559187868467,
+      "from_etf_price": 2233.61962890625
+    },
+    {
+      "date": "2020-12-15",
+      "etf": "LABU",
+      "monthly_return": 0.571151481850926,
+      "from_etf_price": 62.64812469482422
+    },
+    {
+      "date": "2020-12-18",
+      "etf": "SOXL",
+      "monthly_return": 0.29290473147565854,
+      "from_etf_price": 2300.748779296875
+    },
+    {
+      "date": "2020-12-21",
+      "etf": "TNA",
+      "monthly_return": 0.33570867818686345,
+      "from_etf_price": 28.64977264404297
+    },
+    {
+      "date": "2020-12-22",
+      "etf": "LABU",
+      "monthly_return": 0.7015450731676087,
+      "from_etf_price": 65.28766632080078
+    },
+    {
+      "date": "2020-12-23",
+      "etf": "SOXL",
+      "monthly_return": 0.14918191926415192,
+      "from_etf_price": 2485.551025390625
+    },
+    {
+      "date": "2020-12-30",
+      "etf": "TNA",
+      "monthly_return": 0.27962628744345364,
+      "from_etf_price": 29.841371536254883
+    },
+    {
+      "date": "2021-01-06",
+      "etf": "SOXL",
+      "monthly_return": 0.03390745782237281,
+      "from_etf_price": 71.92530822753906
+    },
+    {
+      "date": "2021-01-07",
+      "etf": "TNA",
+      "monthly_return": 0.34401360490381516,
+      "from_etf_price": 34.67604064941406
+    },
+    {
+      "date": "2021-01-13",
+      "etf": "SOXL",
+      "monthly_return": 0.34656320201058777,
+      "from_etf_price": 77.4646987915039
+    },
+    {
+      "date": "2021-01-14",
+      "etf": "ERY",
+      "monthly_return": -0.24717032066384492,
+      "from_etf_price": 39.16611862182617
+    },
+    {
+      "date": "2021-01-15",
+      "etf": "LABU",
+      "monthly_return": 0.09585907917655723,
+      "from_etf_price": 237.0583038330078
+    },
+    {
+      "date": "2021-01-27",
+      "etf": "TNA",
+      "monthly_return": 0.14847912304695976,
+      "from_etf_price": 2468.96630859375
+    },
+    {
+      "date": "2021-01-28",
+      "etf": "SOXL",
+      "monthly_return": 0.19157537007022718,
+      "from_etf_price": 75.9136734008789
+    },
+    {
+      "date": "2021-01-29",
+      "etf": "LABU",
+      "monthly_return": 0.2178570416165988,
+      "from_etf_price": 32.39124298095703
+    },
+    {
+      "date": "2021-02-05",
+      "etf": "ERX",
+      "monthly_return": 0.07202876134486091,
+      "from_etf_price": 3208.372802734375
+    },
+    {
+      "date": "2021-02-08",
+      "etf": "LABD",
+      "monthly_return": -0.4039196269384564,
+      "from_etf_price": 16.994760513305664
+    },
+    {
+      "date": "2021-02-09",
+      "etf": "ERX",
+      "monthly_return": 0.1058479154685541,
+      "from_etf_price": 116.10377502441406
+    },
+    {
+      "date": "2021-02-10",
+      "etf": "LABD",
+      "monthly_return": -0.35710957830924894,
+      "from_etf_price": 17.24054718017578
+    },
+    {
+      "date": "2021-02-11",
+      "etf": "LABU",
+      "monthly_return": 0.33502029717458237,
+      "from_etf_price": 128.85450744628906
+    },
+    {
+      "date": "2021-02-16",
+      "etf": "TECL",
+      "monthly_return": 0.2236108106648489,
+      "from_etf_price": 2800.0703125
+    },
+    {
+      "date": "2021-02-18",
+      "etf": "LABD",
+      "monthly_return": -0.09711839321205074,
+      "from_etf_price": 45.05056381225586
+    },
+    {
+      "date": "2021-02-19",
+      "etf": "DUST",
+      "monthly_return": 0.19268899713424537,
+      "from_etf_price": 143.93997192382812
+    },
+    {
+      "date": "2021-02-22",
+      "etf": "ERX",
+      "monthly_return": 0.2642575534534608,
+      "from_etf_price": 185.01873779296875
+    },
+    {
+      "date": "2021-03-04",
+      "etf": "FAS",
+      "monthly_return": 0.2992904530159122,
+      "from_etf_price": 22.331951141357422
+    },
+    {
+      "date": "2021-03-05",
+      "etf": "ERX",
+      "monthly_return": 0.5927863673818043,
+      "from_etf_price": 82.14705657958984
+    },
+    {
+      "date": "2021-03-09",
+      "etf": "LABD",
+      "monthly_return": 0.480111630205851,
+      "from_etf_price": 23.148332595825195
+    },
+    {
+      "date": "2021-03-19",
+      "etf": "SOXL",
+      "monthly_return": -0.18590311747629418,
+      "from_etf_price": 170.7884063720703
+    },
+    {
+      "date": "2021-03-22",
+      "etf": "LABD",
+      "monthly_return": 0.1316280179153526,
+      "from_etf_price": 35.881797790527344
+    },
+    {
+      "date": "2021-03-24",
+      "etf": "SOXL",
+      "monthly_return": -0.18446251313162798,
+      "from_etf_price": 220.8935089111328
+    },
+    {
+      "date": "2021-03-25",
+      "etf": "LABD",
+      "monthly_return": 0.2655366488540083,
+      "from_etf_price": 31.832191467285156
+    },
+    {
+      "date": "2021-03-31",
+      "etf": "TECL",
+      "monthly_return": -0.012900063710662657,
+      "from_etf_price": 195.21241760253906
+    },
+    {
+      "date": "2021-04-01",
+      "etf": "DRN",
+      "monthly_return": 0.2574307084618408,
+      "from_etf_price": 42.996028900146484
+    },
+    {
+      "date": "2021-04-05",
+      "etf": "SOXL",
+      "monthly_return": 0.5016499569478043,
+      "from_etf_price": 14.707209587097168
+    },
+    {
+      "date": "2021-04-06",
+      "etf": "DRN",
+      "monthly_return": 0.2831235907975007,
+      "from_etf_price": 42.08718490600586
+    },
+    {
+      "date": "2021-04-07",
+      "etf": "SOXL",
+      "monthly_return": 0.5769899238562881,
+      "from_etf_price": 14.794441223144531
+    },
+    {
+      "date": "2021-04-08",
+      "etf": "DRN",
+      "monthly_return": 0.21692687156066848,
+      "from_etf_price": 43.45515823364258
+    },
+    {
+      "date": "2021-04-15",
+      "etf": "TECL",
+      "monthly_return": 0.21827179363686722,
+      "from_etf_price": 15.649312973022461
+    },
+    {
+      "date": "2021-04-16",
+      "etf": "DRN",
+      "monthly_return": 0.12522781503980207,
+      "from_etf_price": 50.764373779296875
+    },
+    {
+      "date": "2021-04-20",
+      "etf": "FAS",
+      "monthly_return": 0.04265455722342337,
+      "from_etf_price": 16.233760833740234
+    },
+    {
+      "date": "2021-04-21",
+      "etf": "DRN",
+      "monthly_return": 0.2495053131192151,
+      "from_etf_price": 94.06831359863281
+    },
+    {
+      "date": "2021-04-22",
+      "etf": "FAS",
+      "monthly_return": 0.14223174901955393,
+      "from_etf_price": 16.303544998168945
+    },
+    {
+      "date": "2021-04-26",
+      "etf": "LABD",
+      "monthly_return": -0.13526777880857366,
+      "from_etf_price": 97.27389526367188
+    },
+    {
+      "date": "2021-04-28",
+      "etf": "LABU",
+      "monthly_return": 0.23124099107433782,
+      "from_etf_price": 170.60877990722656
+    },
+    {
+      "date": "2021-04-30",
+      "etf": "NUGT",
+      "monthly_return": 0.10887083800595176,
+      "from_etf_price": 1554.8267822265625
+    },
+    {
+      "date": "2021-05-12",
+      "etf": "SOXS",
+      "monthly_return": 0.4046784933072691,
+      "from_etf_price": 66.42376708984375
+    },
+    {
+      "date": "2021-05-17",
+      "etf": "DRN",
+      "monthly_return": 0.027762490619795743,
+      "from_etf_price": 944.9425659179688
+    },
+    {
+      "date": "2021-05-18",
+      "etf": "NUGT",
+      "monthly_return": 0.21133392634438986,
+      "from_etf_price": 16.19014549255371
+    },
+    {
+      "date": "2021-05-19",
+      "etf": "ERX",
+      "monthly_return": 0.21346237054608075,
+      "from_etf_price": 73.99647521972656
+    },
+    {
+      "date": "2021-05-21",
+      "etf": "FAS",
+      "monthly_return": 0.22448971062915413,
+      "from_etf_price": 23.270179748535156
+    },
+    {
+      "date": "2021-05-24",
+      "etf": "ERX",
+      "monthly_return": 0.21874978892317776,
+      "from_etf_price": 112.9897689819336
+    },
+    {
+      "date": "2021-05-27",
+      "etf": "DRN",
+      "monthly_return": 0.0320042400054148,
+      "from_etf_price": 23.190757751464844
+    },
+    {
+      "date": "2021-06-01",
+      "etf": "ERX",
+      "monthly_return": 0.19865036161283833,
+      "from_etf_price": 18.39710235595703
+    },
+    {
+      "date": "2021-06-04",
+      "etf": "FAZ",
+      "monthly_return": -0.09895451446176418,
+      "from_etf_price": 26.482288360595703
+    },
+    {
+      "date": "2021-06-07",
+      "etf": "DRN",
+      "monthly_return": 0.21120686252923004,
+      "from_etf_price": 217.87908935546875
+    },
+    {
+      "date": "2021-06-09",
+      "etf": "DUST",
+      "monthly_return": -0.0494506074279184,
+      "from_etf_price": 20.1591739654541
+    },
+    {
+      "date": "2021-06-11",
+      "etf": "SOXL",
+      "monthly_return": 0.40383919062349016,
+      "from_etf_price": 136.33428955078125
+    },
+    {
+      "date": "2021-06-18",
+      "etf": "DUST",
+      "monthly_return": 0.2854251124344642,
+      "from_etf_price": 36.207786560058594
+    },
+    {
+      "date": "2021-06-24",
+      "etf": "LABU",
+      "monthly_return": 0.3230265081014392,
+      "from_etf_price": 166.82894897460938
+    },
+    {
+      "date": "2021-06-25",
+      "etf": "DUST",
+      "monthly_return": 0.2935906638113006,
+      "from_etf_price": 1556.603759765625
+    },
+    {
+      "date": "2021-06-28",
+      "etf": "TECL",
+      "monthly_return": 0.20441030184458775,
+      "from_etf_price": 171.01974487304688
+    },
+    {
+      "date": "2021-07-01",
+      "etf": "ERY",
+      "monthly_return": -0.023861345657943844,
+      "from_etf_price": 54.78113555908203
+    },
+    {
+      "date": "2021-07-07",
+      "etf": "TECL",
+      "monthly_return": 0.2622673771257724,
+      "from_etf_price": 133.1558074951172
+    },
+    {
+      "date": "2021-07-13",
+      "etf": "LABD",
+      "monthly_return": 0.12113407299388745,
+      "from_etf_price": 59.446075439453125
+    },
+    {
+      "date": "2021-07-15",
+      "etf": "TECL",
+      "monthly_return": 0.2083001696129132,
+      "from_etf_price": 212.1834716796875
+    },
+    {
+      "date": "2021-07-16",
+      "etf": "SOXL",
+      "monthly_return": -0.06176637973070764,
+      "from_etf_price": 57.40332794189453
+    },
+    {
+      "date": "2021-07-23",
+      "etf": "ERY",
+      "monthly_return": 0.22975927056321988,
+      "from_etf_price": 40.31171417236328
+    },
+    {
+      "date": "2021-07-26",
+      "etf": "LABD",
+      "monthly_return": 0.3068668471482978,
+      "from_etf_price": 142.87713623046875
+    },
+    {
+      "date": "2021-07-28",
+      "etf": "FAS",
+      "monthly_return": -0.031144041292459623,
+      "from_etf_price": 201.767333984375
+    },
+    {
+      "date": "2021-08-02",
+      "etf": "LABD",
+      "monthly_return": 0.34551490827781417,
+      "from_etf_price": 100.97659301757812
+    },
+    {
+      "date": "2021-08-04",
+      "etf": "DUST",
+      "monthly_return": -0.03014008224485265,
+      "from_etf_price": 213.26100158691406
+    },
+    {
+      "date": "2021-08-05",
+      "etf": "LABD",
+      "monthly_return": 0.0033270586528764134,
+      "from_etf_price": 165.4022979736328
+    },
+    {
+      "date": "2021-08-06",
+      "etf": "ERY",
+      "monthly_return": 0.06366031163672425,
+      "from_etf_price": 198.1755828857422
+    },
+    {
+      "date": "2021-08-10",
+      "etf": "DUST",
+      "monthly_return": 0.10432976659297521,
+      "from_etf_price": 142.16363525390625
+    },
+    {
+      "date": "2021-08-11",
+      "etf": "FAS",
+      "monthly_return": 0.17590902780859796,
+      "from_etf_price": 181.095458984375
+    },
+    {
+      "date": "2021-08-19",
+      "etf": "LABU",
+      "monthly_return": -0.25916177333835577,
+      "from_etf_price": 108.106689453125
+    },
+    {
+      "date": "2021-08-24",
+      "etf": "FAS",
+      "monthly_return": 0.15529946309279596,
+      "from_etf_price": 1168.0450439453125
+    },
+    {
+      "date": "2021-08-25",
+      "etf": "LABU",
+      "monthly_return": 0.12659192729437585,
+      "from_etf_price": 119.49781036376953
+    },
+    {
+      "date": "2021-08-26",
+      "etf": "FAS",
+      "monthly_return": 0.17575843125448887,
+      "from_etf_price": 1188.9737548828125
+    },
+    {
+      "date": "2021-08-30",
+      "etf": "LABU",
+      "monthly_return": 0.17906067829470285,
+      "from_etf_price": 117.90702056884766
+    },
+    {
+      "date": "2021-09-01",
+      "etf": "DUST",
+      "monthly_return": 0.14478871218891132,
+      "from_etf_price": 1375.7501220703125
+    },
+    {
+      "date": "2021-09-08",
+      "etf": "DRN",
+      "monthly_return": 0.10951035850898116,
+      "from_etf_price": 182.25462341308594
+    },
+    {
+      "date": "2021-09-09",
+      "etf": "LABU",
+      "monthly_return": 0.13165567201188733,
+      "from_etf_price": 22.11779022216797
+    },
+    {
+      "date": "2021-09-13",
+      "etf": "SOXL",
+      "monthly_return": 0.12318164583412128,
+      "from_etf_price": 1254.720458984375
+    },
+    {
+      "date": "2021-09-15",
+      "etf": "DUST",
+      "monthly_return": 0.000984810594162333,
+      "from_etf_price": 47.141910552978516
+    },
+    {
+      "date": "2021-09-16",
+      "etf": "SOXL",
+      "monthly_return": 0.2128028132250186,
+      "from_etf_price": 195.98614501953125
+    },
+    {
+      "date": "2021-09-17",
+      "etf": "ERX",
+      "monthly_return": 0.09193750609207596,
+      "from_etf_price": 45.35675048828125
+    },
+    {
+      "date": "2021-10-21",
+      "etf": "SOXL",
+      "monthly_return": -0.014483428792804509,
+      "from_etf_price": 28.274166107177734
+    },
+    {
+      "date": "2021-11-18",
+      "etf": "LABD",
+      "monthly_return": -0.012096610260077911,
+      "from_etf_price": 65.95405578613281
+    },
+    {
+      "date": "2021-11-22",
+      "etf": "SOXL",
+      "monthly_return": 0.4853573552944739,
+      "from_etf_price": 212.90182495117188
+    },
+    {
+      "date": "2021-11-29",
+      "etf": "LABD",
+      "monthly_return": 0.2754607828949689,
+      "from_etf_price": 66.37123107910156
+    },
+    {
+      "date": "2021-12-07",
+      "etf": "SRTY",
+      "monthly_return": 0.2166429669013683,
+      "from_etf_price": 226.19134521484375
+    },
+    {
+      "date": "2021-12-09",
+      "etf": "LABD",
+      "monthly_return": 0.4285711225735098,
+      "from_etf_price": 38.24162292480469
+    },
+    {
+      "date": "2021-12-16",
+      "etf": "DRN",
+      "monthly_return": 0.044827319865145654,
+      "from_etf_price": 248.9990234375
+    },
+    {
+      "date": "2021-12-17",
+      "etf": "SOXL",
+      "monthly_return": -0.08617469584177284,
+      "from_etf_price": 24.310527801513672
+    },
+    {
+      "date": "2021-12-20",
+      "etf": "SRTY",
+      "monthly_return": 0.2945839924193119,
+      "from_etf_price": 55.83488464355469
+    },
+    {
+      "date": "2021-12-21",
+      "etf": "LABD",
+      "monthly_return": 0.03545789123722631,
+      "from_etf_price": 38.5430793762207
+    },
+    {
+      "date": "2021-12-28",
+      "etf": "ERX",
+      "monthly_return": 0.036637121205800094,
+      "from_etf_price": 223.40773010253906
+    },
+    {
+      "date": "2021-12-29",
+      "etf": "LABD",
+      "monthly_return": -0.04334599630351976,
+      "from_etf_price": 26.900352478027344
+    },
+    {
+      "date": "2021-12-31",
+      "etf": "ERX",
+      "monthly_return": 0.0773476107904627,
+      "from_etf_price": 231.13003540039062
+    },
+    {
+      "date": "2022-01-03",
+      "etf": "LABD",
+      "monthly_return": -0.11149145822600848,
+      "from_etf_price": 28.332273483276367
+    },
+    {
+      "date": "2022-01-13",
+      "etf": "SOXS",
+      "monthly_return": -0.06265657262027302,
+      "from_etf_price": 328.3770446777344
+    },
+    {
+      "date": "2022-01-14",
+      "etf": "ERX",
+      "monthly_return": 0.3934317053867944,
+      "from_etf_price": 308.4803161621094
+    },
+    {
+      "date": "2022-01-19",
+      "etf": "LABD",
+      "monthly_return": 0.7351695369859537,
+      "from_etf_price": 35.64499282836914
+    },
+    {
+      "date": "2022-01-26",
+      "etf": "ERX",
+      "monthly_return": 0.33993356755217863,
+      "from_etf_price": 413.0528564453125
+    },
+    {
+      "date": "2022-01-31",
+      "etf": "LABD",
+      "monthly_return": 0.5578312184109486,
+      "from_etf_price": 37.365108489990234
+    },
+    {
+      "date": "2022-02-01",
+      "etf": "ERX",
+      "monthly_return": 0.4976385026181618,
+      "from_etf_price": 332.2381286621094
+    },
+    {
+      "date": "2022-02-02",
+      "etf": "LABD",
+      "monthly_return": 0.7434687794854553,
+      "from_etf_price": 40.27397537231445
+    },
+    {
+      "date": "2022-02-03",
+      "etf": "ERX",
+      "monthly_return": 0.3043995283433738,
+      "from_etf_price": 395.3634033203125
+    },
+    {
+      "date": "2022-02-04",
+      "etf": "NUGT",
+      "monthly_return": -0.04283598055001647,
+      "from_etf_price": 40.7332763671875
+    },
+    {
+      "date": "2022-02-07",
+      "etf": "ERX",
+      "monthly_return": 0.32166250520283457,
+      "from_etf_price": 45.990840911865234
+    },
+    {
+      "date": "2022-02-11",
+      "etf": "SOXS",
+      "monthly_return": 0.35142863578637695,
+      "from_etf_price": 42.417362213134766
+    },
+    {
+      "date": "2022-02-15",
+      "etf": "NUGT",
+      "monthly_return": 0.08181223581813368,
+      "from_etf_price": 348.3699951171875
+    },
+    {
+      "date": "2022-02-17",
+      "etf": "ERX",
+      "monthly_return": 0.12607392391429872,
+      "from_etf_price": 56.45112228393555
+    },
+    {
+      "date": "2022-02-23",
+      "etf": "NUGT",
+      "monthly_return": 0.20620266705342183,
+      "from_etf_price": 39.15726089477539
+    },
+    {
+      "date": "2022-03-14",
+      "etf": "LABD",
+      "monthly_return": 0.43588345304403986,
+      "from_etf_price": 62.293209075927734
+    },
+    {
+      "date": "2022-03-16",
+      "etf": "NUGT",
+      "monthly_return": 0.23344573136370728,
+      "from_etf_price": 381.17596435546875
+    },
+    {
+      "date": "2022-03-21",
+      "etf": "ERX",
+      "monthly_return": 0.2447832296205792,
+      "from_etf_price": 67.20783996582031
+    },
+    {
+      "date": "2022-03-23",
+      "etf": "DRN",
+      "monthly_return": 0.11399357115991027,
+      "from_etf_price": 51.01387405395508
+    },
+    {
+      "date": "2022-03-25",
+      "etf": "SOXS",
+      "monthly_return": -0.20681826219576127,
+      "from_etf_price": 21.544246673583984
+    },
+    {
+      "date": "2022-03-30",
+      "etf": "DRN",
+      "monthly_return": 0.2870307465851425,
+      "from_etf_price": 310.2532043457031
+    },
+    {
+      "date": "2022-03-31",
+      "etf": "SOXS",
+      "monthly_return": -0.11905878426571004,
+      "from_etf_price": 23.159833908081055
+    },
+    {
+      "date": "2022-04-01",
+      "etf": "TMV",
+      "monthly_return": 0.1041538279189751,
+      "from_etf_price": 350.58612060546875
+    },
+    {
+      "date": "2022-04-05",
+      "etf": "LABD",
+      "monthly_return": -0.3659234708411985,
+      "from_etf_price": 17.488357543945312
+    },
+    {
+      "date": "2022-04-08",
+      "etf": "DRN",
+      "monthly_return": 0.24278338301667013,
+      "from_etf_price": 303.9530029296875
+    },
+    {
+      "date": "2022-04-11",
+      "etf": "LABD",
+      "monthly_return": -0.19440826569613834,
+      "from_etf_price": 23.98598861694336
+    },
+    {
+      "date": "2022-04-18",
+      "etf": "DUST",
+      "monthly_return": -0.15958285530786664,
+      "from_etf_price": 370.6700439453125
+    },
+    {
+      "date": "2022-04-19",
+      "etf": "LABD",
+      "monthly_return": 0.16979492284440956,
+      "from_etf_price": 98.70638275146484
+    },
+    {
+      "date": "2022-04-20",
+      "etf": "DRN",
+      "monthly_return": 0.25534910635320474,
+      "from_etf_price": 354.9560852050781
+    },
+    {
+      "date": "2022-04-21",
+      "etf": "LABD",
+      "monthly_return": 0.3228393747028606,
+      "from_etf_price": 25.88614273071289
+    },
+    {
+      "date": "2022-05-05",
+      "etf": "SQQQ",
+      "monthly_return": 0.4198993207563244,
+      "from_etf_price": 497.998046875
+    },
+    {
+      "date": "2022-05-09",
+      "etf": "LABD",
+      "monthly_return": 1.48948194726136,
+      "from_etf_price": 231.22665405273438
+    },
+    {
+      "date": "2022-05-18",
+      "etf": "DUST",
+      "monthly_return": 0.6269196792646079,
+      "from_etf_price": 542.4461059570312
+    },
+    {
+      "date": "2022-05-19",
+      "etf": "ERX",
+      "monthly_return": -0.0011383923132750606,
+      "from_etf_price": 142.57589721679688
+    },
+    {
+      "date": "2022-05-26",
+      "etf": "DRV",
+      "monthly_return": 0.2694388769270353,
+      "from_etf_price": 63.38664627075195
+    },
+    {
+      "date": "2022-06-03",
+      "etf": "SOXS",
+      "monthly_return": -0.046103982422912804,
+      "from_etf_price": 38.8255500793457
+    },
+    {
+      "date": "2022-06-10",
+      "etf": "LABU",
+      "monthly_return": 0.13695652246960144,
+      "from_etf_price": 456.9585876464844
+    },
+    {
+      "date": "2022-07-01",
+      "etf": "DUST",
+      "monthly_return": 0.23105593851617523,
+      "from_etf_price": 145.5120391845703
+    },
+    {
+      "date": "2022-07-05",
+      "etf": "SOXS",
+      "monthly_return": 0.8818897338966505,
+      "from_etf_price": 191.34951782226562
+    },
+    {
+      "date": "2022-07-07",
+      "etf": "LABU",
+      "monthly_return": 0.6040952777670989,
+      "from_etf_price": 540.8156127929688
+    },
+    {
+      "date": "2022-07-08",
+      "etf": "DUST",
+      "monthly_return": 0.37338473969174535,
+      "from_etf_price": 192.69979858398438
+    },
+    {
+      "date": "2022-07-13",
+      "etf": "LABU",
+      "monthly_return": 0.7667303605608353,
+      "from_etf_price": 192.77615356445312
+    },
+    {
+      "date": "2022-08-04",
+      "etf": "SOXL",
+      "monthly_return": 0.8254756243075052,
+      "from_etf_price": 212.83851623535156
+    },
+    {
+      "date": "2022-08-08",
+      "etf": "ERX",
+      "monthly_return": 0.058258847953172044,
+      "from_etf_price": 19.9619140625
+    },
+    {
+      "date": "2022-08-16",
+      "etf": "TNA",
+      "monthly_return": 0.5508300350244326,
+      "from_etf_price": 48.281105041503906
+    },
+    {
+      "date": "2022-08-17",
+      "etf": "TECL",
+      "monthly_return": 0.34714721020402184,
+      "from_etf_price": 48.74113845825195
+    },
+    {
+      "date": "2022-08-18",
+      "etf": "SOXS",
+      "monthly_return": -0.21103003036859946,
+      "from_etf_price": 44.81025314331055
+    },
+    {
+      "date": "2022-08-26",
+      "etf": "TMV",
+      "monthly_return": 0.09057576428900038,
+      "from_etf_price": 376.6473693847656
+    },
+    {
+      "date": "2022-08-30",
+      "etf": "SOXS",
+      "monthly_return": 0.20692347179992332,
+      "from_etf_price": 23.118858337402344
+    },
+    {
+      "date": "2022-09-07",
+      "etf": "DRV",
+      "monthly_return": 0.09404300073878002,
+      "from_etf_price": 455.8062744140625
+    },
+    {
+      "date": "2022-09-09",
+      "etf": "TMV",
+      "monthly_return": 0.24242439186953502,
+      "from_etf_price": 37.31541442871094
+    },
+    {
+      "date": "2022-09-13",
+      "etf": "DRV",
+      "monthly_return": 0.26737690451344887,
+      "from_etf_price": 26.422842025756836
+    },
+    {
+      "date": "2022-09-19",
+      "etf": "TECS",
+      "monthly_return": 0.5078477265379442,
+      "from_etf_price": 45.03584671020508
+    },
+    {
+      "date": "2022-09-20",
+      "etf": "DRV",
+      "monthly_return": 0.43599255533852577,
+      "from_etf_price": 393.0400390625
+    },
+    {
+      "date": "2022-10-04",
+      "etf": "SOXS",
+      "monthly_return": 0.03297132377787326,
+      "from_etf_price": 54.043006896972656
+    },
+    {
+      "date": "2022-10-06",
+      "etf": "DRV",
+      "monthly_return": 0.6272012711432713,
+      "from_etf_price": 476.19427490234375
+    },
+    {
+      "date": "2022-10-07",
+      "etf": "TMV",
+      "monthly_return": 0.19515337822525747,
+      "from_etf_price": 67.13379669189453
+    },
+    {
+      "date": "2022-10-11",
+      "etf": "DRV",
+      "monthly_return": 0.8566861324485422,
+      "from_etf_price": 32.28307342529297
+    },
+    {
+      "date": "2022-10-14",
+      "etf": "UDOW",
+      "monthly_return": -0.1371747072671068,
+      "from_etf_price": 71.82502746582031
+    },
+    {
+      "date": "2022-10-17",
+      "etf": "SOXS",
+      "monthly_return": 0.4227640604137983,
+      "from_etf_price": 42.61383056640625
+    },
+    {
+      "date": "2022-10-18",
+      "etf": "ERX",
+      "monthly_return": 0.0924570379658396,
+      "from_etf_price": 658.3572998046875
+    },
+    {
+      "date": "2022-10-19",
+      "etf": "DRV",
+      "monthly_return": 0.355666133336191,
+      "from_etf_price": 57.56562805175781
+    },
+    {
+      "date": "2022-10-20",
+      "etf": "ERX",
+      "monthly_return": 0.20920830301251958,
+      "from_etf_price": 66.63338470458984
+    },
+    {
+      "date": "2022-10-27",
+      "etf": "SOXL",
+      "monthly_return": -0.16224200223643181,
+      "from_etf_price": 63.802371978759766
+    },
+    {
+      "date": "2022-11-07",
+      "etf": "UDOW",
+      "monthly_return": 0.38637497747833116,
+      "from_etf_price": 9.350605010986328
+    },
+    {
+      "date": "2022-11-08",
+      "etf": "SOXL",
+      "monthly_return": 0.22826117001835922,
+      "from_etf_price": 55.86205291748047
+    },
+    {
+      "date": "2022-11-17",
+      "etf": "NUGT",
+      "monthly_return": 0.3557226005936509,
+      "from_etf_price": 12.06120777130127
+    },
+    {
+      "date": "2022-11-18",
+      "etf": "SOXL",
+      "monthly_return": 0.6220780180888315,
+      "from_etf_price": 29.831897735595703
+    },
+    {
+      "date": "2022-11-21",
+      "etf": "TMF",
+      "monthly_return": 0.22204977598662357,
+      "from_etf_price": 11.59319019317627
+    },
+    {
+      "date": "2022-11-25",
+      "etf": "SOXL",
+      "monthly_return": 0.4273030746235247,
+      "from_etf_price": 77.87326049804688
+    },
+    {
+      "date": "2022-11-29",
+      "etf": "NUGT",
+      "monthly_return": 0.2551643830399979,
+      "from_etf_price": 11.437182426452637
+    },
+    {
+      "date": "2022-11-30",
+      "etf": "TMF",
+      "monthly_return": 0.21408051547212792,
+      "from_etf_price": 33.48439025878906
+    },
+    {
+      "date": "2022-12-05",
+      "etf": "NUGT",
+      "monthly_return": 0.5696719692012788,
+      "from_etf_price": 84.16512298583984
+    },
+    {
+      "date": "2022-12-08",
+      "etf": "TMF",
+      "monthly_return": 0.5232384223719564,
+      "from_etf_price": 34.1536979675293
+    },
+    {
+      "date": "2022-12-12",
+      "etf": "SOXS",
+      "monthly_return": -0.1707703903328156,
+      "from_etf_price": 86.26241302490234
+    },
+    {
+      "date": "2022-12-14",
+      "etf": "TMF",
+      "monthly_return": 0.3433242183790899,
+      "from_etf_price": 276.39129638671875
+    },
+    {
+      "date": "2022-12-16",
+      "etf": "ERY",
+      "monthly_return": 0.1827205257688489,
+      "from_etf_price": 87.90377807617188
+    },
+    {
+      "date": "2022-12-19",
+      "etf": "NUGT",
+      "monthly_return": 0.05964785958961438,
+      "from_etf_price": 28.682451248168945
+    },
+    {
+      "date": "2022-12-27",
+      "etf": "SOXL",
+      "monthly_return": -0.27658867625352435,
+      "from_etf_price": 35.49618911743164
+    },
+    {
+      "date": "2022-12-29",
+      "etf": "NUGT",
+      "monthly_return": 0.07161113828495891,
+      "from_etf_price": 9.462242126464844
+    },
+    {
+      "date": "2022-12-30",
+      "etf": "SOXS",
+      "monthly_return": 0.319174889542686,
+      "from_etf_price": 33.20362091064453
+    },
+    {
+      "date": "2023-01-03",
+      "etf": "SOXL",
+      "monthly_return": -0.30419329095183045,
+      "from_etf_price": 363.1838684082031
+    },
+    {
+      "date": "2023-01-04",
+      "etf": "SQQQ",
+      "monthly_return": 0.3059059934383803,
+      "from_etf_price": 9.85364818572998
+    },
+    {
+      "date": "2023-01-05",
+      "etf": "SOXL",
+      "monthly_return": -0.23716130024658133,
+      "from_etf_price": 237.42799377441406
+    },
+    {
+      "date": "2023-01-09",
+      "etf": "NUGT",
+      "monthly_return": 0.15628917147356858,
+      "from_etf_price": 11.282280921936035
+    },
+    {
+      "date": "2023-01-11",
+      "etf": "SOXL",
+      "monthly_return": 0.010084017335065587,
+      "from_etf_price": 40.05241394042969
+    },
+    {
+      "date": "2023-01-12",
+      "etf": "NUGT",
+      "monthly_return": 0.2549291100631448,
+      "from_etf_price": 12.544564247131348
+    },
+    {
+      "date": "2023-01-20",
+      "etf": "SOXL",
+      "monthly_return": 0.2007134113408542,
+      "from_etf_price": 41.892250061035156
+    },
+    {
+      "date": "2023-02-07",
+      "etf": "DUST",
+      "monthly_return": 0.04499995935697321,
+      "from_etf_price": 17.212081909179688
+    },
+    {
+      "date": "2023-02-14",
+      "etf": "SOXL",
+      "monthly_return": 0.33822391218813497,
+      "from_etf_price": 119.392822265625
+    },
+    {
+      "date": "2023-02-16",
+      "etf": "TECL",
+      "monthly_return": 0.2772357751029131,
+      "from_etf_price": 15.930229187011719
+    },
+    {
+      "date": "2023-02-17",
+      "etf": "SOXL",
+      "monthly_return": 0.31690705201190195,
+      "from_etf_price": 29.858482360839844
+    },
+    {
+      "date": "2023-02-21",
+      "etf": "DUST",
+      "monthly_return": 0.319149033006189,
+      "from_etf_price": 13.708999633789062
+    },
+    {
+      "date": "2023-02-23",
+      "etf": "LABD",
+      "monthly_return": 0.17952409903413602,
+      "from_etf_price": 140.4359130859375
+    },
+    {
+      "date": "2023-02-27",
+      "etf": "FAZ",
+      "monthly_return": 0.056069010164568,
+      "from_etf_price": 154.3389129638672
+    },
+    {
+      "date": "2023-03-07",
+      "etf": "LABD",
+      "monthly_return": 0.3127382384310735,
+      "from_etf_price": 159.15879821777344
+    },
+    {
+      "date": "2023-03-10",
+      "etf": "FAZ",
+      "monthly_return": 0.3852087640773305,
+      "from_etf_price": 195.0208740234375
+    },
+    {
+      "date": "2023-03-14",
+      "etf": "LABD",
+      "monthly_return": 0.22121031426340076,
+      "from_etf_price": 200.5897674560547
+    },
+    {
+      "date": "2023-03-15",
+      "etf": "FAZ",
+      "monthly_return": 0.585760546620741,
+      "from_etf_price": 176.34866333007812
+    },
+    {
+      "date": "2023-03-16",
+      "etf": "LABD",
+      "monthly_return": 0.28326697546874424,
+      "from_etf_price": 204.4933319091797
+    },
+    {
+      "date": "2023-03-17",
+      "etf": "FAZ",
+      "monthly_return": 0.6231606165618127,
+      "from_etf_price": 186.5417022705078
+    },
+    {
+      "date": "2023-03-21",
+      "etf": "NUGT",
+      "monthly_return": 0.09713420390734107,
+      "from_etf_price": 200.5731658935547
+    },
+    {
+      "date": "2023-04-19",
+      "etf": "ERX",
+      "monthly_return": 0.21720579118771388,
+      "from_etf_price": 44.38970184326172
+    },
+    {
+      "date": "2023-04-20",
+      "etf": "NUGT",
+      "monthly_return": 0.27375704025396375,
+      "from_etf_price": 57.59769821166992
+    },
+    {
+      "date": "2023-04-25",
+      "etf": "LABU",
+      "monthly_return": 0.21663012736781084,
+      "from_etf_price": 43.5698127746582
+    },
+    {
+      "date": "2023-05-16",
+      "etf": "SOXL",
+      "monthly_return": -0.03401791102128626,
+      "from_etf_price": 128.7297821044922
+    },
+    {
+      "date": "2023-05-19",
+      "etf": "TQQQ",
+      "monthly_return": 0.18344531627933258,
+      "from_etf_price": 17.042030334472656
+    },
+    {
+      "date": "2023-05-22",
+      "etf": "SOXL",
+      "monthly_return": 0.17967708029770701,
+      "from_etf_price": 31.069236755371094
+    },
+    {
+      "date": "2023-06-21",
+      "etf": "LABD",
+      "monthly_return": -0.06631924280760293,
+      "from_etf_price": 22.3586483001709
+    },
+    {
+      "date": "2023-06-22",
+      "etf": "SOXL",
+      "monthly_return": 0.3197755622822771,
+      "from_etf_price": 117.36530303955078
+    },
+    {
+      "date": "2023-06-28",
+      "etf": "DRN",
+      "monthly_return": 0.14422725917408452,
+      "from_etf_price": 23.281259536743164
+    },
+    {
+      "date": "2023-06-30",
+      "etf": "TNA",
+      "monthly_return": 0.23735613305858627,
+      "from_etf_price": 9.014374732971191
+    },
+    {
+      "date": "2023-07-05",
+      "etf": "DRN",
+      "monthly_return": 0.13264894573950348,
+      "from_etf_price": 33.601776123046875
+    },
+    {
+      "date": "2023-07-06",
+      "etf": "LABD",
+      "monthly_return": 0.18624966259365894,
+      "from_etf_price": 9.22247314453125
+    },
+    {
+      "date": "2023-07-10",
+      "etf": "FAS",
+      "monthly_return": 0.05118071904283883,
+      "from_etf_price": 127.01553344726562
+    },
+    {
+      "date": "2023-07-11",
+      "etf": "LABD",
+      "monthly_return": 0.15314841278448577,
+      "from_etf_price": 64.05026245117188
+    },
+    {
+      "date": "2023-07-12",
+      "etf": "FAS",
+      "monthly_return": 0.11177885661796383,
+      "from_etf_price": 124.62596893310547
+    },
+    {
+      "date": "2023-07-13",
+      "etf": "LABD",
+      "monthly_return": 0.13774727517607022,
+      "from_etf_price": 65.91891479492188
+    },
+    {
+      "date": "2023-07-17",
+      "etf": "ERX",
+      "monthly_return": 0.03876489711304654,
+      "from_etf_price": 120.67395782470703
+    },
+    {
+      "date": "2023-07-20",
+      "etf": "TMV",
+      "monthly_return": 0.04698217852423592,
+      "from_etf_price": 54.440433502197266
+    },
+    {
+      "date": "2023-07-21",
+      "etf": "FAS",
+      "monthly_return": 0.18857033527118094,
+      "from_etf_price": 27.42800521850586
+    },
+    {
+      "date": "2023-07-24",
+      "etf": "LABD",
+      "monthly_return": 0.11119801629103754,
+      "from_etf_price": 72.33269500732422
+    },
+    {
+      "date": "2023-07-25",
+      "etf": "TNA",
+      "monthly_return": 0.24636762378878552,
+      "from_etf_price": 131.794677734375
+    },
+    {
+      "date": "2023-07-27",
+      "etf": "FAS",
+      "monthly_return": 0.19929271967298545,
+      "from_etf_price": 37.7934684753418
+    },
+    {
+      "date": "2023-07-28",
+      "etf": "SOXS",
+      "monthly_return": -0.19634265910583149,
+      "from_etf_price": 69.60757446289062
+    },
+    {
+      "date": "2023-08-01",
+      "etf": "TNA",
+      "monthly_return": 0.16321915377021212,
+      "from_etf_price": 74.61943054199219
+    },
+    {
+      "date": "2023-08-02",
+      "etf": "TMV",
+      "monthly_return": 0.15623941616120707,
+      "from_etf_price": 38.368614196777344
+    },
+    {
+      "date": "2023-08-04",
+      "etf": "ERX",
+      "monthly_return": 0.19692021350082012,
+      "from_etf_price": 31.82744789123535
+    },
+    {
+      "date": "2023-08-07",
+      "etf": "FAS",
+      "monthly_return": 0.15494973719080485,
+      "from_etf_price": 58.794158935546875
+    },
+    {
+      "date": "2023-08-08",
+      "etf": "LABD",
+      "monthly_return": 0.18740955467804898,
+      "from_etf_price": 68.66352081298828
+    },
+    {
+      "date": "2023-08-14",
+      "etf": "DUST",
+      "monthly_return": 0.2088429703884498,
+      "from_etf_price": 146.86746215820312
+    },
+    {
+      "date": "2023-08-15",
+      "etf": "LABD",
+      "monthly_return": 0.2254377053213139,
+      "from_etf_price": 123.44147491455078
+    },
+    {
+      "date": "2023-08-16",
+      "etf": "DUST",
+      "monthly_return": 0.35253927063389967,
+      "from_etf_price": 157.71250915527344
+    },
+    {
+      "date": "2023-08-17",
+      "etf": "LABD",
+      "monthly_return": 0.37070940489973814,
+      "from_etf_price": 128.90750122070312
+    },
+    {
+      "date": "2023-08-23",
+      "etf": "DUST",
+      "monthly_return": 0.2111625372741437,
+      "from_etf_price": 152.93331909179688
+    },
+    {
+      "date": "2023-08-24",
+      "etf": "SRTY",
+      "monthly_return": 0.23657117056742427,
+      "from_etf_price": 119.52413177490234
+    },
+    {
+      "date": "2023-08-25",
+      "etf": "SOXS",
+      "monthly_return": 0.20449446117572578,
+      "from_etf_price": 37.43328857421875
+    },
+    {
+      "date": "2023-08-29",
+      "etf": "LABD",
+      "monthly_return": 0.19272710412358096,
+      "from_etf_price": 86.51133728027344
+    },
+    {
+      "date": "2023-08-30",
+      "etf": "SRTY",
+      "monthly_return": 0.15153281760916126,
+      "from_etf_price": 148.33798217773438
+    },
+    {
+      "date": "2023-08-31",
+      "etf": "SOXS",
+      "monthly_return": 0.004362071952099145,
+      "from_etf_price": 34.80009078979492
+    },
+    {
+      "date": "2023-09-01",
+      "etf": "ERX",
+      "monthly_return": 0.08397799175588005,
+      "from_etf_price": 82.97098541259766
+    },
+    {
+      "date": "2023-09-07",
+      "etf": "SOXS",
+      "monthly_return": 0.058078122100426954,
+      "from_etf_price": 63.98659896850586
+    },
+    {
+      "date": "2023-09-08",
+      "etf": "LABD",
+      "monthly_return": 0.02195143185720294,
+      "from_etf_price": 92.50267791748047
+    },
+    {
+      "date": "2023-09-13",
+      "etf": "DRV",
+      "monthly_return": 0.09047015462827157,
+      "from_etf_price": 155.96627807617188
+    },
+    {
+      "date": "2023-09-15",
+      "etf": "NUGT",
+      "monthly_return": 0.1254701486422649,
+      "from_etf_price": 45.56365966796875
+    },
+    {
+      "date": "2023-09-21",
+      "etf": "LABD",
+      "monthly_return": 0.20130251530504495,
+      "from_etf_price": 30.10486602783203
+    },
+    {
+      "date": "2023-09-22",
+      "etf": "TMV",
+      "monthly_return": 0.1376899349033538,
+      "from_etf_price": 193.5320281982422
+    },
+    {
+      "date": "2023-09-26",
+      "etf": "LABD",
+      "monthly_return": 0.23349649794084515,
+      "from_etf_price": 40.57564926147461
+    },
+    {
+      "date": "2023-10-12",
+      "etf": "SOXS",
+      "monthly_return": -0.0029350279474937846,
+      "from_etf_price": 226.4993438720703
+    },
+    {
+      "date": "2023-10-13",
+      "etf": "LABD",
+      "monthly_return": 0.38593582963160844,
+      "from_etf_price": 100.7824935913086
+    },
+    {
+      "date": "2023-10-17",
+      "etf": "TMV",
+      "monthly_return": 0.287375305240394,
+      "from_etf_price": 211.5479736328125
+    },
+    {
+      "date": "2023-10-18",
+      "etf": "LABD",
+      "monthly_return": 0.3335146885670841,
+      "from_etf_price": 46.343048095703125
+    },
+    {
+      "date": "2023-10-19",
+      "etf": "TMV",
+      "monthly_return": 0.38505753735416826,
+      "from_etf_price": 242.2864990234375
+    },
+    {
+      "date": "2023-10-20",
+      "etf": "LABD",
+      "monthly_return": 0.31082420162626456,
+      "from_etf_price": 48.466400146484375
+    },
+    {
+      "date": "2023-10-23",
+      "etf": "TECL",
+      "monthly_return": -0.02222732901133062,
+      "from_etf_price": 260.8596496582031
+    },
+    {
+      "date": "2023-10-26",
+      "etf": "LABD",
+      "monthly_return": 0.35332652240484075,
+      "from_etf_price": 39.174400329589844
+    },
+    {
+      "date": "2023-10-31",
+      "etf": "SOXL",
+      "monthly_return": -0.2190776609687971,
+      "from_etf_price": 248.6013946533203
+    },
+    {
+      "date": "2023-11-02",
+      "etf": "NUGT",
+      "monthly_return": 0.17732790048505143,
+      "from_etf_price": 16.791881561279297
+    },
+    {
+      "date": "2023-11-06",
+      "etf": "SOXL",
+      "monthly_return": -0.06266045231360229,
+      "from_etf_price": 29.959335327148438
+    },
+    {
+      "date": "2023-11-07",
+      "etf": "ERY",
+      "monthly_return": 0.1176240685946448,
+      "from_etf_price": 18.28624153137207
+    },
+    {
+      "date": "2023-11-09",
+      "etf": "LABD",
+      "monthly_return": 0.16179162563914318,
+      "from_etf_price": 27.024524688720703
+    },
+    {
+      "date": "2023-11-10",
+      "etf": "LABU",
+      "monthly_return": -0.1217949569920358,
+      "from_etf_price": 232.53561401367188
+    },
+    {
+      "date": "2023-11-13",
+      "etf": "NUGT",
+      "monthly_return": -0.13320271845819254,
+      "from_etf_price": 55.1821174621582
+    },
+    {
+      "date": "2023-11-15",
+      "etf": "TECL",
+      "monthly_return": 0.2185711657858762,
+      "from_etf_price": 27.921947479248047
+    },
+    {
+      "date": "2023-11-16",
+      "etf": "LABU",
+      "monthly_return": 0.019543943450103463,
+      "from_etf_price": 57.77605056762695
+    },
+    {
+      "date": "2023-11-27",
+      "etf": "SOXL",
+      "monthly_return": 0.5594025595165537,
+      "from_etf_price": 69.81822967529297
+    },
+    {
+      "date": "2023-11-28",
+      "etf": "LABU",
+      "monthly_return": 0.4112903156816594,
+      "from_etf_price": 22.159778594970703
+    },
+    {
+      "date": "2023-12-04",
+      "etf": "SOXL",
+      "monthly_return": 0.30620612822989024,
+      "from_etf_price": 87.24312591552734
+    },
+    {
+      "date": "2023-12-06",
+      "etf": "LABU",
+      "monthly_return": 0.4091195750151839,
+      "from_etf_price": 21.107826232910156
+    },
+    {
+      "date": "2023-12-07",
+      "etf": "SOXL",
+      "monthly_return": 0.24623633224810804,
+      "from_etf_price": 91.76252746582031
+    },
+    {
+      "date": "2023-12-08",
+      "etf": "LABU",
+      "monthly_return": 0.42951604984695724,
+      "from_etf_price": 23.300209045410156
+    },
+    {
+      "date": "2024-01-02",
+      "etf": "SOXL",
+      "monthly_return": 0.23204771241229682,
+      "from_etf_price": 124.61373138427734
+    },
+    {
+      "date": "2024-01-16",
+      "etf": "LABU",
+      "monthly_return": 0.14590720906192978,
+      "from_etf_price": 28.762083053588867
+    },
+    {
+      "date": "2024-01-17",
+      "etf": "DUST",
+      "monthly_return": 0.24348828899093466,
+      "from_etf_price": 115.1690902709961
+    },
+    {
+      "date": "2024-01-18",
+      "etf": "FAS",
+      "monthly_return": -0.0023556945516003402,
+      "from_etf_price": 118.75628662109375
+    },
+    {
+      "date": "2024-01-19",
+      "etf": "DUST",
+      "monthly_return": 0.22582478025541453,
+      "from_etf_price": 82.47732543945312
+    },
+    {
+      "date": "2024-01-23",
+      "etf": "SOXL",
+      "monthly_return": 0.28116399546146664,
+      "from_etf_price": 113.4720458984375
+    },
+    {
+      "date": "2024-01-24",
+      "etf": "DUST",
+      "monthly_return": 0.27200001645934746,
+      "from_etf_price": 36.871429443359375
+    },
+    {
+      "date": "2024-02-01",
+      "etf": "SOXL",
+      "monthly_return": 0.15727514190890557,
+      "from_etf_price": 107.2607421875
+    },
+    {
+      "date": "2024-02-12",
+      "etf": "LABU",
+      "monthly_return": 0.06005905121366584,
+      "from_etf_price": 38.57607650756836
+    },
+    {
+      "date": "2024-02-13",
+      "etf": "SOXL",
+      "monthly_return": 0.3110321634981612,
+      "from_etf_price": 112.75094604492188
+    },
+    {
+      "date": "2024-02-20",
+      "etf": "LABU",
+      "monthly_return": 0.1504192438039884,
+      "from_etf_price": 35.8860969543457
+    },
+    {
+      "date": "2024-02-21",
+      "etf": "SOXL",
+      "monthly_return": 0.024957577081797355,
+      "from_etf_price": 127.00214385986328
+    },
+    {
+      "date": "2024-02-26",
+      "etf": "NUGT",
+      "monthly_return": -0.15122799180261504,
+      "from_etf_price": 40.60586929321289
+    },
+    {
+      "date": "2024-02-27",
+      "etf": "SOXL",
+      "monthly_return": 0.2087623453055425,
+      "from_etf_price": 23.272138595581055
+    },
+    {
+      "date": "2024-03-01",
+      "etf": "NUGT",
+      "monthly_return": -0.06140035981962866,
+      "from_etf_price": 47.62149429321289
+    },
+    {
+      "date": "2024-03-04",
+      "etf": "ERX",
+      "monthly_return": 0.06165503628002056,
+      "from_etf_price": 27.88542366027832
+    },
+    {
+      "date": "2024-03-07",
+      "etf": "SOXL",
+      "monthly_return": 0.6352347846984405,
+      "from_etf_price": 58.2917594909668
+    },
+    {
+      "date": "2024-03-08",
+      "etf": "ERX",
+      "monthly_return": 0.0989442763756101,
+      "from_etf_price": 48.2324104309082
+    },
+    {
+      "date": "2024-03-13",
+      "etf": "NUGT",
+      "monthly_return": 0.21198312134085806,
+      "from_etf_price": 61.56624984741211
+    },
+    {
+      "date": "2024-04-01",
+      "etf": "LABD",
+      "monthly_return": 0.13510397623261006,
+      "from_etf_price": 34.680965423583984
+    },
+    {
+      "date": "2024-04-08",
+      "etf": "SOXS",
+      "monthly_return": 0.20032817649397638,
+      "from_etf_price": 79.0242919921875
+    },
+    {
+      "date": "2024-04-09",
+      "etf": "LABD",
+      "monthly_return": 0.2394285141638568,
+      "from_etf_price": 30.797374725341797
+    },
+    {
+      "date": "2024-04-15",
+      "etf": "NUGT",
+      "monthly_return": 0.2363858795917111,
+      "from_etf_price": 89.68030548095703
+    },
+    {
+      "date": "2024-04-16",
+      "etf": "LABD",
+      "monthly_return": 0.3260886037084101,
+      "from_etf_price": 36.68216323852539
+    },
+    {
+      "date": "2024-04-17",
+      "etf": "TECS",
+      "monthly_return": 0.11958296673171165,
+      "from_etf_price": 95.05546569824219
+    },
+    {
+      "date": "2024-04-19",
+      "etf": "SOXL",
+      "monthly_return": -0.2905530621780048,
+      "from_etf_price": 91.56187438964844
+    },
+    {
+      "date": "2024-04-22",
+      "etf": "LABD",
+      "monthly_return": 0.43905817112434176,
+      "from_etf_price": 31.625883102416992
+    },
+    {
+      "date": "2024-04-24",
+      "etf": "NUGT",
+      "monthly_return": 0.2108687710864552,
+      "from_etf_price": 97.7901840209961
+    },
+    {
+      "date": "2024-05-01",
+      "etf": "SOXL",
+      "monthly_return": -0.25087187743769035,
+      "from_etf_price": 37.14550018310547
+    },
+    {
+      "date": "2024-05-02",
+      "etf": "SOXS",
+      "monthly_return": 0.1640867327294111,
+      "from_etf_price": 35.945228576660156
+    },
+    {
+      "date": "2024-05-03",
+      "etf": "NUGT",
+      "monthly_return": 0.02580797488310549,
+      "from_etf_price": 33.07657241821289
+    },
+    {
+      "date": "2024-05-07",
+      "etf": "DRV",
+      "monthly_return": 0.10348509623738011,
+      "from_etf_price": 38.84109878540039
+    },
+    {
+      "date": "2024-05-08",
+      "etf": "SOXL",
+      "monthly_return": -0.10971583287455022,
+      "from_etf_price": 39.68269729614258
+    },
+    {
+      "date": "2024-06-10",
+      "etf": "TECL",
+      "monthly_return": 0.1562794040739719,
+      "from_etf_price": 53.202880859375
+    },
+    {
+      "date": "2024-06-11",
+      "etf": "SOXL",
+      "monthly_return": 0.3202534143365696,
+      "from_etf_price": 89.6397476196289
+    },
+    {
+      "date": "2024-06-14",
+      "etf": "TMV",
+      "monthly_return": -0.08333329611154383,
+      "from_etf_price": 59.2677116394043
+    },
+    {
+      "date": "2024-06-17",
+      "etf": "SOXL",
+      "monthly_return": 0.35473417374336735,
+      "from_etf_price": 32.349388122558594
+    },
+    {
+      "date": "2024-06-26",
+      "etf": "TECL",
+      "monthly_return": 0.14767829980837122,
+      "from_etf_price": 54.173057556152344
+    },
+    {
+      "date": "2024-06-27",
+      "etf": "LABU",
+      "monthly_return": 0.10176740659662098,
+      "from_etf_price": 97.0606918334961
+    },
+    {
+      "date": "2024-06-28",
+      "etf": "TECL",
+      "monthly_return": 0.1541893287122318,
+      "from_etf_price": 112.71170806884766
+    },
+    {
+      "date": "2024-07-09",
+      "etf": "TNA",
+      "monthly_return": -0.037941573338475254,
+      "from_etf_price": 106.90193939208984
+    },
+    {
+      "date": "2024-07-11",
+      "etf": "SOXS",
+      "monthly_return": -0.16616845608152764,
+      "from_etf_price": 40.27549362182617
+    },
+    {
+      "date": "2024-07-17",
+      "etf": "TNA",
+      "monthly_return": 0.3721444309995372,
+      "from_etf_price": 21.674453735351562
+    },
+    {
+      "date": "2024-07-18",
+      "etf": "SOXS",
+      "monthly_return": 0.1096977941032038,
+      "from_etf_price": 44.20937728881836
+    },
+    {
+      "date": "2024-07-26",
+      "etf": "TNA",
+      "monthly_return": 0.37358269656030707,
+      "from_etf_price": 25.037567138671875
+    },
+    {
+      "date": "2024-07-30",
+      "etf": "SOXS",
+      "monthly_return": 0.29365075862244283,
+      "from_etf_price": 46.59534454345703
+    },
+    {
+      "date": "2024-07-31",
+      "etf": "TNA",
+      "monthly_return": 0.3463687090460479,
+      "from_etf_price": 22.303251266479492
+    },
+    {
+      "date": "2024-08-01",
+      "etf": "SOXS",
+      "monthly_return": 0.3121253698363098,
+      "from_etf_price": 42.83892822265625
+    },
+    {
+      "date": "2024-08-07",
+      "etf": "SOXL",
+      "monthly_return": -0.5919066427211441,
+      "from_etf_price": 35.136436462402344
+    },
+    {
+      "date": "2024-08-08",
+      "etf": "SOXS",
+      "monthly_return": 0.6196015649716651,
+      "from_etf_price": 31.111434936523438
+    },
+    {
+      "date": "2024-08-16",
+      "etf": "TMF",
+      "monthly_return": 0.12231340580926675,
+      "from_etf_price": 21.350528717041016
+    },
+    {
+      "date": "2024-08-19",
+      "etf": "SOXS",
+      "monthly_return": -0.13846146987866847,
+      "from_etf_price": 55.592529296875
+    },
+    {
+      "date": "2024-08-20",
+      "etf": "TMF",
+      "monthly_return": 0.20120717518530018,
+      "from_etf_price": 21.064712524414062
+    },
+    {
+      "date": "2024-08-21",
+      "etf": "SOXS",
+      "monthly_return": -0.0623617927334168,
+      "from_etf_price": 56.98616027832031
+    },
+    {
+      "date": "2024-08-26",
+      "etf": "DRN",
+      "monthly_return": 0.1852571293347971,
+      "from_etf_price": 22.055543899536133
+    },
+    {
+      "date": "2024-09-03",
+      "etf": "FAS",
+      "monthly_return": 0.2355436849204342,
+      "from_etf_price": 12.127413749694824
+    },
+    {
+      "date": "2024-09-10",
+      "etf": "NUGT",
+      "monthly_return": 0.06558170707608935,
+      "from_etf_price": 121.37471008300781
+    },
+    {
+      "date": "2024-09-12",
+      "etf": "SOXL",
+      "monthly_return": -0.09835598647754296,
+      "from_etf_price": 47.89263153076172
+    },
+    {
+      "date": "2024-09-13",
+      "etf": "DRN",
+      "monthly_return": 0.22987483656057583,
+      "from_etf_price": 33.05960464477539
+    },
+    {
+      "date": "2024-09-19",
+      "etf": "LABD",
+      "monthly_return": -0.04856112445738503,
+      "from_etf_price": 12.934611320495605
+    },
+    {
+      "date": "2024-09-20",
+      "etf": "DRN",
+      "monthly_return": 0.16534740795612235,
+      "from_etf_price": 51.849063873291016
+    },
+    {
+      "date": "2024-09-25",
+      "etf": "LABD",
+      "monthly_return": 0.12233447983021462,
+      "from_etf_price": 13.128344535827637
+    },
+    {
+      "date": "2024-09-26",
+      "etf": "NUGT",
+      "monthly_return": 0.10968966045513606,
+      "from_etf_price": 57.19533157348633
+    },
+    {
+      "date": "2024-09-27",
+      "etf": "TMV",
+      "monthly_return": -0.018093555615827484,
+      "from_etf_price": 50.51911926269531
+    },
+    {
+      "date": "2024-09-30",
+      "etf": "DRN",
+      "monthly_return": 0.11721273111849873,
+      "from_etf_price": 28.072433471679688
+    },
+    {
+      "date": "2024-10-01",
+      "etf": "LABD",
+      "monthly_return": 0.10410688108748545,
+      "from_etf_price": 12.854837417602539
+    },
+    {
+      "date": "2024-10-02",
+      "etf": "SOXL",
+      "monthly_return": 0.16468078815111475,
+      "from_etf_price": 57.484683990478516
+    },
+    {
+      "date": "2024-10-03",
+      "etf": "TECL",
+      "monthly_return": 0.18038773606775682,
+      "from_etf_price": 34.88158416748047
+    },
+    {
+      "date": "2024-10-04",
+      "etf": "NUGT",
+      "monthly_return": 0.10694206970098885,
+      "from_etf_price": 86.21541595458984
+    },
+    {
+      "date": "2024-10-10",
+      "etf": "TMV",
+      "monthly_return": 0.2254211749771977,
+      "from_etf_price": 49.06355285644531
+    },
+    {
+      "date": "2024-10-22",
+      "etf": "DUST",
+      "monthly_return": -0.17224245513699465,
+      "from_etf_price": 33.500484466552734
+    },
+    {
+      "date": "2024-10-23",
+      "etf": "TNA",
+      "monthly_return": -0.028571273271873254,
+      "from_etf_price": 43.43400955200195
+    },
+    {
+      "date": "2024-10-29",
+      "etf": "DUST",
+      "monthly_return": -0.10861427749342689,
+      "from_etf_price": 43.6209831237793
+    },
+    {
+      "date": "2024-10-31",
+      "etf": "TMV",
+      "monthly_return": 0.18980362379850013,
+      "from_etf_price": 49.59758758544922
+    },
+    {
+      "date": "2024-11-05",
+      "etf": "FAS",
+      "monthly_return": 0.09658472629709292,
+      "from_etf_price": 32.879024505615234
+    },
+    {
+      "date": "2024-11-06",
+      "etf": "SOXS",
+      "monthly_return": 0.02603359665067062,
+      "from_etf_price": 164.06460571289062
+    },
+    {
+      "date": "2024-11-08",
+      "etf": "TNA",
+      "monthly_return": 0.2927064017176795,
+      "from_etf_price": 18.551918029785156
+    },
+    {
+      "date": "2024-11-12",
+      "etf": "SOXS",
+      "monthly_return": 0.1958706194955211,
+      "from_etf_price": 52.62934494018555
+    },
+    {
+      "date": "2024-11-13",
+      "etf": "FAS",
+      "monthly_return": 0.16670174062746734,
+      "from_etf_price": 21.9888858795166
+    },
+    {
+      "date": "2024-11-14",
+      "etf": "DUST",
+      "monthly_return": 0.2878727195210744,
+      "from_etf_price": 163.7178955078125
+    },
+    {
+      "date": "2024-11-15",
+      "etf": "TNA",
+      "monthly_return": 0.007226398219555952,
+      "from_etf_price": 63.39824676513672
+    },
+    {
+      "date": "2024-11-20",
+      "etf": "DUST",
+      "monthly_return": 0.3397229208889694,
+      "from_etf_price": 48.159698486328125
+    },
+    {
+      "date": "2024-11-22",
+      "etf": "TQQQ",
+      "monthly_return": 0.06462602793642724,
+      "from_etf_price": 54.239540100097656
+    },
+    {
+      "date": "2024-11-25",
+      "etf": "TNA",
+      "monthly_return": 0.321663431958253,
+      "from_etf_price": 77.82670593261719
+    },
+    {
+      "date": "2024-11-27",
+      "etf": "LABD",
+      "monthly_return": -0.06473586938432296,
+      "from_etf_price": 54.474430084228516
+    },
+    {
+      "date": "2024-12-02",
+      "etf": "TQQQ",
+      "monthly_return": 0.18761702825055737,
+      "from_etf_price": 54.01245880126953
+    },
+    {
+      "date": "2024-12-04",
+      "etf": "LABD",
+      "monthly_return": -0.010434781173207175,
+      "from_etf_price": 85.39058685302734
+    },
+    {
+      "date": "2024-12-05",
+      "etf": "FAS",
+      "monthly_return": 0.22701616652316603,
+      "from_etf_price": 57.291786193847656
+    },
+    {
+      "date": "2024-12-06",
+      "etf": "LABD",
+      "monthly_return": 0.07251915397427555,
+      "from_etf_price": 170.10731506347656
+    },
+    {
+      "date": "2024-12-16",
+      "etf": "ERY",
+      "monthly_return": 0.187050280862463,
+      "from_etf_price": 61.728519439697266
+    },
+    {
+      "date": "2024-12-18",
+      "etf": "SOXL",
+      "monthly_return": 0.0057823904109579605,
+      "from_etf_price": 25.715492248535156
+    },
+    {
+      "date": "2024-12-20",
+      "etf": "ERY",
+      "monthly_return": 0.314384682441623,
+      "from_etf_price": 27.045366287231445
+    },
+    {
+      "date": "2024-12-23",
+      "etf": "DRV",
+      "monthly_return": 0.21158037138933028,
+      "from_etf_price": 25.42586326599121
+    },
+    {
+      "date": "2024-12-27",
+      "etf": "LABD",
+      "monthly_return": 0.24609973933506968,
+      "from_etf_price": 29.062742233276367
+    },
+    {
+      "date": "2025-01-03",
+      "etf": "DRV",
+      "monthly_return": 0.21602399182218734,
+      "from_etf_price": 65.88776397705078
+    },
+    {
+      "date": "2025-01-06",
+      "etf": "TMV",
+      "monthly_return": 0.2649058286787873,
+      "from_etf_price": 29.617897033691406
+    },
+    {
+      "date": "2025-01-07",
+      "etf": "SOXL",
+      "monthly_return": 0.07273704110833124,
+      "from_etf_price": 40.77708053588867
+    },
+    {
+      "date": "2025-01-10",
+      "etf": "FAS",
+      "monthly_return": -0.14310317072577217,
+      "from_etf_price": 27.876901626586914
+    },
+    {
+      "date": "2025-01-17",
+      "etf": "ERX",
+      "monthly_return": 0.16697261893138604,
+      "from_etf_price": 166.04745483398438
+    },
+    {
+      "date": "2025-01-22",
+      "etf": "NUGT",
+      "monthly_return": 0.1954052628858871,
+      "from_etf_price": 62.213478088378906
+    },
+    {
+      "date": "2025-02-11",
+      "etf": "TMF",
+      "monthly_return": 0.10482561745332641,
+      "from_etf_price": 51.47175598144531
+    },
+    {
+      "date": "2025-02-12",
+      "etf": "NUGT",
+      "monthly_return": 0.40431686023234326,
+      "from_etf_price": 38.50153350830078
+    },
+    {
+      "date": "2025-02-14",
+      "etf": "SOXS",
+      "monthly_return": -0.03501732125053392,
+      "from_etf_price": 50.33525085449219
+    },
+    {
+      "date": "2025-02-18",
+      "etf": "NUGT",
+      "monthly_return": 0.27306275563628235,
+      "from_etf_price": 17.870853424072266
+    },
+    {
+      "date": "2025-02-19",
+      "etf": "SOXS",
+      "monthly_return": -0.04855423528434155,
+      "from_etf_price": 51.59138488769531
+    },
+    {
+      "date": "2025-02-26",
+      "etf": "SRTY",
+      "monthly_return": 0.15892150374694403,
+      "from_etf_price": 19.870595932006836
+    },
+    {
+      "date": "2025-03-03",
+      "etf": "NUGT",
+      "monthly_return": 0.0059891943390188995,
+      "from_etf_price": 21.45168685913086
+    },
+    {
+      "date": "2025-03-07",
+      "etf": "SRTY",
+      "monthly_return": 0.37947499397248774,
+      "from_etf_price": 51.28233337402344
+    },
+    {
+      "date": "2025-03-11",
+      "etf": "NUGT",
+      "monthly_return": 0.029037453153307746,
+      "from_etf_price": 24.05335807800293
+    },
+    {
+      "date": "2025-03-12",
+      "etf": "SRTY",
+      "monthly_return": 0.42980944286589917,
+      "from_etf_price": 51.910404205322266
+    },
+    {
+      "date": "2025-03-14",
+      "etf": "SOXS",
+      "monthly_return": 0.21817269712389464,
+      "from_etf_price": 23.221595764160156
+    },
+    {
+      "date": "2025-03-18",
+      "etf": "LABD",
+      "monthly_return": 0.1759530150327835,
+      "from_etf_price": 23.353071212768555
+    },
+    {
+      "date": "2025-03-19",
+      "etf": "SOXS",
+      "monthly_return": 0.28548038022198474,
+      "from_etf_price": 75.21614074707031
+    },
+    {
+      "date": "2025-03-27",
+      "etf": "LABD",
+      "monthly_return": 0.08096967878255734,
+      "from_etf_price": 25.845876693725586
+    },
+    {
+      "date": "2025-04-01",
+      "etf": "NUGT",
+      "monthly_return": 0.31359636490382603,
+      "from_etf_price": 103.68574523925781
+    },
+    {
+      "date": "2025-04-10",
+      "etf": "LABD",
+      "monthly_return": 0.621437356283097,
+      "from_etf_price": 63.91791534423828
+    },
+    {
+      "date": "2025-04-15",
+      "etf": "LABU",
+      "monthly_return": -0.3978784235167663,
+      "from_etf_price": 99.82720947265625
+    },
+    {
+      "date": "2025-04-16",
+      "etf": "LABD",
+      "monthly_return": 0.34552139959604977,
+      "from_etf_price": 45.238101959228516
+    },
+    {
+      "date": "2025-04-21",
+      "etf": "TECL",
+      "monthly_return": -0.3828184154375507,
+      "from_etf_price": 103.98255157470703
+    },
+    {
+      "date": "2025-04-23",
+      "etf": "LABD",
+      "monthly_return": 0.25120441950949446,
+      "from_etf_price": 46.38801956176758
+    },
+    {
+      "date": "2025-04-28",
+      "etf": "SOXL",
+      "monthly_return": -0.307995479840221,
+      "from_etf_price": 82.51327514648438
+    },
+    {
+      "date": "2025-05-09",
+      "etf": "NUGT",
+      "monthly_return": 0.22946322565459876,
+      "from_etf_price": 14.061452865600586
+    },
+    {
+      "date": "2025-05-12",
+      "etf": "SOXL",
+      "monthly_return": 0.7788162309535762,
+      "from_etf_price": 61.00937271118164
+    },
+    {
+      "date": "2025-07-10",
+      "etf": "TECL",
+      "monthly_return": 0.22240709284246662,
+      "from_etf_price": 27.362051010131836
+    },
+    {
+      "date": "2025-07-16",
+      "etf": "SOXL",
+      "monthly_return": 0.35306591810599275,
+      "from_etf_price": 99.01000213623047
+    },
+    {
+      "date": "2025-07-17",
+      "etf": "TECL",
+      "monthly_return": 0.22847342728567166,
+      "from_etf_price": 27.31206512451172
+    },
+    {
+      "date": "2025-07-22",
+      "etf": "SOXL",
+      "monthly_return": 0.24484672647837624,
+      "from_etf_price": 98.79000091552734
+    },
+    {
+      "date": "2025-07-23",
+      "etf": "TECL",
+      "monthly_return": 0.2150875078216259,
+      "from_etf_price": 25.772512435913086
+    },
+    {
+      "date": "2025-07-25",
+      "etf": "NUGT",
+      "monthly_return": 0.06354336696648777,
+      "from_etf_price": 102.5999984741211
+    },
+    {
+      "date": "2025-08-04",
+      "etf": "FAZ",
+      "monthly_return": 0.07838485089518499,
+      "from_etf_price": 81.6500015258789
+    },
+    {
+      "date": "2025-08-05",
+      "etf": "LABU",
+      "monthly_return": 0.09515599536158748,
+      "from_etf_price": 45.56839370727539
+    },
+    {
+      "date": "2025-08-06",
+      "etf": "NUGT",
+      "monthly_return": 0.2544119183569713,
+      "from_etf_price": 61.806121826171875
+    },
+    {
+      "date": "2025-09-04",
+      "etf": "SOXL",
+      "monthly_return": 0.04608479989741521,
+      "from_etf_price": 111.45999908447266
+    },
+    {
+      "date": "2025-09-05",
+      "etf": "NUGT",
+      "monthly_return": 0.32357907139833975,
+      "from_etf_price": 26.442317962646484
+    },
+    {
+      "date": "2025-09-25",
+      "etf": "LABU",
+      "monthly_return": 0.19123907658258177,
+      "from_etf_price": 141.60000610351562
+    },
+    {
+      "date": "2025-09-29",
+      "etf": "NUGT",
+      "monthly_return": 0.5087388011925191,
+      "from_etf_price": 91.51000213623047
+    },
+    {
+      "date": "2025-09-30",
+      "etf": "LABU",
+      "monthly_return": 0.3514333642839127,
+      "from_etf_price": 154.44000244140625
+    },
+    {
+      "date": "2025-10-02",
+      "etf": "NUGT",
+      "monthly_return": 0.3806638524731787,
+      "from_etf_price": 100.44999694824219
+    },
+    {
+      "date": "2025-10-03",
+      "etf": "UPRO",
+      "monthly_return": 0.09403066114975878,
+      "from_etf_price": 157.35000610351562
+    }
+  ],
+  "lightgbm": [
+    {
+      "date": "2020-02-14",
+      "etf": "ERY",
+      "monthly_return": 0.2648223429804708,
+      "from_etf_price": null
+    },
+    {
+      "date": "2020-03-10",
+      "etf": "DRV",
+      "monthly_return": 0.18624165993654507,
+      "from_etf_price": 1224.4300537109375
+    },
+    {
+      "date": "2020-03-11",
+      "etf": "ERY",
+      "monthly_return": 1.9647916706261532,
+      "from_etf_price": 298.54315185546875
+    },
+    {
+      "date": "2020-03-26",
+      "etf": "NUGT",
+      "monthly_return": -0.7447828636162916,
+      "from_etf_price": 945.4684448242188
+    },
+    {
+      "date": "2020-04-01",
+      "etf": "ERY",
+      "monthly_return": 0.5635042491383486,
+      "from_etf_price": 34.66046142578125
+    },
+    {
+      "date": "2020-04-02",
+      "etf": "LABU",
+      "monthly_return": -0.602952300840855,
+      "from_etf_price": 941.8118896484375
+    },
+    {
+      "date": "2020-04-14",
+      "etf": "NUGT",
+      "monthly_return": 0.7011834361433154,
+      "from_etf_price": 597.4483642578125
+    },
+    {
+      "date": "2020-04-15",
+      "etf": "LABU",
+      "monthly_return": 0.7482992299911351,
+      "from_etf_price": 53.066349029541016
+    },
+    {
+      "date": "2020-04-30",
+      "etf": "NUGT",
+      "monthly_return": 0.8394120019445981,
+      "from_etf_price": 728.5474243164062
+    },
+    {
+      "date": "2020-05-01",
+      "etf": "LABU",
+      "monthly_return": 0.7836841964824959,
+      "from_etf_price": 63.69873809814453
+    },
+    {
+      "date": "2020-05-12",
+      "etf": "TNA",
+      "monthly_return": 0.11335156688144243,
+      "from_etf_price": 932.5011596679688
+    },
+    {
+      "date": "2020-05-19",
+      "etf": "NUGT",
+      "monthly_return": 0.4359828126962155,
+      "from_etf_price": 20.855030059814453
+    },
+    {
+      "date": "2020-05-20",
+      "etf": "FAS",
+      "monthly_return": 0.18821524268790912,
+      "from_etf_price": 76.3008041381836
+    },
+    {
+      "date": "2020-05-26",
+      "etf": "TNA",
+      "monthly_return": 0.37717893405291414,
+      "from_etf_price": 29.214357376098633
+    },
+    {
+      "date": "2020-05-29",
+      "etf": "LABU",
+      "monthly_return": 0.21675870280732257,
+      "from_etf_price": 25.053003311157227
+    },
+    {
+      "date": "2020-06-01",
+      "etf": "SOXL",
+      "monthly_return": 0.16174331799867314,
+      "from_etf_price": 972.186279296875
+    },
+    {
+      "date": "2020-06-04",
+      "etf": "LABU",
+      "monthly_return": 0.11486496365720233,
+      "from_etf_price": 11.68438720703125
+    },
+    {
+      "date": "2020-06-16",
+      "etf": "DRN",
+      "monthly_return": 0.6891119639156793,
+      "from_etf_price": 967.44775390625
+    },
+    {
+      "date": "2020-06-18",
+      "etf": "LABU",
+      "monthly_return": 0.06753635185938456,
+      "from_etf_price": 9.388567924499512
+    },
+    {
+      "date": "2020-06-19",
+      "etf": "TQQQ",
+      "monthly_return": 0.15950632225295025,
+      "from_etf_price": 1086.700439453125
+    },
+    {
+      "date": "2020-06-23",
+      "etf": "SOXL",
+      "monthly_return": 0.3147126272110874,
+      "from_etf_price": 23.907249450683594
+    },
+    {
+      "date": "2020-06-24",
+      "etf": "LABU",
+      "monthly_return": 0.21827925346787058,
+      "from_etf_price": 11.29855728149414
+    },
+    {
+      "date": "2020-06-25",
+      "etf": "TQQQ",
+      "monthly_return": 0.20512494625539435,
+      "from_etf_price": 1246.0330810546875
+    },
+    {
+      "date": "2020-06-26",
+      "etf": "LABU",
+      "monthly_return": 0.21156709140842334,
+      "from_etf_price": 21.43507194519043
+    },
+    {
+      "date": "2020-06-30",
+      "etf": "TQQQ",
+      "monthly_return": 0.16541385391960106,
+      "from_etf_price": 1173.1785888671875
+    },
+    {
+      "date": "2020-07-06",
+      "etf": "NUGT",
+      "monthly_return": 0.21858544121251433,
+      "from_etf_price": 26.561473846435547
+    },
+    {
+      "date": "2020-07-27",
+      "etf": "TNA",
+      "monthly_return": 0.14060717523148147,
+      "from_etf_price": 105.74067687988281
+    },
+    {
+      "date": "2020-07-29",
+      "etf": "SOXL",
+      "monthly_return": 0.24984213901423935,
+      "from_etf_price": 29.55173110961914
+    },
+    {
+      "date": "2020-07-30",
+      "etf": "NUGT",
+      "monthly_return": 0.27334351037209803,
+      "from_etf_price": 14.894078254699707
+    },
+    {
+      "date": "2020-07-31",
+      "etf": "TNA",
+      "monthly_return": 0.10814875414344871,
+      "from_etf_price": 101.08423614501953
+    },
+    {
+      "date": "2020-08-06",
+      "etf": "NUGT",
+      "monthly_return": 0.2705614735104134,
+      "from_etf_price": 32.17169952392578
+    },
+    {
+      "date": "2020-08-07",
+      "etf": "TNA",
+      "monthly_return": 0.3975232440621581,
+      "from_etf_price": 100.01334381103516
+    },
+    {
+      "date": "2020-08-10",
+      "etf": "TECL",
+      "monthly_return": 0.1367143573560332,
+      "from_etf_price": 34.79167175292969
+    },
+    {
+      "date": "2020-08-11",
+      "etf": "TNA",
+      "monthly_return": 0.4015811311173578,
+      "from_etf_price": 26.92353630065918
+    },
+    {
+      "date": "2020-08-13",
+      "etf": "TECL",
+      "monthly_return": 0.1643917638540111,
+      "from_etf_price": 34.34857940673828
+    },
+    {
+      "date": "2020-08-20",
+      "etf": "LABD",
+      "monthly_return": 0.06462597065768327,
+      "from_etf_price": 30.747844696044922
+    },
+    {
+      "date": "2020-08-24",
+      "etf": "ERY",
+      "monthly_return": 0.005963562837927983,
+      "from_etf_price": 624.9669189453125
+    },
+    {
+      "date": "2020-09-01",
+      "etf": "TQQQ",
+      "monthly_return": 0.37075003539668017,
+      "from_etf_price": 475.9003601074219
+    },
+    {
+      "date": "2020-09-02",
+      "etf": "LABU",
+      "monthly_return": -0.0905129232151527,
+      "from_etf_price": 41.80893325805664
+    },
+    {
+      "date": "2020-09-04",
+      "etf": "ERY",
+      "monthly_return": 0.1171921943716987,
+      "from_etf_price": 919.47021484375
+    },
+    {
+      "date": "2020-09-08",
+      "etf": "LABD",
+      "monthly_return": 0.2654837432632009,
+      "from_etf_price": 526.380126953125
+    },
+    {
+      "date": "2020-09-09",
+      "etf": "ERY",
+      "monthly_return": 0.26652164346340057,
+      "from_etf_price": 657.0235595703125
+    },
+    {
+      "date": "2020-09-24",
+      "etf": "TNA",
+      "monthly_return": -0.22212711281685693,
+      "from_etf_price": 616.458740234375
+    },
+    {
+      "date": "2020-09-25",
+      "etf": "ERY",
+      "monthly_return": 0.3152897394125058,
+      "from_etf_price": 27.538589477539062
+    },
+    {
+      "date": "2020-09-29",
+      "etf": "LABU",
+      "monthly_return": 0.04343620040444218,
+      "from_etf_price": 619.8477172851562
+    },
+    {
+      "date": "2020-09-30",
+      "etf": "ERY",
+      "monthly_return": 0.3256741134721588,
+      "from_etf_price": 1057.2821044921875
+    },
+    {
+      "date": "2020-10-01",
+      "etf": "LABU",
+      "monthly_return": 0.05613530245082843,
+      "from_etf_price": 664.1736450195312
+    },
+    {
+      "date": "2020-10-05",
+      "etf": "ERY",
+      "monthly_return": 0.2561333933572201,
+      "from_etf_price": 1177.3245849609375
+    },
+    {
+      "date": "2020-10-07",
+      "etf": "SOXL",
+      "monthly_return": 0.31790599407925013,
+      "from_etf_price": 611.9993286132812
+    },
+    {
+      "date": "2020-10-09",
+      "etf": "LABU",
+      "monthly_return": 0.4654295973531408,
+      "from_etf_price": 19.725605010986328
+    },
+    {
+      "date": "2020-10-13",
+      "etf": "SOXL",
+      "monthly_return": 0.36041226526525283,
+      "from_etf_price": 1375.9476318359375
+    },
+    {
+      "date": "2020-10-14",
+      "etf": "DUST",
+      "monthly_return": 0.05360455920962459,
+      "from_etf_price": 20.23177146911621
+    },
+    {
+      "date": "2020-10-15",
+      "etf": "SOXL",
+      "monthly_return": 0.3025419381517971,
+      "from_etf_price": 156.75323486328125
+    },
+    {
+      "date": "2020-10-21",
+      "etf": "LABU",
+      "monthly_return": 0.0035841964283240824,
+      "from_etf_price": 18.995121002197266
+    },
+    {
+      "date": "2020-10-22",
+      "etf": "SOXL",
+      "monthly_return": 0.36558169990279943,
+      "from_etf_price": 1198.4505615234375
+    },
+    {
+      "date": "2020-10-26",
+      "etf": "TNA",
+      "monthly_return": 0.27911840795137777,
+      "from_etf_price": 17.5826416015625
+    },
+    {
+      "date": "2020-10-27",
+      "etf": "FAS",
+      "monthly_return": 0.029697074306386906,
+      "from_etf_price": 34.3196907043457
+    },
+    {
+      "date": "2020-10-28",
+      "etf": "ERY",
+      "monthly_return": 0.1408634756146494,
+      "from_etf_price": 30.700862884521484
+    },
+    {
+      "date": "2020-10-29",
+      "etf": "TNA",
+      "monthly_return": 0.09379083292435708,
+      "from_etf_price": 661.5870361328125
+    },
+    {
+      "date": "2020-10-30",
+      "etf": "ERX",
+      "monthly_return": -0.035347926925957784,
+      "from_etf_price": 31.006196975708008
+    },
+    {
+      "date": "2020-11-02",
+      "etf": "DRV",
+      "monthly_return": 0.11792439373809427,
+      "from_etf_price": 7.9129509925842285
+    },
+    {
+      "date": "2020-11-03",
+      "etf": "ERX",
+      "monthly_return": -0.05596629607585446,
+      "from_etf_price": 119.4700927734375
+    },
+    {
+      "date": "2020-11-13",
+      "etf": "FAS",
+      "monthly_return": 0.23740836010745947,
+      "from_etf_price": 10.096437454223633
+    },
+    {
+      "date": "2020-11-16",
+      "etf": "SOXL",
+      "monthly_return": 0.19635981225480004,
+      "from_etf_price": 47.550506591796875
+    },
+    {
+      "date": "2020-11-17",
+      "etf": "ERX",
+      "monthly_return": 0.47566388944383964,
+      "from_etf_price": 23.094226837158203
+    },
+    {
+      "date": "2020-11-23",
+      "etf": "LABU",
+      "monthly_return": 0.21236776730244733,
+      "from_etf_price": 12.795225143432617
+    },
+    {
+      "date": "2020-11-27",
+      "etf": "ERX",
+      "monthly_return": 0.8987340809879114,
+      "from_etf_price": 1646.8328857421875
+    },
+    {
+      "date": "2020-11-30",
+      "etf": "LABU",
+      "monthly_return": 0.5063467613413044,
+      "from_etf_price": 11.694750785827637
+    },
+    {
+      "date": "2020-12-14",
+      "etf": "TNA",
+      "monthly_return": 0.3935559187868467,
+      "from_etf_price": 2233.61962890625
+    },
+    {
+      "date": "2020-12-15",
+      "etf": "LABU",
+      "monthly_return": 0.571151481850926,
+      "from_etf_price": 62.64812469482422
+    },
+    {
+      "date": "2020-12-18",
+      "etf": "SOXL",
+      "monthly_return": 0.29290473147565854,
+      "from_etf_price": 2300.748779296875
+    },
+    {
+      "date": "2020-12-22",
+      "etf": "LABU",
+      "monthly_return": 0.7015450731676087,
+      "from_etf_price": 28.54380989074707
+    },
+    {
+      "date": "2020-12-23",
+      "etf": "SOXL",
+      "monthly_return": 0.14918191926415192,
+      "from_etf_price": 2485.551025390625
+    },
+    {
+      "date": "2020-12-29",
+      "etf": "TNA",
+      "monthly_return": 0.17119759569852744,
+      "from_etf_price": 28.374420166015625
+    },
+    {
+      "date": "2021-01-06",
+      "etf": "SOXL",
+      "monthly_return": 0.03390745782237281,
+      "from_etf_price": 71.92530822753906
+    },
+    {
+      "date": "2021-01-07",
+      "etf": "TNA",
+      "monthly_return": 0.34401360490381516,
+      "from_etf_price": 34.67604064941406
+    },
+    {
+      "date": "2021-01-13",
+      "etf": "SOXL",
+      "monthly_return": 0.34656320201058777,
+      "from_etf_price": 77.4646987915039
+    },
+    {
+      "date": "2021-01-14",
+      "etf": "ERY",
+      "monthly_return": -0.24717032066384492,
+      "from_etf_price": 39.16611862182617
+    },
+    {
+      "date": "2021-01-15",
+      "etf": "LABU",
+      "monthly_return": 0.09585907917655723,
+      "from_etf_price": 237.0583038330078
+    },
+    {
+      "date": "2021-01-27",
+      "etf": "TNA",
+      "monthly_return": 0.14847912304695976,
+      "from_etf_price": 2468.96630859375
+    },
+    {
+      "date": "2021-01-28",
+      "etf": "SOXL",
+      "monthly_return": 0.19157537007022718,
+      "from_etf_price": 75.9136734008789
+    },
+    {
+      "date": "2021-01-29",
+      "etf": "LABU",
+      "monthly_return": 0.2178570416165988,
+      "from_etf_price": 32.39124298095703
+    },
+    {
+      "date": "2021-02-05",
+      "etf": "ERX",
+      "monthly_return": 0.07202876134486091,
+      "from_etf_price": 3208.372802734375
+    },
+    {
+      "date": "2021-02-08",
+      "etf": "LABD",
+      "monthly_return": -0.4039196269384564,
+      "from_etf_price": 16.994760513305664
+    },
+    {
+      "date": "2021-02-09",
+      "etf": "ERX",
+      "monthly_return": 0.1058479154685541,
+      "from_etf_price": 116.10377502441406
+    },
+    {
+      "date": "2021-02-10",
+      "etf": "LABD",
+      "monthly_return": -0.35710957830924894,
+      "from_etf_price": 17.24054718017578
+    },
+    {
+      "date": "2021-02-11",
+      "etf": "LABU",
+      "monthly_return": 0.33502029717458237,
+      "from_etf_price": 128.85450744628906
+    },
+    {
+      "date": "2021-02-16",
+      "etf": "TECL",
+      "monthly_return": 0.2236108106648489,
+      "from_etf_price": 2800.0703125
+    },
+    {
+      "date": "2021-02-18",
+      "etf": "LABD",
+      "monthly_return": -0.09711839321205074,
+      "from_etf_price": 45.05056381225586
+    },
+    {
+      "date": "2021-02-19",
+      "etf": "DUST",
+      "monthly_return": 0.19268899713424537,
+      "from_etf_price": 143.93997192382812
+    },
+    {
+      "date": "2021-02-22",
+      "etf": "ERX",
+      "monthly_return": 0.2642575534534608,
+      "from_etf_price": 185.01873779296875
+    },
+    {
+      "date": "2021-03-04",
+      "etf": "FAS",
+      "monthly_return": 0.2992904530159122,
+      "from_etf_price": 22.331951141357422
+    },
+    {
+      "date": "2021-03-05",
+      "etf": "ERX",
+      "monthly_return": 0.5927863673818043,
+      "from_etf_price": 82.14705657958984
+    },
+    {
+      "date": "2021-03-08",
+      "etf": "LABD",
+      "monthly_return": 0.5993547889858932,
+      "from_etf_price": 24.070049285888672
+    },
+    {
+      "date": "2021-03-19",
+      "etf": "SOXL",
+      "monthly_return": -0.18590311747629418,
+      "from_etf_price": 170.7884063720703
+    },
+    {
+      "date": "2021-03-22",
+      "etf": "LABD",
+      "monthly_return": 0.1316280179153526,
+      "from_etf_price": 35.881797790527344
+    },
+    {
+      "date": "2021-03-24",
+      "etf": "SOXL",
+      "monthly_return": -0.18446251313162798,
+      "from_etf_price": 220.8935089111328
+    },
+    {
+      "date": "2021-03-25",
+      "etf": "LABD",
+      "monthly_return": 0.2655366488540083,
+      "from_etf_price": 31.832191467285156
+    },
+    {
+      "date": "2021-03-31",
+      "etf": "TECL",
+      "monthly_return": -0.012900063710662657,
+      "from_etf_price": 195.21241760253906
+    },
+    {
+      "date": "2021-04-01",
+      "etf": "DRN",
+      "monthly_return": 0.2574307084618408,
+      "from_etf_price": 42.996028900146484
+    },
+    {
+      "date": "2021-04-05",
+      "etf": "SOXL",
+      "monthly_return": 0.5016499569478043,
+      "from_etf_price": 14.707209587097168
+    },
+    {
+      "date": "2021-04-06",
+      "etf": "DRN",
+      "monthly_return": 0.2831235907975007,
+      "from_etf_price": 42.08718490600586
+    },
+    {
+      "date": "2021-04-07",
+      "etf": "SOXL",
+      "monthly_return": 0.5769899238562881,
+      "from_etf_price": 14.794441223144531
+    },
+    {
+      "date": "2021-04-08",
+      "etf": "DRN",
+      "monthly_return": 0.21692687156066848,
+      "from_etf_price": 43.45515823364258
+    },
+    {
+      "date": "2021-04-15",
+      "etf": "TECL",
+      "monthly_return": 0.21827179363686722,
+      "from_etf_price": 15.649312973022461
+    },
+    {
+      "date": "2021-04-16",
+      "etf": "DRN",
+      "monthly_return": 0.12522781503980207,
+      "from_etf_price": 50.764373779296875
+    },
+    {
+      "date": "2021-04-20",
+      "etf": "FAS",
+      "monthly_return": 0.04265455722342337,
+      "from_etf_price": 16.233760833740234
+    },
+    {
+      "date": "2021-04-21",
+      "etf": "DRN",
+      "monthly_return": 0.2495053131192151,
+      "from_etf_price": 94.06831359863281
+    },
+    {
+      "date": "2021-04-22",
+      "etf": "FAS",
+      "monthly_return": 0.14223174901955393,
+      "from_etf_price": 16.303544998168945
+    },
+    {
+      "date": "2021-04-26",
+      "etf": "LABD",
+      "monthly_return": -0.13526777880857366,
+      "from_etf_price": 97.27389526367188
+    },
+    {
+      "date": "2021-04-28",
+      "etf": "LABU",
+      "monthly_return": 0.23124099107433782,
+      "from_etf_price": 170.60877990722656
+    },
+    {
+      "date": "2021-04-30",
+      "etf": "NUGT",
+      "monthly_return": 0.10887083800595176,
+      "from_etf_price": 1554.8267822265625
+    },
+    {
+      "date": "2021-05-12",
+      "etf": "SOXS",
+      "monthly_return": 0.4046784933072691,
+      "from_etf_price": 66.42376708984375
+    },
+    {
+      "date": "2021-05-17",
+      "etf": "DRN",
+      "monthly_return": 0.027762490619795743,
+      "from_etf_price": 944.9425659179688
+    },
+    {
+      "date": "2021-05-18",
+      "etf": "NUGT",
+      "monthly_return": 0.21133392634438986,
+      "from_etf_price": 16.19014549255371
+    },
+    {
+      "date": "2021-05-20",
+      "etf": "ERX",
+      "monthly_return": 0.17749897426681271,
+      "from_etf_price": 75.96615600585938
+    },
+    {
+      "date": "2021-05-21",
+      "etf": "FAS",
+      "monthly_return": 0.22448971062915413,
+      "from_etf_price": 23.270179748535156
+    },
+    {
+      "date": "2021-05-24",
+      "etf": "ERX",
+      "monthly_return": 0.21874978892317776,
+      "from_etf_price": 112.9897689819336
+    },
+    {
+      "date": "2021-05-27",
+      "etf": "DRN",
+      "monthly_return": 0.0320042400054148,
+      "from_etf_price": 23.190757751464844
+    },
+    {
+      "date": "2021-06-01",
+      "etf": "ERX",
+      "monthly_return": 0.19865036161283833,
+      "from_etf_price": 18.39710235595703
+    },
+    {
+      "date": "2021-06-04",
+      "etf": "FAZ",
+      "monthly_return": -0.09895451446176418,
+      "from_etf_price": 26.482288360595703
+    },
+    {
+      "date": "2021-06-07",
+      "etf": "DRN",
+      "monthly_return": 0.21120686252923004,
+      "from_etf_price": 217.87908935546875
+    },
+    {
+      "date": "2021-06-09",
+      "etf": "DUST",
+      "monthly_return": -0.0494506074279184,
+      "from_etf_price": 20.1591739654541
+    },
+    {
+      "date": "2021-06-11",
+      "etf": "SOXL",
+      "monthly_return": 0.40383919062349016,
+      "from_etf_price": 136.33428955078125
+    },
+    {
+      "date": "2021-06-15",
+      "etf": "DUST",
+      "monthly_return": -0.003775920887559514,
+      "from_etf_price": 38.846717834472656
+    },
+    {
+      "date": "2021-06-16",
+      "etf": "SOXL",
+      "monthly_return": 0.25980688423338827,
+      "from_etf_price": 147.5691680908203
+    },
+    {
+      "date": "2021-06-18",
+      "etf": "DUST",
+      "monthly_return": 0.2854251124344642,
+      "from_etf_price": 36.207786560058594
+    },
+    {
+      "date": "2021-06-24",
+      "etf": "LABU",
+      "monthly_return": 0.3230265081014392,
+      "from_etf_price": 166.82894897460938
+    },
+    {
+      "date": "2021-06-25",
+      "etf": "DUST",
+      "monthly_return": 0.2935906638113006,
+      "from_etf_price": 1556.603759765625
+    },
+    {
+      "date": "2021-06-28",
+      "etf": "TECL",
+      "monthly_return": 0.20441030184458775,
+      "from_etf_price": 171.01974487304688
+    },
+    {
+      "date": "2021-07-01",
+      "etf": "ERY",
+      "monthly_return": -0.023861345657943844,
+      "from_etf_price": 54.78113555908203
+    },
+    {
+      "date": "2021-07-07",
+      "etf": "TECL",
+      "monthly_return": 0.2622673771257724,
+      "from_etf_price": 133.1558074951172
+    },
+    {
+      "date": "2021-07-08",
+      "etf": "ERY",
+      "monthly_return": 0.11869467875283357,
+      "from_etf_price": 56.98102569580078
+    },
+    {
+      "date": "2021-07-09",
+      "etf": "TECL",
+      "monthly_return": 0.2566971213102871,
+      "from_etf_price": 128.87481689453125
+    },
+    {
+      "date": "2021-07-13",
+      "etf": "LABD",
+      "monthly_return": 0.12113407299388745,
+      "from_etf_price": 59.446075439453125
+    },
+    {
+      "date": "2021-07-15",
+      "etf": "TECL",
+      "monthly_return": 0.2083001696129132,
+      "from_etf_price": 212.1834716796875
+    },
+    {
+      "date": "2021-07-16",
+      "etf": "SOXL",
+      "monthly_return": -0.06176637973070764,
+      "from_etf_price": 57.40332794189453
+    },
+    {
+      "date": "2021-07-23",
+      "etf": "ERY",
+      "monthly_return": 0.22975927056321988,
+      "from_etf_price": 40.31171417236328
+    },
+    {
+      "date": "2021-07-26",
+      "etf": "LABD",
+      "monthly_return": 0.3068668471482978,
+      "from_etf_price": 142.87713623046875
+    },
+    {
+      "date": "2021-07-28",
+      "etf": "FAS",
+      "monthly_return": -0.031144041292459623,
+      "from_etf_price": 201.767333984375
+    },
+    {
+      "date": "2021-08-02",
+      "etf": "LABD",
+      "monthly_return": 0.34551490827781417,
+      "from_etf_price": 100.97659301757812
+    },
+    {
+      "date": "2021-08-04",
+      "etf": "DUST",
+      "monthly_return": -0.03014008224485265,
+      "from_etf_price": 213.26100158691406
+    },
+    {
+      "date": "2021-08-05",
+      "etf": "LABD",
+      "monthly_return": 0.0033270586528764134,
+      "from_etf_price": 165.4022979736328
+    },
+    {
+      "date": "2021-08-06",
+      "etf": "ERY",
+      "monthly_return": 0.06366031163672425,
+      "from_etf_price": 198.1755828857422
+    },
+    {
+      "date": "2021-08-10",
+      "etf": "DUST",
+      "monthly_return": 0.10432976659297521,
+      "from_etf_price": 142.16363525390625
+    },
+    {
+      "date": "2021-08-11",
+      "etf": "FAS",
+      "monthly_return": 0.17590902780859796,
+      "from_etf_price": 181.095458984375
+    },
+    {
+      "date": "2021-08-18",
+      "etf": "LABU",
+      "monthly_return": -0.17780253752215358,
+      "from_etf_price": 110.89054870605469
+    },
+    {
+      "date": "2021-08-24",
+      "etf": "FAS",
+      "monthly_return": 0.15529946309279596,
+      "from_etf_price": 1168.0450439453125
+    },
+    {
+      "date": "2021-08-25",
+      "etf": "LABU",
+      "monthly_return": 0.12659192729437585,
+      "from_etf_price": 119.49781036376953
+    },
+    {
+      "date": "2021-08-26",
+      "etf": "FAS",
+      "monthly_return": 0.17575843125448887,
+      "from_etf_price": 1188.9737548828125
+    },
+    {
+      "date": "2021-08-30",
+      "etf": "LABU",
+      "monthly_return": 0.17906067829470285,
+      "from_etf_price": 117.90702056884766
+    },
+    {
+      "date": "2021-09-01",
+      "etf": "DUST",
+      "monthly_return": 0.14478871218891132,
+      "from_etf_price": 1375.7501220703125
+    },
+    {
+      "date": "2021-09-08",
+      "etf": "DRN",
+      "monthly_return": 0.10951035850898116,
+      "from_etf_price": 182.25462341308594
+    },
+    {
+      "date": "2021-09-09",
+      "etf": "LABU",
+      "monthly_return": 0.13165567201188733,
+      "from_etf_price": 22.11779022216797
+    },
+    {
+      "date": "2021-09-13",
+      "etf": "SOXL",
+      "monthly_return": 0.12318164583412128,
+      "from_etf_price": 1254.720458984375
+    },
+    {
+      "date": "2021-09-15",
+      "etf": "DUST",
+      "monthly_return": 0.000984810594162333,
+      "from_etf_price": 47.141910552978516
+    },
+    {
+      "date": "2021-09-16",
+      "etf": "SOXL",
+      "monthly_return": 0.2128028132250186,
+      "from_etf_price": 195.98614501953125
+    },
+    {
+      "date": "2021-09-17",
+      "etf": "ERX",
+      "monthly_return": 0.09193750609207596,
+      "from_etf_price": 45.35675048828125
+    },
+    {
+      "date": "2021-10-21",
+      "etf": "SOXL",
+      "monthly_return": -0.014483428792804509,
+      "from_etf_price": 28.274166107177734
+    },
+    {
+      "date": "2021-11-18",
+      "etf": "LABD",
+      "monthly_return": -0.012096610260077911,
+      "from_etf_price": 65.95405578613281
+    },
+    {
+      "date": "2021-11-22",
+      "etf": "SOXL",
+      "monthly_return": 0.4853573552944739,
+      "from_etf_price": 212.90182495117188
+    },
+    {
+      "date": "2021-11-29",
+      "etf": "LABD",
+      "monthly_return": 0.2754607828949689,
+      "from_etf_price": 66.37123107910156
+    },
+    {
+      "date": "2021-12-07",
+      "etf": "SRTY",
+      "monthly_return": 0.2166429669013683,
+      "from_etf_price": 226.19134521484375
+    },
+    {
+      "date": "2021-12-09",
+      "etf": "LABD",
+      "monthly_return": 0.4285711225735098,
+      "from_etf_price": 38.24162292480469
+    },
+    {
+      "date": "2021-12-16",
+      "etf": "DRN",
+      "monthly_return": 0.044827319865145654,
+      "from_etf_price": 248.9990234375
+    },
+    {
+      "date": "2021-12-17",
+      "etf": "SOXL",
+      "monthly_return": -0.08617469584177284,
+      "from_etf_price": 24.310527801513672
+    },
+    {
+      "date": "2021-12-20",
+      "etf": "SRTY",
+      "monthly_return": 0.2945839924193119,
+      "from_etf_price": 55.83488464355469
+    },
+    {
+      "date": "2021-12-21",
+      "etf": "LABD",
+      "monthly_return": 0.03545789123722631,
+      "from_etf_price": 38.5430793762207
+    },
+    {
+      "date": "2021-12-28",
+      "etf": "ERX",
+      "monthly_return": 0.036637121205800094,
+      "from_etf_price": 223.40773010253906
+    },
+    {
+      "date": "2021-12-29",
+      "etf": "LABD",
+      "monthly_return": -0.04334599630351976,
+      "from_etf_price": 26.900352478027344
+    },
+    {
+      "date": "2021-12-31",
+      "etf": "ERX",
+      "monthly_return": 0.0773476107904627,
+      "from_etf_price": 231.13003540039062
+    },
+    {
+      "date": "2022-01-03",
+      "etf": "LABD",
+      "monthly_return": -0.11149145822600848,
+      "from_etf_price": 28.332273483276367
+    },
+    {
+      "date": "2022-01-13",
+      "etf": "SOXS",
+      "monthly_return": -0.06265657262027302,
+      "from_etf_price": 328.3770446777344
+    },
+    {
+      "date": "2022-01-14",
+      "etf": "ERX",
+      "monthly_return": 0.3934317053867944,
+      "from_etf_price": 308.4803161621094
+    },
+    {
+      "date": "2022-01-19",
+      "etf": "LABD",
+      "monthly_return": 0.7351695369859537,
+      "from_etf_price": 35.64499282836914
+    },
+    {
+      "date": "2022-01-26",
+      "etf": "ERX",
+      "monthly_return": 0.33993356755217863,
+      "from_etf_price": 413.0528564453125
+    },
+    {
+      "date": "2022-01-28",
+      "etf": "LABD",
+      "monthly_return": 0.8561208599959043,
+      "from_etf_price": 37.013877868652344
+    },
+    {
+      "date": "2022-02-01",
+      "etf": "ERX",
+      "monthly_return": 0.4976385026181618,
+      "from_etf_price": 332.2381286621094
+    },
+    {
+      "date": "2022-02-02",
+      "etf": "LABD",
+      "monthly_return": 0.7434687794854553,
+      "from_etf_price": 40.27397537231445
+    },
+    {
+      "date": "2022-02-03",
+      "etf": "ERX",
+      "monthly_return": 0.3043995283433738,
+      "from_etf_price": 395.3634033203125
+    },
+    {
+      "date": "2022-02-04",
+      "etf": "NUGT",
+      "monthly_return": -0.04283598055001647,
+      "from_etf_price": 40.7332763671875
+    },
+    {
+      "date": "2022-02-07",
+      "etf": "ERX",
+      "monthly_return": 0.32166250520283457,
+      "from_etf_price": 45.990840911865234
+    },
+    {
+      "date": "2022-02-11",
+      "etf": "SOXS",
+      "monthly_return": 0.35142863578637695,
+      "from_etf_price": 42.417362213134766
+    },
+    {
+      "date": "2022-02-15",
+      "etf": "NUGT",
+      "monthly_return": 0.08181223581813368,
+      "from_etf_price": 348.3699951171875
+    },
+    {
+      "date": "2022-02-17",
+      "etf": "ERX",
+      "monthly_return": 0.12607392391429872,
+      "from_etf_price": 56.45112228393555
+    },
+    {
+      "date": "2022-02-23",
+      "etf": "NUGT",
+      "monthly_return": 0.20620266705342183,
+      "from_etf_price": 39.15726089477539
+    },
+    {
+      "date": "2022-03-14",
+      "etf": "LABD",
+      "monthly_return": 0.43588345304403986,
+      "from_etf_price": 62.293209075927734
+    },
+    {
+      "date": "2022-03-16",
+      "etf": "NUGT",
+      "monthly_return": 0.23344573136370728,
+      "from_etf_price": 381.17596435546875
+    },
+    {
+      "date": "2022-03-21",
+      "etf": "ERX",
+      "monthly_return": 0.2447832296205792,
+      "from_etf_price": 67.20783996582031
+    },
+    {
+      "date": "2022-03-23",
+      "etf": "DRN",
+      "monthly_return": 0.11399357115991027,
+      "from_etf_price": 51.01387405395508
+    },
+    {
+      "date": "2022-03-25",
+      "etf": "SOXS",
+      "monthly_return": -0.20681826219576127,
+      "from_etf_price": 21.544246673583984
+    },
+    {
+      "date": "2022-03-30",
+      "etf": "DRN",
+      "monthly_return": 0.2870307465851425,
+      "from_etf_price": 310.2532043457031
+    },
+    {
+      "date": "2022-03-31",
+      "etf": "SOXS",
+      "monthly_return": -0.11905878426571004,
+      "from_etf_price": 23.159833908081055
+    },
+    {
+      "date": "2022-04-01",
+      "etf": "TMV",
+      "monthly_return": 0.1041538279189751,
+      "from_etf_price": 350.58612060546875
+    },
+    {
+      "date": "2022-04-05",
+      "etf": "LABD",
+      "monthly_return": -0.3659234708411985,
+      "from_etf_price": 17.488357543945312
+    },
+    {
+      "date": "2022-04-08",
+      "etf": "DRN",
+      "monthly_return": 0.24278338301667013,
+      "from_etf_price": 303.9530029296875
+    },
+    {
+      "date": "2022-04-11",
+      "etf": "LABD",
+      "monthly_return": -0.19440826569613834,
+      "from_etf_price": 23.98598861694336
+    },
+    {
+      "date": "2022-04-18",
+      "etf": "DUST",
+      "monthly_return": -0.15958285530786664,
+      "from_etf_price": 370.6700439453125
+    },
+    {
+      "date": "2022-04-19",
+      "etf": "LABD",
+      "monthly_return": 0.16979492284440956,
+      "from_etf_price": 98.70638275146484
+    },
+    {
+      "date": "2022-04-20",
+      "etf": "DRN",
+      "monthly_return": 0.25534910635320474,
+      "from_etf_price": 354.9560852050781
+    },
+    {
+      "date": "2022-04-21",
+      "etf": "LABD",
+      "monthly_return": 0.3228393747028606,
+      "from_etf_price": 25.88614273071289
+    },
+    {
+      "date": "2022-05-05",
+      "etf": "SQQQ",
+      "monthly_return": 0.4198993207563244,
+      "from_etf_price": 497.998046875
+    },
+    {
+      "date": "2022-05-09",
+      "etf": "LABD",
+      "monthly_return": 1.48948194726136,
+      "from_etf_price": 231.22665405273438
+    },
+    {
+      "date": "2022-05-18",
+      "etf": "DUST",
+      "monthly_return": 0.6269196792646079,
+      "from_etf_price": 542.4461059570312
+    },
+    {
+      "date": "2022-05-19",
+      "etf": "ERX",
+      "monthly_return": -0.0011383923132750606,
+      "from_etf_price": 142.57589721679688
+    },
+    {
+      "date": "2022-05-25",
+      "etf": "DRV",
+      "monthly_return": 0.29186011878907614,
+      "from_etf_price": 61.91822052001953
+    },
+    {
+      "date": "2022-06-03",
+      "etf": "SOXS",
+      "monthly_return": -0.046103982422912804,
+      "from_etf_price": 38.8255500793457
+    },
+    {
+      "date": "2022-06-09",
+      "etf": "LABU",
+      "monthly_return": 0.03571412846161359,
+      "from_etf_price": 411.9276123046875
+    },
+    {
+      "date": "2022-07-01",
+      "etf": "DUST",
+      "monthly_return": 0.23105593851617523,
+      "from_etf_price": 145.5120391845703
+    },
+    {
+      "date": "2022-07-05",
+      "etf": "SOXS",
+      "monthly_return": 0.8818897338966505,
+      "from_etf_price": 191.34951782226562
+    },
+    {
+      "date": "2022-07-07",
+      "etf": "LABU",
+      "monthly_return": 0.6040952777670989,
+      "from_etf_price": 540.8156127929688
+    },
+    {
+      "date": "2022-07-08",
+      "etf": "DUST",
+      "monthly_return": 0.37338473969174535,
+      "from_etf_price": 192.69979858398438
+    },
+    {
+      "date": "2022-07-13",
+      "etf": "LABU",
+      "monthly_return": 0.7667303605608353,
+      "from_etf_price": 192.77615356445312
+    },
+    {
+      "date": "2022-08-04",
+      "etf": "SOXL",
+      "monthly_return": 0.8254756243075052,
+      "from_etf_price": 212.83851623535156
+    },
+    {
+      "date": "2022-08-08",
+      "etf": "ERX",
+      "monthly_return": 0.058258847953172044,
+      "from_etf_price": 19.9619140625
+    },
+    {
+      "date": "2022-08-16",
+      "etf": "TNA",
+      "monthly_return": 0.5508300350244326,
+      "from_etf_price": 48.281105041503906
+    },
+    {
+      "date": "2022-08-17",
+      "etf": "TECL",
+      "monthly_return": 0.34714721020402184,
+      "from_etf_price": 48.74113845825195
+    },
+    {
+      "date": "2022-08-18",
+      "etf": "SOXS",
+      "monthly_return": -0.21103003036859946,
+      "from_etf_price": 44.81025314331055
+    },
+    {
+      "date": "2022-08-26",
+      "etf": "TMV",
+      "monthly_return": 0.09057576428900038,
+      "from_etf_price": 376.6473693847656
+    },
+    {
+      "date": "2022-08-30",
+      "etf": "SOXS",
+      "monthly_return": 0.20692347179992332,
+      "from_etf_price": 23.118858337402344
+    },
+    {
+      "date": "2022-09-07",
+      "etf": "DRV",
+      "monthly_return": 0.09404300073878002,
+      "from_etf_price": 455.8062744140625
+    },
+    {
+      "date": "2022-09-09",
+      "etf": "TMV",
+      "monthly_return": 0.24242439186953502,
+      "from_etf_price": 37.31541442871094
+    },
+    {
+      "date": "2022-09-13",
+      "etf": "DRV",
+      "monthly_return": 0.26737690451344887,
+      "from_etf_price": 26.422842025756836
+    },
+    {
+      "date": "2022-09-19",
+      "etf": "TECS",
+      "monthly_return": 0.5078477265379442,
+      "from_etf_price": 45.03584671020508
+    },
+    {
+      "date": "2022-09-20",
+      "etf": "DRV",
+      "monthly_return": 0.43599255533852577,
+      "from_etf_price": 393.0400390625
+    },
+    {
+      "date": "2022-10-04",
+      "etf": "SOXS",
+      "monthly_return": 0.03297132377787326,
+      "from_etf_price": 54.043006896972656
+    },
+    {
+      "date": "2022-10-06",
+      "etf": "DRV",
+      "monthly_return": 0.6272012711432713,
+      "from_etf_price": 476.19427490234375
+    },
+    {
+      "date": "2022-10-07",
+      "etf": "TMV",
+      "monthly_return": 0.19515337822525747,
+      "from_etf_price": 67.13379669189453
+    },
+    {
+      "date": "2022-10-11",
+      "etf": "DRV",
+      "monthly_return": 0.8566861324485422,
+      "from_etf_price": 32.28307342529297
+    },
+    {
+      "date": "2022-10-14",
+      "etf": "UDOW",
+      "monthly_return": -0.1371747072671068,
+      "from_etf_price": 71.82502746582031
+    },
+    {
+      "date": "2022-10-17",
+      "etf": "SOXS",
+      "monthly_return": 0.4227640604137983,
+      "from_etf_price": 42.61383056640625
+    },
+    {
+      "date": "2022-10-18",
+      "etf": "ERX",
+      "monthly_return": 0.0924570379658396,
+      "from_etf_price": 658.3572998046875
+    },
+    {
+      "date": "2022-10-19",
+      "etf": "DRV",
+      "monthly_return": 0.355666133336191,
+      "from_etf_price": 57.56562805175781
+    },
+    {
+      "date": "2022-10-20",
+      "etf": "ERX",
+      "monthly_return": 0.20920830301251958,
+      "from_etf_price": 66.63338470458984
+    },
+    {
+      "date": "2022-10-27",
+      "etf": "SOXL",
+      "monthly_return": -0.16224200223643181,
+      "from_etf_price": 63.802371978759766
+    },
+    {
+      "date": "2022-11-07",
+      "etf": "UDOW",
+      "monthly_return": 0.38637497747833116,
+      "from_etf_price": 9.350605010986328
+    },
+    {
+      "date": "2022-11-08",
+      "etf": "SOXL",
+      "monthly_return": 0.22826117001835922,
+      "from_etf_price": 55.86205291748047
+    },
+    {
+      "date": "2022-11-17",
+      "etf": "NUGT",
+      "monthly_return": 0.3557226005936509,
+      "from_etf_price": 12.06120777130127
+    },
+    {
+      "date": "2022-11-18",
+      "etf": "SOXL",
+      "monthly_return": 0.6220780180888315,
+      "from_etf_price": 29.831897735595703
+    },
+    {
+      "date": "2022-11-21",
+      "etf": "TMF",
+      "monthly_return": 0.22204977598662357,
+      "from_etf_price": 11.59319019317627
+    },
+    {
+      "date": "2022-11-25",
+      "etf": "SOXL",
+      "monthly_return": 0.4273030746235247,
+      "from_etf_price": 77.87326049804688
+    },
+    {
+      "date": "2022-11-29",
+      "etf": "NUGT",
+      "monthly_return": 0.2551643830399979,
+      "from_etf_price": 11.437182426452637
+    },
+    {
+      "date": "2022-11-30",
+      "etf": "TMF",
+      "monthly_return": 0.21408051547212792,
+      "from_etf_price": 33.48439025878906
+    },
+    {
+      "date": "2022-12-05",
+      "etf": "NUGT",
+      "monthly_return": 0.5696719692012788,
+      "from_etf_price": 84.16512298583984
+    },
+    {
+      "date": "2022-12-08",
+      "etf": "TMF",
+      "monthly_return": 0.5232384223719564,
+      "from_etf_price": 34.1536979675293
+    },
+    {
+      "date": "2022-12-09",
+      "etf": "NUGT",
+      "monthly_return": 0.2030335298998216,
+      "from_etf_price": 85.53292846679688
+    },
+    {
+      "date": "2022-12-12",
+      "etf": "SOXS",
+      "monthly_return": -0.1707703903328156,
+      "from_etf_price": 33.082801818847656
+    },
+    {
+      "date": "2022-12-14",
+      "etf": "TMF",
+      "monthly_return": 0.3433242183790899,
+      "from_etf_price": 276.39129638671875
+    },
+    {
+      "date": "2022-12-16",
+      "etf": "ERY",
+      "monthly_return": 0.1827205257688489,
+      "from_etf_price": 87.90377807617188
+    },
+    {
+      "date": "2022-12-19",
+      "etf": "NUGT",
+      "monthly_return": 0.05964785958961438,
+      "from_etf_price": 28.682451248168945
+    },
+    {
+      "date": "2022-12-27",
+      "etf": "SOXL",
+      "monthly_return": -0.27658867625352435,
+      "from_etf_price": 35.49618911743164
+    },
+    {
+      "date": "2022-12-29",
+      "etf": "NUGT",
+      "monthly_return": 0.07161113828495891,
+      "from_etf_price": 9.462242126464844
+    },
+    {
+      "date": "2022-12-30",
+      "etf": "SOXS",
+      "monthly_return": 0.319174889542686,
+      "from_etf_price": 33.20362091064453
+    },
+    {
+      "date": "2023-01-03",
+      "etf": "SOXL",
+      "monthly_return": -0.30419329095183045,
+      "from_etf_price": 363.1838684082031
+    },
+    {
+      "date": "2023-01-04",
+      "etf": "SQQQ",
+      "monthly_return": 0.3059059934383803,
+      "from_etf_price": 9.85364818572998
+    },
+    {
+      "date": "2023-01-05",
+      "etf": "SOXL",
+      "monthly_return": -0.23716130024658133,
+      "from_etf_price": 237.42799377441406
+    },
+    {
+      "date": "2023-01-09",
+      "etf": "NUGT",
+      "monthly_return": 0.15628917147356858,
+      "from_etf_price": 11.282280921936035
+    },
+    {
+      "date": "2023-01-11",
+      "etf": "SOXL",
+      "monthly_return": 0.010084017335065587,
+      "from_etf_price": 40.05241394042969
+    },
+    {
+      "date": "2023-01-12",
+      "etf": "NUGT",
+      "monthly_return": 0.2549291100631448,
+      "from_etf_price": 12.544564247131348
+    },
+    {
+      "date": "2023-01-19",
+      "etf": "SOXL",
+      "monthly_return": 0.06318543918156627,
+      "from_etf_price": 40.928985595703125
+    },
+    {
+      "date": "2023-02-07",
+      "etf": "DUST",
+      "monthly_return": 0.04499995935697321,
+      "from_etf_price": 17.212081909179688
+    },
+    {
+      "date": "2023-02-14",
+      "etf": "SOXL",
+      "monthly_return": 0.33822391218813497,
+      "from_etf_price": 119.392822265625
+    },
+    {
+      "date": "2023-02-16",
+      "etf": "TECL",
+      "monthly_return": 0.2772357751029131,
+      "from_etf_price": 15.930229187011719
+    },
+    {
+      "date": "2023-02-17",
+      "etf": "SOXL",
+      "monthly_return": 0.31690705201190195,
+      "from_etf_price": 29.858482360839844
+    },
+    {
+      "date": "2023-02-21",
+      "etf": "DUST",
+      "monthly_return": 0.319149033006189,
+      "from_etf_price": 13.708999633789062
+    },
+    {
+      "date": "2023-02-23",
+      "etf": "LABD",
+      "monthly_return": 0.17952409903413602,
+      "from_etf_price": 140.4359130859375
+    },
+    {
+      "date": "2023-02-27",
+      "etf": "FAZ",
+      "monthly_return": 0.056069010164568,
+      "from_etf_price": 154.3389129638672
+    },
+    {
+      "date": "2023-03-07",
+      "etf": "LABD",
+      "monthly_return": 0.3127382384310735,
+      "from_etf_price": 159.15879821777344
+    },
+    {
+      "date": "2023-03-10",
+      "etf": "FAZ",
+      "monthly_return": 0.3852087640773305,
+      "from_etf_price": 195.0208740234375
+    },
+    {
+      "date": "2023-03-14",
+      "etf": "LABD",
+      "monthly_return": 0.22121031426340076,
+      "from_etf_price": 200.5897674560547
+    },
+    {
+      "date": "2023-03-15",
+      "etf": "FAZ",
+      "monthly_return": 0.585760546620741,
+      "from_etf_price": 176.34866333007812
+    },
+    {
+      "date": "2023-03-16",
+      "etf": "LABD",
+      "monthly_return": 0.28326697546874424,
+      "from_etf_price": 204.4933319091797
+    },
+    {
+      "date": "2023-03-17",
+      "etf": "FAZ",
+      "monthly_return": 0.6231606165618127,
+      "from_etf_price": 186.5417022705078
+    },
+    {
+      "date": "2023-03-21",
+      "etf": "NUGT",
+      "monthly_return": 0.09713420390734107,
+      "from_etf_price": 200.5731658935547
+    },
+    {
+      "date": "2023-04-19",
+      "etf": "ERX",
+      "monthly_return": 0.21720579118771388,
+      "from_etf_price": 44.38970184326172
+    },
+    {
+      "date": "2023-04-20",
+      "etf": "NUGT",
+      "monthly_return": 0.27375704025396375,
+      "from_etf_price": 57.59769821166992
+    },
+    {
+      "date": "2023-04-25",
+      "etf": "LABU",
+      "monthly_return": 0.21663012736781084,
+      "from_etf_price": 43.5698127746582
+    },
+    {
+      "date": "2023-05-16",
+      "etf": "SOXL",
+      "monthly_return": -0.03401791102128626,
+      "from_etf_price": 128.7297821044922
+    },
+    {
+      "date": "2023-05-19",
+      "etf": "TQQQ",
+      "monthly_return": 0.18344531627933258,
+      "from_etf_price": 17.042030334472656
+    },
+    {
+      "date": "2023-05-22",
+      "etf": "SOXL",
+      "monthly_return": 0.17967708029770701,
+      "from_etf_price": 31.069236755371094
+    },
+    {
+      "date": "2023-06-21",
+      "etf": "LABD",
+      "monthly_return": -0.06631924280760293,
+      "from_etf_price": 22.3586483001709
+    },
+    {
+      "date": "2023-06-22",
+      "etf": "SOXL",
+      "monthly_return": 0.3197755622822771,
+      "from_etf_price": 117.36530303955078
+    },
+    {
+      "date": "2023-06-28",
+      "etf": "DRN",
+      "monthly_return": 0.14422725917408452,
+      "from_etf_price": 23.281259536743164
+    },
+    {
+      "date": "2023-06-30",
+      "etf": "TNA",
+      "monthly_return": 0.23735613305858627,
+      "from_etf_price": 9.014374732971191
+    },
+    {
+      "date": "2023-07-05",
+      "etf": "DRN",
+      "monthly_return": 0.13264894573950348,
+      "from_etf_price": 33.601776123046875
+    },
+    {
+      "date": "2023-07-06",
+      "etf": "LABD",
+      "monthly_return": 0.18624966259365894,
+      "from_etf_price": 9.22247314453125
+    },
+    {
+      "date": "2023-07-10",
+      "etf": "FAS",
+      "monthly_return": 0.05118071904283883,
+      "from_etf_price": 127.01553344726562
+    },
+    {
+      "date": "2023-07-11",
+      "etf": "LABD",
+      "monthly_return": 0.15314841278448577,
+      "from_etf_price": 64.05026245117188
+    },
+    {
+      "date": "2023-07-12",
+      "etf": "FAS",
+      "monthly_return": 0.11177885661796383,
+      "from_etf_price": 124.62596893310547
+    },
+    {
+      "date": "2023-07-13",
+      "etf": "LABD",
+      "monthly_return": 0.13774727517607022,
+      "from_etf_price": 65.91891479492188
+    },
+    {
+      "date": "2023-07-17",
+      "etf": "ERX",
+      "monthly_return": 0.03876489711304654,
+      "from_etf_price": 120.67395782470703
+    },
+    {
+      "date": "2023-07-20",
+      "etf": "TMV",
+      "monthly_return": 0.04698217852423592,
+      "from_etf_price": 54.440433502197266
+    },
+    {
+      "date": "2023-07-21",
+      "etf": "FAS",
+      "monthly_return": 0.18857033527118094,
+      "from_etf_price": 27.42800521850586
+    },
+    {
+      "date": "2023-07-24",
+      "etf": "LABD",
+      "monthly_return": 0.11119801629103754,
+      "from_etf_price": 72.33269500732422
+    },
+    {
+      "date": "2023-07-25",
+      "etf": "TNA",
+      "monthly_return": 0.24636762378878552,
+      "from_etf_price": 131.794677734375
+    },
+    {
+      "date": "2023-07-27",
+      "etf": "FAS",
+      "monthly_return": 0.19929271967298545,
+      "from_etf_price": 37.7934684753418
+    },
+    {
+      "date": "2023-07-28",
+      "etf": "SOXS",
+      "monthly_return": -0.19634265910583149,
+      "from_etf_price": 69.60757446289062
+    },
+    {
+      "date": "2023-08-01",
+      "etf": "TNA",
+      "monthly_return": 0.16321915377021212,
+      "from_etf_price": 74.61943054199219
+    },
+    {
+      "date": "2023-08-02",
+      "etf": "TMV",
+      "monthly_return": 0.15623941616120707,
+      "from_etf_price": 38.368614196777344
+    },
+    {
+      "date": "2023-08-04",
+      "etf": "ERX",
+      "monthly_return": 0.19692021350082012,
+      "from_etf_price": 31.82744789123535
+    },
+    {
+      "date": "2023-08-07",
+      "etf": "FAS",
+      "monthly_return": 0.15494973719080485,
+      "from_etf_price": 58.794158935546875
+    },
+    {
+      "date": "2023-08-08",
+      "etf": "LABD",
+      "monthly_return": 0.18740955467804898,
+      "from_etf_price": 68.66352081298828
+    },
+    {
+      "date": "2023-08-14",
+      "etf": "DUST",
+      "monthly_return": 0.2088429703884498,
+      "from_etf_price": 146.86746215820312
+    },
+    {
+      "date": "2023-08-15",
+      "etf": "LABD",
+      "monthly_return": 0.2254377053213139,
+      "from_etf_price": 123.44147491455078
+    },
+    {
+      "date": "2023-08-16",
+      "etf": "DUST",
+      "monthly_return": 0.35253927063389967,
+      "from_etf_price": 157.71250915527344
+    },
+    {
+      "date": "2023-08-17",
+      "etf": "LABD",
+      "monthly_return": 0.37070940489973814,
+      "from_etf_price": 128.90750122070312
+    },
+    {
+      "date": "2023-08-23",
+      "etf": "DUST",
+      "monthly_return": 0.2111625372741437,
+      "from_etf_price": 152.93331909179688
+    },
+    {
+      "date": "2023-08-24",
+      "etf": "SRTY",
+      "monthly_return": 0.23657117056742427,
+      "from_etf_price": 119.52413177490234
+    },
+    {
+      "date": "2023-08-25",
+      "etf": "SOXS",
+      "monthly_return": 0.20449446117572578,
+      "from_etf_price": 37.43328857421875
+    },
+    {
+      "date": "2023-08-29",
+      "etf": "LABD",
+      "monthly_return": 0.19272710412358096,
+      "from_etf_price": 86.51133728027344
+    },
+    {
+      "date": "2023-08-30",
+      "etf": "SRTY",
+      "monthly_return": 0.15153281760916126,
+      "from_etf_price": 148.33798217773438
+    },
+    {
+      "date": "2023-08-31",
+      "etf": "SOXS",
+      "monthly_return": 0.004362071952099145,
+      "from_etf_price": 34.80009078979492
+    },
+    {
+      "date": "2023-09-01",
+      "etf": "ERX",
+      "monthly_return": 0.08397799175588005,
+      "from_etf_price": 82.97098541259766
+    },
+    {
+      "date": "2023-09-05",
+      "etf": "SOXS",
+      "monthly_return": -0.017167376942934465,
+      "from_etf_price": 64.16564178466797
+    },
+    {
+      "date": "2023-09-08",
+      "etf": "LABD",
+      "monthly_return": 0.02195143185720294,
+      "from_etf_price": 92.50267791748047
+    },
+    {
+      "date": "2023-09-13",
+      "etf": "DRV",
+      "monthly_return": 0.09047015462827157,
+      "from_etf_price": 155.96627807617188
+    },
+    {
+      "date": "2023-09-15",
+      "etf": "NUGT",
+      "monthly_return": 0.1254701486422649,
+      "from_etf_price": 45.56365966796875
+    },
+    {
+      "date": "2023-09-21",
+      "etf": "LABD",
+      "monthly_return": 0.20130251530504495,
+      "from_etf_price": 30.10486602783203
+    },
+    {
+      "date": "2023-09-22",
+      "etf": "TMV",
+      "monthly_return": 0.1376899349033538,
+      "from_etf_price": 193.5320281982422
+    },
+    {
+      "date": "2023-09-26",
+      "etf": "LABD",
+      "monthly_return": 0.23349649794084515,
+      "from_etf_price": 40.57564926147461
+    },
+    {
+      "date": "2023-10-12",
+      "etf": "SOXS",
+      "monthly_return": -0.0029350279474937846,
+      "from_etf_price": 226.4993438720703
+    },
+    {
+      "date": "2023-10-13",
+      "etf": "LABD",
+      "monthly_return": 0.38593582963160844,
+      "from_etf_price": 100.7824935913086
+    },
+    {
+      "date": "2023-10-17",
+      "etf": "TMV",
+      "monthly_return": 0.287375305240394,
+      "from_etf_price": 211.5479736328125
+    },
+    {
+      "date": "2023-10-20",
+      "etf": "LABD",
+      "monthly_return": 0.31082420162626456,
+      "from_etf_price": 48.466400146484375
+    },
+    {
+      "date": "2023-10-23",
+      "etf": "TECL",
+      "monthly_return": -0.02222732901133062,
+      "from_etf_price": 260.8596496582031
+    },
+    {
+      "date": "2023-10-27",
+      "etf": "LABD",
+      "monthly_return": 0.47399998044706715,
+      "from_etf_price": 39.79841613769531
+    },
+    {
+      "date": "2023-10-31",
+      "etf": "SOXL",
+      "monthly_return": -0.2190776609687971,
+      "from_etf_price": 248.6013946533203
+    },
+    {
+      "date": "2023-11-02",
+      "etf": "NUGT",
+      "monthly_return": 0.17732790048505143,
+      "from_etf_price": 16.791881561279297
+    },
+    {
+      "date": "2023-11-06",
+      "etf": "SOXL",
+      "monthly_return": -0.06266045231360229,
+      "from_etf_price": 29.959335327148438
+    },
+    {
+      "date": "2023-11-07",
+      "etf": "ERY",
+      "monthly_return": 0.1176240685946448,
+      "from_etf_price": 18.28624153137207
+    },
+    {
+      "date": "2023-11-09",
+      "etf": "LABD",
+      "monthly_return": 0.16179162563914318,
+      "from_etf_price": 27.024524688720703
+    },
+    {
+      "date": "2023-11-10",
+      "etf": "LABU",
+      "monthly_return": -0.1217949569920358,
+      "from_etf_price": 232.53561401367188
+    },
+    {
+      "date": "2023-11-13",
+      "etf": "NUGT",
+      "monthly_return": -0.13320271845819254,
+      "from_etf_price": 55.1821174621582
+    },
+    {
+      "date": "2023-11-15",
+      "etf": "TECL",
+      "monthly_return": 0.2185711657858762,
+      "from_etf_price": 27.921947479248047
+    },
+    {
+      "date": "2023-11-16",
+      "etf": "LABU",
+      "monthly_return": 0.019543943450103463,
+      "from_etf_price": 57.77605056762695
+    },
+    {
+      "date": "2023-11-27",
+      "etf": "SOXL",
+      "monthly_return": 0.5594025595165537,
+      "from_etf_price": 69.81822967529297
+    },
+    {
+      "date": "2023-11-28",
+      "etf": "LABU",
+      "monthly_return": 0.4112903156816594,
+      "from_etf_price": 22.159778594970703
+    },
+    {
+      "date": "2023-12-04",
+      "etf": "SOXL",
+      "monthly_return": 0.30620612822989024,
+      "from_etf_price": 87.24312591552734
+    },
+    {
+      "date": "2023-12-08",
+      "etf": "LABU",
+      "monthly_return": 0.42951604984695724,
+      "from_etf_price": 23.300209045410156
+    },
+    {
+      "date": "2024-01-02",
+      "etf": "SOXL",
+      "monthly_return": 0.23204771241229682,
+      "from_etf_price": 124.61373138427734
+    },
+    {
+      "date": "2024-01-16",
+      "etf": "LABU",
+      "monthly_return": 0.14590720906192978,
+      "from_etf_price": 28.762083053588867
+    },
+    {
+      "date": "2024-01-17",
+      "etf": "DUST",
+      "monthly_return": 0.24348828899093466,
+      "from_etf_price": 115.1690902709961
+    },
+    {
+      "date": "2024-01-18",
+      "etf": "FAS",
+      "monthly_return": -0.0023556945516003402,
+      "from_etf_price": 118.75628662109375
+    },
+    {
+      "date": "2024-01-19",
+      "etf": "DUST",
+      "monthly_return": 0.22582478025541453,
+      "from_etf_price": 82.47732543945312
+    },
+    {
+      "date": "2024-01-23",
+      "etf": "SOXL",
+      "monthly_return": 0.28116399546146664,
+      "from_etf_price": 113.4720458984375
+    },
+    {
+      "date": "2024-01-24",
+      "etf": "DUST",
+      "monthly_return": 0.27200001645934746,
+      "from_etf_price": 36.871429443359375
+    },
+    {
+      "date": "2024-02-01",
+      "etf": "SOXL",
+      "monthly_return": 0.15727514190890557,
+      "from_etf_price": 107.2607421875
+    },
+    {
+      "date": "2024-02-12",
+      "etf": "LABU",
+      "monthly_return": 0.06005905121366584,
+      "from_etf_price": 38.57607650756836
+    },
+    {
+      "date": "2024-02-13",
+      "etf": "SOXL",
+      "monthly_return": 0.3110321634981612,
+      "from_etf_price": 112.75094604492188
+    },
+    {
+      "date": "2024-02-20",
+      "etf": "LABU",
+      "monthly_return": 0.1504192438039884,
+      "from_etf_price": 35.8860969543457
+    },
+    {
+      "date": "2024-02-21",
+      "etf": "SOXL",
+      "monthly_return": 0.024957577081797355,
+      "from_etf_price": 127.00214385986328
+    },
+    {
+      "date": "2024-02-26",
+      "etf": "NUGT",
+      "monthly_return": -0.15122799180261504,
+      "from_etf_price": 40.60586929321289
+    },
+    {
+      "date": "2024-02-27",
+      "etf": "SOXL",
+      "monthly_return": 0.2087623453055425,
+      "from_etf_price": 23.272138595581055
+    },
+    {
+      "date": "2024-03-01",
+      "etf": "NUGT",
+      "monthly_return": -0.06140035981962866,
+      "from_etf_price": 47.62149429321289
+    },
+    {
+      "date": "2024-03-04",
+      "etf": "ERX",
+      "monthly_return": 0.06165503628002056,
+      "from_etf_price": 27.88542366027832
+    },
+    {
+      "date": "2024-03-07",
+      "etf": "SOXL",
+      "monthly_return": 0.6352347846984405,
+      "from_etf_price": 58.2917594909668
+    },
+    {
+      "date": "2024-03-08",
+      "etf": "ERX",
+      "monthly_return": 0.0989442763756101,
+      "from_etf_price": 48.2324104309082
+    },
+    {
+      "date": "2024-03-13",
+      "etf": "NUGT",
+      "monthly_return": 0.21198312134085806,
+      "from_etf_price": 61.56624984741211
+    },
+    {
+      "date": "2024-04-01",
+      "etf": "LABD",
+      "monthly_return": 0.13510397623261006,
+      "from_etf_price": 34.680965423583984
+    },
+    {
+      "date": "2024-04-08",
+      "etf": "SOXS",
+      "monthly_return": 0.20032817649397638,
+      "from_etf_price": 79.0242919921875
+    },
+    {
+      "date": "2024-04-09",
+      "etf": "LABD",
+      "monthly_return": 0.2394285141638568,
+      "from_etf_price": 30.797374725341797
+    },
+    {
+      "date": "2024-04-15",
+      "etf": "NUGT",
+      "monthly_return": 0.2363858795917111,
+      "from_etf_price": 89.68030548095703
+    },
+    {
+      "date": "2024-04-16",
+      "etf": "LABD",
+      "monthly_return": 0.3260886037084101,
+      "from_etf_price": 36.68216323852539
+    },
+    {
+      "date": "2024-04-17",
+      "etf": "TECS",
+      "monthly_return": 0.11958296673171165,
+      "from_etf_price": 95.05546569824219
+    },
+    {
+      "date": "2024-04-19",
+      "etf": "SOXL",
+      "monthly_return": -0.2905530621780048,
+      "from_etf_price": 91.56187438964844
+    },
+    {
+      "date": "2024-04-22",
+      "etf": "LABD",
+      "monthly_return": 0.43905817112434176,
+      "from_etf_price": 31.625883102416992
+    },
+    {
+      "date": "2024-04-24",
+      "etf": "NUGT",
+      "monthly_return": 0.2108687710864552,
+      "from_etf_price": 97.7901840209961
+    },
+    {
+      "date": "2024-05-01",
+      "etf": "SOXL",
+      "monthly_return": -0.25087187743769035,
+      "from_etf_price": 37.14550018310547
+    },
+    {
+      "date": "2024-05-02",
+      "etf": "SOXS",
+      "monthly_return": 0.1640867327294111,
+      "from_etf_price": 35.945228576660156
+    },
+    {
+      "date": "2024-05-03",
+      "etf": "NUGT",
+      "monthly_return": 0.02580797488310549,
+      "from_etf_price": 33.07657241821289
+    },
+    {
+      "date": "2024-05-07",
+      "etf": "DRV",
+      "monthly_return": 0.10348509623738011,
+      "from_etf_price": 38.84109878540039
+    },
+    {
+      "date": "2024-05-08",
+      "etf": "SOXL",
+      "monthly_return": -0.10971583287455022,
+      "from_etf_price": 39.68269729614258
+    },
+    {
+      "date": "2024-06-10",
+      "etf": "TECL",
+      "monthly_return": 0.1562794040739719,
+      "from_etf_price": 53.202880859375
+    },
+    {
+      "date": "2024-06-11",
+      "etf": "SOXL",
+      "monthly_return": 0.3202534143365696,
+      "from_etf_price": 89.6397476196289
+    },
+    {
+      "date": "2024-06-14",
+      "etf": "TMV",
+      "monthly_return": -0.08333329611154383,
+      "from_etf_price": 59.2677116394043
+    },
+    {
+      "date": "2024-06-17",
+      "etf": "SOXL",
+      "monthly_return": 0.35473417374336735,
+      "from_etf_price": 32.349388122558594
+    },
+    {
+      "date": "2024-06-26",
+      "etf": "TECL",
+      "monthly_return": 0.14767829980837122,
+      "from_etf_price": 54.173057556152344
+    },
+    {
+      "date": "2024-06-27",
+      "etf": "LABU",
+      "monthly_return": 0.10176740659662098,
+      "from_etf_price": 97.0606918334961
+    },
+    {
+      "date": "2024-06-28",
+      "etf": "TECL",
+      "monthly_return": 0.1541893287122318,
+      "from_etf_price": 112.71170806884766
+    },
+    {
+      "date": "2024-07-09",
+      "etf": "TNA",
+      "monthly_return": -0.037941573338475254,
+      "from_etf_price": 106.90193939208984
+    },
+    {
+      "date": "2024-07-10",
+      "etf": "SOXL",
+      "monthly_return": 0.3260566380659595,
+      "from_etf_price": 36.32189178466797
+    },
+    {
+      "date": "2024-07-11",
+      "etf": "SOXS",
+      "monthly_return": -0.16616845608152764,
+      "from_etf_price": 61.30317687988281
+    },
+    {
+      "date": "2024-07-17",
+      "etf": "TNA",
+      "monthly_return": 0.3721444309995372,
+      "from_etf_price": 21.674453735351562
+    },
+    {
+      "date": "2024-07-18",
+      "etf": "SOXS",
+      "monthly_return": 0.1096977941032038,
+      "from_etf_price": 44.20937728881836
+    },
+    {
+      "date": "2024-07-26",
+      "etf": "TNA",
+      "monthly_return": 0.37358269656030707,
+      "from_etf_price": 25.037567138671875
+    },
+    {
+      "date": "2024-07-30",
+      "etf": "SOXS",
+      "monthly_return": 0.29365075862244283,
+      "from_etf_price": 46.59534454345703
+    },
+    {
+      "date": "2024-07-31",
+      "etf": "TNA",
+      "monthly_return": 0.3463687090460479,
+      "from_etf_price": 22.303251266479492
+    },
+    {
+      "date": "2024-08-01",
+      "etf": "SOXS",
+      "monthly_return": 0.3121253698363098,
+      "from_etf_price": 42.83892822265625
+    },
+    {
+      "date": "2024-08-07",
+      "etf": "SOXL",
+      "monthly_return": -0.5919066427211441,
+      "from_etf_price": 35.136436462402344
+    },
+    {
+      "date": "2024-08-08",
+      "etf": "SOXS",
+      "monthly_return": 0.6196015649716651,
+      "from_etf_price": 31.111434936523438
+    },
+    {
+      "date": "2024-08-16",
+      "etf": "TMF",
+      "monthly_return": 0.12231340580926675,
+      "from_etf_price": 21.350528717041016
+    },
+    {
+      "date": "2024-08-19",
+      "etf": "SOXS",
+      "monthly_return": -0.13846146987866847,
+      "from_etf_price": 55.592529296875
+    },
+    {
+      "date": "2024-08-20",
+      "etf": "TMF",
+      "monthly_return": 0.20120717518530018,
+      "from_etf_price": 21.064712524414062
+    },
+    {
+      "date": "2024-08-21",
+      "etf": "SOXS",
+      "monthly_return": -0.0623617927334168,
+      "from_etf_price": 56.98616027832031
+    },
+    {
+      "date": "2024-08-26",
+      "etf": "DRN",
+      "monthly_return": 0.1852571293347971,
+      "from_etf_price": 22.055543899536133
+    },
+    {
+      "date": "2024-09-03",
+      "etf": "FAS",
+      "monthly_return": 0.2355436849204342,
+      "from_etf_price": 12.127413749694824
+    },
+    {
+      "date": "2024-09-10",
+      "etf": "NUGT",
+      "monthly_return": 0.06558170707608935,
+      "from_etf_price": 121.37471008300781
+    },
+    {
+      "date": "2024-09-12",
+      "etf": "SOXL",
+      "monthly_return": -0.09835598647754296,
+      "from_etf_price": 47.89263153076172
+    },
+    {
+      "date": "2024-09-13",
+      "etf": "DRN",
+      "monthly_return": 0.22987483656057583,
+      "from_etf_price": 33.05960464477539
+    },
+    {
+      "date": "2024-09-19",
+      "etf": "LABD",
+      "monthly_return": -0.04856112445738503,
+      "from_etf_price": 12.934611320495605
+    },
+    {
+      "date": "2024-09-20",
+      "etf": "DRN",
+      "monthly_return": 0.16534740795612235,
+      "from_etf_price": 51.849063873291016
+    },
+    {
+      "date": "2024-09-25",
+      "etf": "LABD",
+      "monthly_return": 0.12233447983021462,
+      "from_etf_price": 13.128344535827637
+    },
+    {
+      "date": "2024-09-26",
+      "etf": "NUGT",
+      "monthly_return": 0.10968966045513606,
+      "from_etf_price": 57.19533157348633
+    },
+    {
+      "date": "2024-09-27",
+      "etf": "TMV",
+      "monthly_return": -0.018093555615827484,
+      "from_etf_price": 50.51911926269531
+    },
+    {
+      "date": "2024-09-30",
+      "etf": "DRN",
+      "monthly_return": 0.11721273111849873,
+      "from_etf_price": 28.072433471679688
+    },
+    {
+      "date": "2024-10-01",
+      "etf": "LABD",
+      "monthly_return": 0.10410688108748545,
+      "from_etf_price": 12.854837417602539
+    },
+    {
+      "date": "2024-10-02",
+      "etf": "SOXL",
+      "monthly_return": 0.16468078815111475,
+      "from_etf_price": 57.484683990478516
+    },
+    {
+      "date": "2024-10-03",
+      "etf": "TECL",
+      "monthly_return": 0.18038773606775682,
+      "from_etf_price": 34.88158416748047
+    },
+    {
+      "date": "2024-10-04",
+      "etf": "NUGT",
+      "monthly_return": 0.10694206970098885,
+      "from_etf_price": 86.21541595458984
+    },
+    {
+      "date": "2024-10-10",
+      "etf": "TMV",
+      "monthly_return": 0.2254211749771977,
+      "from_etf_price": 49.06355285644531
+    },
+    {
+      "date": "2024-10-22",
+      "etf": "DUST",
+      "monthly_return": -0.17224245513699465,
+      "from_etf_price": 33.500484466552734
+    },
+    {
+      "date": "2024-10-23",
+      "etf": "TNA",
+      "monthly_return": -0.028571273271873254,
+      "from_etf_price": 43.43400955200195
+    },
+    {
+      "date": "2024-10-29",
+      "etf": "DUST",
+      "monthly_return": -0.10861427749342689,
+      "from_etf_price": 43.6209831237793
+    },
+    {
+      "date": "2024-10-31",
+      "etf": "TMV",
+      "monthly_return": 0.18980362379850013,
+      "from_etf_price": 49.59758758544922
+    },
+    {
+      "date": "2024-11-04",
+      "etf": "FAS",
+      "monthly_return": 0.026878293439618783,
+      "from_etf_price": 33.393672943115234
+    },
+    {
+      "date": "2024-11-06",
+      "etf": "SOXS",
+      "monthly_return": 0.02603359665067062,
+      "from_etf_price": 164.06460571289062
+    },
+    {
+      "date": "2024-11-08",
+      "etf": "TNA",
+      "monthly_return": 0.2927064017176795,
+      "from_etf_price": 18.551918029785156
+    },
+    {
+      "date": "2024-11-12",
+      "etf": "SOXS",
+      "monthly_return": 0.1958706194955211,
+      "from_etf_price": 52.62934494018555
+    },
+    {
+      "date": "2024-11-13",
+      "etf": "FAS",
+      "monthly_return": 0.16670174062746734,
+      "from_etf_price": 21.9888858795166
+    },
+    {
+      "date": "2024-11-14",
+      "etf": "DUST",
+      "monthly_return": 0.2878727195210744,
+      "from_etf_price": 163.7178955078125
+    },
+    {
+      "date": "2024-11-15",
+      "etf": "TNA",
+      "monthly_return": 0.007226398219555952,
+      "from_etf_price": 63.39824676513672
+    },
+    {
+      "date": "2024-11-20",
+      "etf": "DUST",
+      "monthly_return": 0.3397229208889694,
+      "from_etf_price": 48.159698486328125
+    },
+    {
+      "date": "2024-11-22",
+      "etf": "TQQQ",
+      "monthly_return": 0.06462602793642724,
+      "from_etf_price": 54.239540100097656
+    },
+    {
+      "date": "2024-11-25",
+      "etf": "TNA",
+      "monthly_return": 0.321663431958253,
+      "from_etf_price": 77.82670593261719
+    },
+    {
+      "date": "2024-11-26",
+      "etf": "LABD",
+      "monthly_return": -0.03571428331203219,
+      "from_etf_price": 54.26722717285156
+    },
+    {
+      "date": "2024-12-02",
+      "etf": "TQQQ",
+      "monthly_return": 0.18761702825055737,
+      "from_etf_price": 54.01245880126953
+    },
+    {
+      "date": "2024-12-04",
+      "etf": "LABD",
+      "monthly_return": -0.010434781173207175,
+      "from_etf_price": 85.39058685302734
+    },
+    {
+      "date": "2024-12-05",
+      "etf": "FAS",
+      "monthly_return": 0.22701616652316603,
+      "from_etf_price": 57.291786193847656
+    },
+    {
+      "date": "2024-12-06",
+      "etf": "LABD",
+      "monthly_return": 0.07251915397427555,
+      "from_etf_price": 170.10731506347656
+    },
+    {
+      "date": "2024-12-16",
+      "etf": "ERY",
+      "monthly_return": 0.187050280862463,
+      "from_etf_price": 61.728519439697266
+    },
+    {
+      "date": "2024-12-18",
+      "etf": "SOXL",
+      "monthly_return": 0.0057823904109579605,
+      "from_etf_price": 25.715492248535156
+    },
+    {
+      "date": "2024-12-20",
+      "etf": "ERY",
+      "monthly_return": 0.314384682441623,
+      "from_etf_price": 27.045366287231445
+    },
+    {
+      "date": "2024-12-23",
+      "etf": "DRV",
+      "monthly_return": 0.21158037138933028,
+      "from_etf_price": 25.42586326599121
+    },
+    {
+      "date": "2024-12-27",
+      "etf": "LABD",
+      "monthly_return": 0.24609973933506968,
+      "from_etf_price": 29.062742233276367
+    },
+    {
+      "date": "2025-01-03",
+      "etf": "DRV",
+      "monthly_return": 0.21602399182218734,
+      "from_etf_price": 65.88776397705078
+    },
+    {
+      "date": "2025-01-06",
+      "etf": "TMV",
+      "monthly_return": 0.2649058286787873,
+      "from_etf_price": 29.617897033691406
+    },
+    {
+      "date": "2025-01-07",
+      "etf": "SOXL",
+      "monthly_return": 0.07273704110833124,
+      "from_etf_price": 40.77708053588867
+    },
+    {
+      "date": "2025-01-10",
+      "etf": "FAS",
+      "monthly_return": -0.14310317072577217,
+      "from_etf_price": 27.876901626586914
+    },
+    {
+      "date": "2025-01-15",
+      "etf": "DRV",
+      "monthly_return": 0.1738720745874116,
+      "from_etf_price": 159.3623046875
+    },
+    {
+      "date": "2025-01-21",
+      "etf": "ERX",
+      "monthly_return": 0.172294538023416,
+      "from_etf_price": 26.345415115356445
+    },
+    {
+      "date": "2025-01-22",
+      "etf": "NUGT",
+      "monthly_return": 0.1954052628858871,
+      "from_etf_price": 62.213478088378906
+    },
+    {
+      "date": "2025-02-11",
+      "etf": "TMF",
+      "monthly_return": 0.10482561745332641,
+      "from_etf_price": 51.47175598144531
+    },
+    {
+      "date": "2025-02-12",
+      "etf": "NUGT",
+      "monthly_return": 0.40431686023234326,
+      "from_etf_price": 38.50153350830078
+    },
+    {
+      "date": "2025-02-14",
+      "etf": "SOXS",
+      "monthly_return": -0.03501732125053392,
+      "from_etf_price": 50.33525085449219
+    },
+    {
+      "date": "2025-02-18",
+      "etf": "NUGT",
+      "monthly_return": 0.27306275563628235,
+      "from_etf_price": 17.870853424072266
+    },
+    {
+      "date": "2025-02-19",
+      "etf": "SOXS",
+      "monthly_return": -0.04855423528434155,
+      "from_etf_price": 51.59138488769531
+    },
+    {
+      "date": "2025-02-26",
+      "etf": "SRTY",
+      "monthly_return": 0.15892150374694403,
+      "from_etf_price": 19.870595932006836
+    },
+    {
+      "date": "2025-03-03",
+      "etf": "NUGT",
+      "monthly_return": 0.0059891943390188995,
+      "from_etf_price": 21.45168685913086
+    },
+    {
+      "date": "2025-03-07",
+      "etf": "SRTY",
+      "monthly_return": 0.37947499397248774,
+      "from_etf_price": 51.28233337402344
+    },
+    {
+      "date": "2025-03-11",
+      "etf": "NUGT",
+      "monthly_return": 0.029037453153307746,
+      "from_etf_price": 24.05335807800293
+    },
+    {
+      "date": "2025-03-12",
+      "etf": "SRTY",
+      "monthly_return": 0.42980944286589917,
+      "from_etf_price": 51.910404205322266
+    },
+    {
+      "date": "2025-03-14",
+      "etf": "SOXS",
+      "monthly_return": 0.21817269712389464,
+      "from_etf_price": 23.221595764160156
+    },
+    {
+      "date": "2025-03-18",
+      "etf": "LABD",
+      "monthly_return": 0.1759530150327835,
+      "from_etf_price": 23.353071212768555
+    },
+    {
+      "date": "2025-03-19",
+      "etf": "SOXS",
+      "monthly_return": 0.28548038022198474,
+      "from_etf_price": 75.21614074707031
+    },
+    {
+      "date": "2025-03-27",
+      "etf": "LABD",
+      "monthly_return": 0.08096967878255734,
+      "from_etf_price": 25.845876693725586
+    },
+    {
+      "date": "2025-03-31",
+      "etf": "NUGT",
+      "monthly_return": 0.32538239214044573,
+      "from_etf_price": 93.29737854003906
+    },
+    {
+      "date": "2025-04-10",
+      "etf": "LABD",
+      "monthly_return": 0.621437356283097,
+      "from_etf_price": 63.91791534423828
+    },
+    {
+      "date": "2025-04-15",
+      "etf": "LABU",
+      "monthly_return": -0.3978784235167663,
+      "from_etf_price": 99.82720947265625
+    },
+    {
+      "date": "2025-04-16",
+      "etf": "LABD",
+      "monthly_return": 0.34552139959604977,
+      "from_etf_price": 45.238101959228516
+    },
+    {
+      "date": "2025-04-17",
+      "etf": "TECL",
+      "monthly_return": -0.34629197351752417,
+      "from_etf_price": 102.10274505615234
+    },
+    {
+      "date": "2025-04-23",
+      "etf": "LABD",
+      "monthly_return": 0.25120441950949446,
+      "from_etf_price": 46.38801956176758
+    },
+    {
+      "date": "2025-04-28",
+      "etf": "SOXL",
+      "monthly_return": -0.307995479840221,
+      "from_etf_price": 82.51327514648438
+    },
+    {
+      "date": "2025-05-09",
+      "etf": "NUGT",
+      "monthly_return": 0.22946322565459876,
+      "from_etf_price": 14.061452865600586
+    },
+    {
+      "date": "2025-05-12",
+      "etf": "SOXL",
+      "monthly_return": 0.7788162309535762,
+      "from_etf_price": 61.00937271118164
+    },
+    {
+      "date": "2025-07-10",
+      "etf": "TECL",
+      "monthly_return": 0.22240709284246662,
+      "from_etf_price": 27.362051010131836
+    },
+    {
+      "date": "2025-07-16",
+      "etf": "SOXL",
+      "monthly_return": 0.35306591810599275,
+      "from_etf_price": 99.01000213623047
+    },
+    {
+      "date": "2025-07-17",
+      "etf": "TECL",
+      "monthly_return": 0.22847342728567166,
+      "from_etf_price": 27.31206512451172
+    },
+    {
+      "date": "2025-07-22",
+      "etf": "SOXL",
+      "monthly_return": 0.24484672647837624,
+      "from_etf_price": 98.79000091552734
+    },
+    {
+      "date": "2025-07-23",
+      "etf": "TECL",
+      "monthly_return": 0.2150875078216259,
+      "from_etf_price": 25.772512435913086
+    },
+    {
+      "date": "2025-07-24",
+      "etf": "NUGT",
+      "monthly_return": 0.04314419113706469,
+      "from_etf_price": 101.81999969482422
+    },
+    {
+      "date": "2025-08-04",
+      "etf": "FAZ",
+      "monthly_return": 0.07838485089518499,
+      "from_etf_price": 81.6500015258789
+    },
+    {
+      "date": "2025-08-05",
+      "etf": "LABU",
+      "monthly_return": 0.09515599536158748,
+      "from_etf_price": 45.56839370727539
+    },
+    {
+      "date": "2025-08-06",
+      "etf": "NUGT",
+      "monthly_return": 0.2544119183569713,
+      "from_etf_price": 61.806121826171875
+    },
+    {
+      "date": "2025-09-04",
+      "etf": "SOXL",
+      "monthly_return": 0.04608479989741521,
+      "from_etf_price": 111.45999908447266
+    },
+    {
+      "date": "2025-09-05",
+      "etf": "NUGT",
+      "monthly_return": 0.32357907139833975,
+      "from_etf_price": 26.442317962646484
+    },
+    {
+      "date": "2025-09-25",
+      "etf": "LABU",
+      "monthly_return": 0.19123907658258177,
+      "from_etf_price": 141.60000610351562
+    },
+    {
+      "date": "2025-09-29",
+      "etf": "NUGT",
+      "monthly_return": 0.5087388011925191,
+      "from_etf_price": 91.51000213623047
+    },
+    {
+      "date": "2025-09-30",
+      "etf": "LABU",
+      "monthly_return": 0.3514333642839127,
+      "from_etf_price": 154.44000244140625
+    },
+    {
+      "date": "2025-10-01",
+      "etf": "NUGT",
+      "monthly_return": 0.40138722556041206,
+      "from_etf_price": 97.16000366210938
+    },
+    {
+      "date": "2025-10-03",
+      "etf": "UPRO",
+      "monthly_return": 0.09403066114975878,
+      "from_etf_price": 157.35000610351562
+    },
+    {
+      "date": "2025-10-16",
+      "etf": "NUGT",
+      "monthly_return": 0.4880497432646673,
+      "from_etf_price": 107.93000030517578
+    },
+    {
+      "date": "2025-10-17",
+      "etf": "UPRO",
+      "monthly_return": 0.004614067891245188,
+      "from_etf_price": 160.52000427246094
+    }
+  ],
+  "random_forest": [
+    {
+      "date": "2020-02-14",
+      "etf": "ERY",
+      "monthly_return": 0.2648223429804708,
+      "from_etf_price": null
+    },
+    {
+      "date": "2020-03-27",
+      "etf": "NUGT",
+      "monthly_return": -0.743243245428949,
+      "from_etf_price": 1129.906494140625
+    },
+    {
+      "date": "2020-04-02",
+      "etf": "LABU",
+      "monthly_return": -0.602952300840855,
+      "from_etf_price": 37.38548278808594
+    },
+    {
+      "date": "2020-05-13",
+      "etf": "TNA",
+      "monthly_return": -0.05461104890604296,
+      "from_etf_price": 879.3902587890625
+    },
+    {
+      "date": "2020-06-05",
+      "etf": "LABU",
+      "monthly_return": 0.12544556177433264,
+      "from_etf_price": 31.51363754272461
+    },
+    {
+      "date": "2020-07-08",
+      "etf": "NUGT",
+      "monthly_return": 0.39632495506677423,
+      "from_etf_price": 1324.416259765625
+    },
+    {
+      "date": "2020-08-26",
+      "etf": "ERY",
+      "monthly_return": 0.04859590536173286,
+      "from_etf_price": 92.86134338378906
+    },
+    {
+      "date": "2020-10-09",
+      "etf": "LABU",
+      "monthly_return": 0.4654295973531408,
+      "from_etf_price": 584.173095703125
+    },
+    {
+      "date": "2020-10-16",
+      "etf": "SOXL",
+      "monthly_return": 0.28985654114628323,
+      "from_etf_price": 1322.4417724609375
+    },
+    {
+      "date": "2020-11-11",
+      "etf": "ERX",
+      "monthly_return": 0.2016724255727378,
+      "from_etf_price": 22.112279891967773
+    },
+    {
+      "date": "2020-11-25",
+      "etf": "LABU",
+      "monthly_return": 0.22933978578713354,
+      "from_etf_price": 13.432804107666016
+    },
+    {
+      "date": "2020-12-24",
+      "etf": "SOXL",
+      "monthly_return": 0.16355323380596642,
+      "from_etf_price": 2415.855224609375
+    },
+    {
+      "date": "2021-01-07",
+      "etf": "TNA",
+      "monthly_return": 0.34401360490381516,
+      "from_etf_price": 34.67604064941406
+    },
+    {
+      "date": "2021-01-19",
+      "etf": "LABU",
+      "monthly_return": 0.19155540206462374,
+      "from_etf_price": 81.42414093017578
+    },
+    {
+      "date": "2021-02-22",
+      "etf": "ERX",
+      "monthly_return": 0.2642575534534608,
+      "from_etf_price": 2494.633056640625
+    },
+    {
+      "date": "2021-03-09",
+      "etf": "LABD",
+      "monthly_return": 0.480111630205851,
+      "from_etf_price": 23.148332595825195
+    },
+    {
+      "date": "2021-04-08",
+      "etf": "DRN",
+      "monthly_return": 0.21692687156066848,
+      "from_etf_price": 207.2447967529297
+    },
+    {
+      "date": "2021-06-11",
+      "etf": "SOXL",
+      "monthly_return": 0.40383919062349016,
+      "from_etf_price": 20.333637237548828
+    },
+    {
+      "date": "2021-09-23",
+      "etf": "ERX",
+      "monthly_return": 0.10524354392961377,
+      "from_etf_price": 46.6665153503418
+    },
+    {
+      "date": "2021-10-25",
+      "etf": "SOXL",
+      "monthly_return": -0.060271187091114675,
+      "from_etf_price": 29.651647567749023
+    },
+    {
+      "date": "2021-11-29",
+      "etf": "LABD",
+      "monthly_return": 0.2754607828949689,
+      "from_etf_price": 66.37123107910156
+    },
+    {
+      "date": "2022-01-18",
+      "etf": "ERX",
+      "monthly_return": 0.38685470802243116,
+      "from_etf_price": 357.56011962890625
+    },
+    {
+      "date": "2022-01-20",
+      "etf": "LABD",
+      "monthly_return": 0.8297874063581478,
+      "from_etf_price": 34.96955490112305
+    },
+    {
+      "date": "2022-02-25",
+      "etf": "NUGT",
+      "monthly_return": 0.2403450905941138,
+      "from_etf_price": 360.79266357421875
+    },
+    {
+      "date": "2022-03-15",
+      "etf": "LABD",
+      "monthly_return": 0.31655637891618604,
+      "from_etf_price": 62.809532165527344
+    },
+    {
+      "date": "2022-03-28",
+      "etf": "SOXS",
+      "monthly_return": -0.1821003146515724,
+      "from_etf_price": 323.4383850097656
+    },
+    {
+      "date": "2022-04-19",
+      "etf": "LABD",
+      "monthly_return": 0.16979492284440956,
+      "from_etf_price": 416.8030090332031
+    },
+    {
+      "date": "2022-06-13",
+      "etf": "LABU",
+      "monthly_return": -0.14509796255583374,
+      "from_etf_price": 607.0081787109375
+    },
+    {
+      "date": "2022-08-08",
+      "etf": "ERX",
+      "monthly_return": 0.058258847953172044,
+      "from_etf_price": 251.1415252685547
+    },
+    {
+      "date": "2022-08-30",
+      "etf": "SOXS",
+      "monthly_return": 0.20692347179992332,
+      "from_etf_price": 53.74000549316406
+    },
+    {
+      "date": "2022-09-13",
+      "etf": "DRV",
+      "monthly_return": 0.26737690451344887,
+      "from_etf_price": 471.0530090332031
+    },
+    {
+      "date": "2022-10-28",
+      "etf": "SOXL",
+      "monthly_return": 0.022604733852531922,
+      "from_etf_price": 53.91791534423828
+    },
+    {
+      "date": "2022-12-07",
+      "etf": "NUGT",
+      "monthly_return": 0.33633609730291125,
+      "from_etf_price": 11.407931327819824
+    },
+    {
+      "date": "2023-01-20",
+      "etf": "SOXL",
+      "monthly_return": 0.2007134113408542,
+      "from_etf_price": 41.892250061035156
+    },
+    {
+      "date": "2023-02-08",
+      "etf": "DUST",
+      "monthly_return": 0.04593937880340726,
+      "from_etf_price": 16.135717391967773
+    },
+    {
+      "date": "2023-03-07",
+      "etf": "LABD",
+      "monthly_return": 0.3127382384310735,
+      "from_etf_price": 144.53753662109375
+    },
+    {
+      "date": "2023-03-22",
+      "etf": "NUGT",
+      "monthly_return": 0.15784468895094017,
+      "from_etf_price": 213.0657196044922
+    },
+    {
+      "date": "2023-04-26",
+      "etf": "LABU",
+      "monthly_return": 0.14861993384766192,
+      "from_etf_price": 42.537715911865234
+    },
+    {
+      "date": "2023-05-18",
+      "etf": "SOXL",
+      "monthly_return": 0.15792920007473965,
+      "from_etf_price": 126.75540924072266
+    },
+    {
+      "date": "2023-07-06",
+      "etf": "LABD",
+      "monthly_return": 0.18624966259365894,
+      "from_etf_price": 22.554948806762695
+    },
+    {
+      "date": "2023-11-17",
+      "etf": "LABU",
+      "monthly_return": 0.201388882378019,
+      "from_etf_price": 176.72337341308594
+    },
+    {
+      "date": "2024-01-03",
+      "etf": "SOXL",
+      "monthly_return": 0.14039812834451704,
+      "from_etf_price": 116.2889633178711
+    },
+    {
+      "date": "2024-01-22",
+      "etf": "DUST",
+      "monthly_return": 0.3013320727854547,
+      "from_etf_price": 34.743099212646484
+    },
+    {
+      "date": "2024-02-01",
+      "etf": "SOXL",
+      "monthly_return": 0.15727514190890557,
+      "from_etf_price": 107.2607421875
+    },
+    {
+      "date": "2024-03-13",
+      "etf": "NUGT",
+      "monthly_return": 0.21198312134085806,
+      "from_etf_price": 45.40448760986328
+    },
+    {
+      "date": "2024-04-02",
+      "etf": "LABD",
+      "monthly_return": 0.38186624122647617,
+      "from_etf_price": 35.57805252075195
+    },
+    {
+      "date": "2024-05-09",
+      "etf": "SOXL",
+      "monthly_return": -0.07263875284722443,
+      "from_etf_price": 80.9103012084961
+    },
+    {
+      "date": "2024-07-12",
+      "etf": "SOXS",
+      "monthly_return": -0.19627798580707922,
+      "from_etf_price": 63.2315673828125
+    },
+    {
+      "date": "2024-10-07",
+      "etf": "NUGT",
+      "monthly_return": 0.144539848335683,
+      "from_etf_price": 19.476144790649414
+    },
+    {
+      "date": "2024-12-11",
+      "etf": "LABD",
+      "monthly_return": 0.18737661859475674,
+      "from_etf_price": 45.904869079589844
+    },
+    {
+      "date": "2025-01-24",
+      "etf": "NUGT",
+      "monthly_return": 0.2047457899668612,
+      "from_etf_price": 65.10222625732422
+    },
+    {
+      "date": "2025-03-19",
+      "etf": "SOXS",
+      "monthly_return": 0.28548038022198474,
+      "from_etf_price": 60.07530212402344
+    },
+    {
+      "date": "2025-04-03",
+      "etf": "NUGT",
+      "monthly_return": 0.18864920966581544,
+      "from_etf_price": 36.20193099975586
+    },
+    {
+      "date": "2025-04-29",
+      "etf": "SOXL",
+      "monthly_return": -0.2601373113065003,
+      "from_etf_price": 66.96638488769531
+    },
+    {
+      "date": "2025-07-10",
+      "etf": "TECL",
+      "monthly_return": 0.22240709284246662,
+      "from_etf_price": 27.362051010131836
+    },
+    {
+      "date": "2025-07-25",
+      "etf": "NUGT",
+      "monthly_return": 0.06354336696648777,
+      "from_etf_price": 102.5999984741211
+    },
+    {
+      "date": "2025-10-06",
+      "etf": "UPRO",
+      "monthly_return": 0.11675424886076202,
+      "from_etf_price": 163.3699951171875
+    }
+  ]
+}

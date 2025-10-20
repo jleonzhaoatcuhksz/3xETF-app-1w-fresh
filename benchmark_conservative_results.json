@@ -1,0 +1,996 @@
+{
+  "model_performance": {
+    "xgboost_accuracy": 0.9569565471665009,
+    "lightgbm_accuracy": 0.9568395812620621,
+    "random_forest_accuracy": 0.9567810983098427
+  },
+  "backtests": {
+    "xgboost": {
+      "total_return": 4.14862933270874,
+      "final_value": 51486.293327087405,
+      "num_trades": 0,
+      "transaction_costs": 0.0,
+      "trades": [],
+      "portfolio_history": [
+        {
+          "date": "2020-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 10000.0
+        },
+        {
+          "date": "2020-08-03",
+          "etf": "UPRO",
+          "portfolio_value": 11790.613322681824
+        },
+        {
+          "date": "2020-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 14506.418789039122
+        },
+        {
+          "date": "2020-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 12605.13311423848
+        },
+        {
+          "date": "2020-11-02",
+          "etf": "UPRO",
+          "portfolio_value": 11715.36002693549
+        },
+        {
+          "date": "2020-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 15814.518048835911
+        },
+        {
+          "date": "2021-01-04",
+          "etf": "UPRO",
+          "portfolio_value": 16320.787138163247
+        },
+        {
+          "date": "2021-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 17168.81944959999
+        },
+        {
+          "date": "2021-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 18935.74309786736
+        },
+        {
+          "date": "2021-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 20631.971536490648
+        },
+        {
+          "date": "2021-05-03",
+          "etf": "UPRO",
+          "portfolio_value": 23396.191527797953
+        },
+        {
+          "date": "2021-06-01",
+          "etf": "UPRO",
+          "portfolio_value": 23493.65144260679
+        },
+        {
+          "date": "2021-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 25535.802977752064
+        },
+        {
+          "date": "2021-08-02",
+          "etf": "UPRO",
+          "portfolio_value": 26689.77862915494
+        },
+        {
+          "date": "2021-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 29314.45897060273
+        },
+        {
+          "date": "2021-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 26082.891815033185
+        },
+        {
+          "date": "2021-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 30867.111618126655
+        },
+        {
+          "date": "2021-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 28811.675322760588
+        },
+        {
+          "date": "2022-01-03",
+          "etf": "UPRO",
+          "portfolio_value": 34396.563772948575
+        },
+        {
+          "date": "2022-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 29058.596196616538
+        },
+        {
+          "date": "2022-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 24498.382232334643
+        },
+        {
+          "date": "2022-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 28414.0770707792
+        },
+        {
+          "date": "2022-05-02",
+          "etf": "UPRO",
+          "portfolio_value": 21412.54312798157
+        },
+        {
+          "date": "2022-06-01",
+          "etf": "UPRO",
+          "portfolio_value": 20108.900876483964
+        },
+        {
+          "date": "2022-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 15940.793851123544
+        },
+        {
+          "date": "2022-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 19687.65738946706
+        },
+        {
+          "date": "2022-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 17386.331910924655
+        },
+        {
+          "date": "2022-10-03",
+          "etf": "UPRO",
+          "portfolio_value": 13590.6904903563
+        },
+        {
+          "date": "2022-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 15297.841431233803
+        },
+        {
+          "date": "2022-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 17705.586151922722
+        },
+        {
+          "date": "2023-01-03",
+          "etf": "UPRO",
+          "portfolio_value": 14397.501356708095
+        },
+        {
+          "date": "2023-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 17767.604354989424
+        },
+        {
+          "date": "2023-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 15546.095486457838
+        },
+        {
+          "date": "2023-04-03",
+          "etf": "UPRO",
+          "portfolio_value": 17389.25968177222
+        },
+        {
+          "date": "2023-05-01",
+          "etf": "UPRO",
+          "portfolio_value": 17768.54716691117
+        },
+        {
+          "date": "2023-06-01",
+          "etf": "UPRO",
+          "portfolio_value": 18299.550691738143
+        },
+        {
+          "date": "2023-07-03",
+          "etf": "UPRO",
+          "portfolio_value": 21303.00093026433
+        },
+        {
+          "date": "2023-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 22887.632503414858
+        },
+        {
+          "date": "2023-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 21741.687309193858
+        },
+        {
+          "date": "2023-10-02",
+          "etf": "UPRO",
+          "portfolio_value": 18433.66699464671
+        },
+        {
+          "date": "2023-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 17537.302066134856
+        },
+        {
+          "date": "2023-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 22140.116838969465
+        },
+        {
+          "date": "2024-01-02",
+          "etf": "UPRO",
+          "portfolio_value": 24141.966214221506
+        },
+        {
+          "date": "2024-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 26396.71399547659
+        },
+        {
+          "date": "2024-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 29989.937530432257
+        },
+        {
+          "date": "2024-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 31583.129347870406
+        },
+        {
+          "date": "2024-05-01",
+          "etf": "UPRO",
+          "portfolio_value": 27312.952911336986
+        },
+        {
+          "date": "2024-06-03",
+          "etf": "UPRO",
+          "portfolio_value": 31650.628407672564
+        },
+        {
+          "date": "2024-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 34873.81830463246
+        },
+        {
+          "date": "2024-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 33849.44356669409
+        },
+        {
+          "date": "2024-09-03",
+          "etf": "UPRO",
+          "portfolio_value": 34810.63770683044
+        },
+        {
+          "date": "2024-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 37913.75414462559
+        },
+        {
+          "date": "2024-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 37850.41321651526
+        },
+        {
+          "date": "2024-12-02",
+          "etf": "UPRO",
+          "portfolio_value": 44166.35733373484
+        },
+        {
+          "date": "2025-01-02",
+          "etf": "UPRO",
+          "portfolio_value": 39879.884715537424
+        },
+        {
+          "date": "2025-02-03",
+          "etf": "UPRO",
+          "portfolio_value": 42016.79494834052
+        },
+        {
+          "date": "2025-03-03",
+          "etf": "UPRO",
+          "portfolio_value": 38677.58864610464
+        },
+        {
+          "date": "2025-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 33933.561211497625
+        },
+        {
+          "date": "2025-05-01",
+          "etf": "UPRO",
+          "portfolio_value": 31341.47671881932
+        },
+        {
+          "date": "2025-06-02",
+          "etf": "UPRO",
+          "portfolio_value": 36853.068077294534
+        },
+        {
+          "date": "2025-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 41610.14151938061
+        },
+        {
+          "date": "2025-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 41956.66062639656
+        },
+        {
+          "date": "2025-09-02",
+          "etf": "UPRO",
+          "portfolio_value": 45312.4646009849
+        },
+        {
+          "date": "2025-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 51486.293327087405
+        }
+      ]
+    },
+    "lightgbm": {
+      "total_return": 4.14862933270874,
+      "final_value": 51486.293327087405,
+      "num_trades": 0,
+      "transaction_costs": 0.0,
+      "trades": [],
+      "portfolio_history": [
+        {
+          "date": "2020-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 10000.0
+        },
+        {
+          "date": "2020-08-03",
+          "etf": "UPRO",
+          "portfolio_value": 11790.613322681824
+        },
+        {
+          "date": "2020-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 14506.418789039122
+        },
+        {
+          "date": "2020-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 12605.13311423848
+        },
+        {
+          "date": "2020-11-02",
+          "etf": "UPRO",
+          "portfolio_value": 11715.36002693549
+        },
+        {
+          "date": "2020-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 15814.518048835911
+        },
+        {
+          "date": "2021-01-04",
+          "etf": "UPRO",
+          "portfolio_value": 16320.787138163247
+        },
+        {
+          "date": "2021-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 17168.81944959999
+        },
+        {
+          "date": "2021-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 18935.74309786736
+        },
+        {
+          "date": "2021-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 20631.971536490648
+        },
+        {
+          "date": "2021-05-03",
+          "etf": "UPRO",
+          "portfolio_value": 23396.191527797953
+        },
+        {
+          "date": "2021-06-01",
+          "etf": "UPRO",
+          "portfolio_value": 23493.65144260679
+        },
+        {
+          "date": "2021-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 25535.802977752064
+        },
+        {
+          "date": "2021-08-02",
+          "etf": "UPRO",
+          "portfolio_value": 26689.77862915494
+        },
+        {
+          "date": "2021-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 29314.45897060273
+        },
+        {
+          "date": "2021-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 26082.891815033185
+        },
+        {
+          "date": "2021-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 30867.111618126655
+        },
+        {
+          "date": "2021-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 28811.675322760588
+        },
+        {
+          "date": "2022-01-03",
+          "etf": "UPRO",
+          "portfolio_value": 34396.563772948575
+        },
+        {
+          "date": "2022-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 29058.596196616538
+        },
+        {
+          "date": "2022-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 24498.382232334643
+        },
+        {
+          "date": "2022-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 28414.0770707792
+        },
+        {
+          "date": "2022-05-02",
+          "etf": "UPRO",
+          "portfolio_value": 21412.54312798157
+        },
+        {
+          "date": "2022-06-01",
+          "etf": "UPRO",
+          "portfolio_value": 20108.900876483964
+        },
+        {
+          "date": "2022-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 15940.793851123544
+        },
+        {
+          "date": "2022-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 19687.65738946706
+        },
+        {
+          "date": "2022-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 17386.331910924655
+        },
+        {
+          "date": "2022-10-03",
+          "etf": "UPRO",
+          "portfolio_value": 13590.6904903563
+        },
+        {
+          "date": "2022-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 15297.841431233803
+        },
+        {
+          "date": "2022-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 17705.586151922722
+        },
+        {
+          "date": "2023-01-03",
+          "etf": "UPRO",
+          "portfolio_value": 14397.501356708095
+        },
+        {
+          "date": "2023-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 17767.604354989424
+        },
+        {
+          "date": "2023-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 15546.095486457838
+        },
+        {
+          "date": "2023-04-03",
+          "etf": "UPRO",
+          "portfolio_value": 17389.25968177222
+        },
+        {
+          "date": "2023-05-01",
+          "etf": "UPRO",
+          "portfolio_value": 17768.54716691117
+        },
+        {
+          "date": "2023-06-01",
+          "etf": "UPRO",
+          "portfolio_value": 18299.550691738143
+        },
+        {
+          "date": "2023-07-03",
+          "etf": "UPRO",
+          "portfolio_value": 21303.00093026433
+        },
+        {
+          "date": "2023-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 22887.632503414858
+        },
+        {
+          "date": "2023-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 21741.687309193858
+        },
+        {
+          "date": "2023-10-02",
+          "etf": "UPRO",
+          "portfolio_value": 18433.66699464671
+        },
+        {
+          "date": "2023-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 17537.302066134856
+        },
+        {
+          "date": "2023-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 22140.116838969465
+        },
+        {
+          "date": "2024-01-02",
+          "etf": "UPRO",
+          "portfolio_value": 24141.966214221506
+        },
+        {
+          "date": "2024-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 26396.71399547659
+        },
+        {
+          "date": "2024-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 29989.937530432257
+        },
+        {
+          "date": "2024-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 31583.129347870406
+        },
+        {
+          "date": "2024-05-01",
+          "etf": "UPRO",
+          "portfolio_value": 27312.952911336986
+        },
+        {
+          "date": "2024-06-03",
+          "etf": "UPRO",
+          "portfolio_value": 31650.628407672564
+        },
+        {
+          "date": "2024-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 34873.81830463246
+        },
+        {
+          "date": "2024-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 33849.44356669409
+        },
+        {
+          "date": "2024-09-03",
+          "etf": "UPRO",
+          "portfolio_value": 34810.63770683044
+        },
+        {
+          "date": "2024-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 37913.75414462559
+        },
+        {
+          "date": "2024-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 37850.41321651526
+        },
+        {
+          "date": "2024-12-02",
+          "etf": "UPRO",
+          "portfolio_value": 44166.35733373484
+        },
+        {
+          "date": "2025-01-02",
+          "etf": "UPRO",
+          "portfolio_value": 39879.884715537424
+        },
+        {
+          "date": "2025-02-03",
+          "etf": "UPRO",
+          "portfolio_value": 42016.79494834052
+        },
+        {
+          "date": "2025-03-03",
+          "etf": "UPRO",
+          "portfolio_value": 38677.58864610464
+        },
+        {
+          "date": "2025-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 33933.561211497625
+        },
+        {
+          "date": "2025-05-01",
+          "etf": "UPRO",
+          "portfolio_value": 31341.47671881932
+        },
+        {
+          "date": "2025-06-02",
+          "etf": "UPRO",
+          "portfolio_value": 36853.068077294534
+        },
+        {
+          "date": "2025-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 41610.14151938061
+        },
+        {
+          "date": "2025-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 41956.66062639656
+        },
+        {
+          "date": "2025-09-02",
+          "etf": "UPRO",
+          "portfolio_value": 45312.4646009849
+        },
+        {
+          "date": "2025-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 51486.293327087405
+        }
+      ]
+    },
+    "random_forest": {
+      "total_return": 4.14862933270874,
+      "final_value": 51486.293327087405,
+      "num_trades": 0,
+      "transaction_costs": 0.0,
+      "trades": [],
+      "portfolio_history": [
+        {
+          "date": "2020-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 10000.0
+        },
+        {
+          "date": "2020-08-03",
+          "etf": "UPRO",
+          "portfolio_value": 11790.613322681824
+        },
+        {
+          "date": "2020-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 14506.418789039122
+        },
+        {
+          "date": "2020-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 12605.13311423848
+        },
+        {
+          "date": "2020-11-02",
+          "etf": "UPRO",
+          "portfolio_value": 11715.36002693549
+        },
+        {
+          "date": "2020-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 15814.518048835911
+        },
+        {
+          "date": "2021-01-04",
+          "etf": "UPRO",
+          "portfolio_value": 16320.787138163247
+        },
+        {
+          "date": "2021-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 17168.81944959999
+        },
+        {
+          "date": "2021-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 18935.74309786736
+        },
+        {
+          "date": "2021-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 20631.971536490648
+        },
+        {
+          "date": "2021-05-03",
+          "etf": "UPRO",
+          "portfolio_value": 23396.191527797953
+        },
+        {
+          "date": "2021-06-01",
+          "etf": "UPRO",
+          "portfolio_value": 23493.65144260679
+        },
+        {
+          "date": "2021-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 25535.802977752064
+        },
+        {
+          "date": "2021-08-02",
+          "etf": "UPRO",
+          "portfolio_value": 26689.77862915494
+        },
+        {
+          "date": "2021-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 29314.45897060273
+        },
+        {
+          "date": "2021-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 26082.891815033185
+        },
+        {
+          "date": "2021-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 30867.111618126655
+        },
+        {
+          "date": "2021-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 28811.675322760588
+        },
+        {
+          "date": "2022-01-03",
+          "etf": "UPRO",
+          "portfolio_value": 34396.563772948575
+        },
+        {
+          "date": "2022-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 29058.596196616538
+        },
+        {
+          "date": "2022-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 24498.382232334643
+        },
+        {
+          "date": "2022-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 28414.0770707792
+        },
+        {
+          "date": "2022-05-02",
+          "etf": "UPRO",
+          "portfolio_value": 21412.54312798157
+        },
+        {
+          "date": "2022-06-01",
+          "etf": "UPRO",
+          "portfolio_value": 20108.900876483964
+        },
+        {
+          "date": "2022-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 15940.793851123544
+        },
+        {
+          "date": "2022-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 19687.65738946706
+        },
+        {
+          "date": "2022-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 17386.331910924655
+        },
+        {
+          "date": "2022-10-03",
+          "etf": "UPRO",
+          "portfolio_value": 13590.6904903563
+        },
+        {
+          "date": "2022-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 15297.841431233803
+        },
+        {
+          "date": "2022-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 17705.586151922722
+        },
+        {
+          "date": "2023-01-03",
+          "etf": "UPRO",
+          "portfolio_value": 14397.501356708095
+        },
+        {
+          "date": "2023-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 17767.604354989424
+        },
+        {
+          "date": "2023-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 15546.095486457838
+        },
+        {
+          "date": "2023-04-03",
+          "etf": "UPRO",
+          "portfolio_value": 17389.25968177222
+        },
+        {
+          "date": "2023-05-01",
+          "etf": "UPRO",
+          "portfolio_value": 17768.54716691117
+        },
+        {
+          "date": "2023-06-01",
+          "etf": "UPRO",
+          "portfolio_value": 18299.550691738143
+        },
+        {
+          "date": "2023-07-03",
+          "etf": "UPRO",
+          "portfolio_value": 21303.00093026433
+        },
+        {
+          "date": "2023-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 22887.632503414858
+        },
+        {
+          "date": "2023-09-01",
+          "etf": "UPRO",
+          "portfolio_value": 21741.687309193858
+        },
+        {
+          "date": "2023-10-02",
+          "etf": "UPRO",
+          "portfolio_value": 18433.66699464671
+        },
+        {
+          "date": "2023-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 17537.302066134856
+        },
+        {
+          "date": "2023-12-01",
+          "etf": "UPRO",
+          "portfolio_value": 22140.116838969465
+        },
+        {
+          "date": "2024-01-02",
+          "etf": "UPRO",
+          "portfolio_value": 24141.966214221506
+        },
+        {
+          "date": "2024-02-01",
+          "etf": "UPRO",
+          "portfolio_value": 26396.71399547659
+        },
+        {
+          "date": "2024-03-01",
+          "etf": "UPRO",
+          "portfolio_value": 29989.937530432257
+        },
+        {
+          "date": "2024-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 31583.129347870406
+        },
+        {
+          "date": "2024-05-01",
+          "etf": "UPRO",
+          "portfolio_value": 27312.952911336986
+        },
+        {
+          "date": "2024-06-03",
+          "etf": "UPRO",
+          "portfolio_value": 31650.628407672564
+        },
+        {
+          "date": "2024-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 34873.81830463246
+        },
+        {
+          "date": "2024-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 33849.44356669409
+        },
+        {
+          "date": "2024-09-03",
+          "etf": "UPRO",
+          "portfolio_value": 34810.63770683044
+        },
+        {
+          "date": "2024-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 37913.75414462559
+        },
+        {
+          "date": "2024-11-01",
+          "etf": "UPRO",
+          "portfolio_value": 37850.41321651526
+        },
+        {
+          "date": "2024-12-02",
+          "etf": "UPRO",
+          "portfolio_value": 44166.35733373484
+        },
+        {
+          "date": "2025-01-02",
+          "etf": "UPRO",
+          "portfolio_value": 39879.884715537424
+        },
+        {
+          "date": "2025-02-03",
+          "etf": "UPRO",
+          "portfolio_value": 42016.79494834052
+        },
+        {
+          "date": "2025-03-03",
+          "etf": "UPRO",
+          "portfolio_value": 38677.58864610464
+        },
+        {
+          "date": "2025-04-01",
+          "etf": "UPRO",
+          "portfolio_value": 33933.561211497625
+        },
+        {
+          "date": "2025-05-01",
+          "etf": "UPRO",
+          "portfolio_value": 31341.47671881932
+        },
+        {
+          "date": "2025-06-02",
+          "etf": "UPRO",
+          "portfolio_value": 36853.068077294534
+        },
+        {
+          "date": "2025-07-01",
+          "etf": "UPRO",
+          "portfolio_value": 41610.14151938061
+        },
+        {
+          "date": "2025-08-01",
+          "etf": "UPRO",
+          "portfolio_value": 41956.66062639656
+        },
+        {
+          "date": "2025-09-02",
+          "etf": "UPRO",
+          "portfolio_value": 45312.4646009849
+        },
+        {
+          "date": "2025-10-01",
+          "etf": "UPRO",
+          "portfolio_value": 51486.293327087405
+        }
+      ]
+    }
+  }
+}

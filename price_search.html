@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETF Price Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .search-section {
+            padding: 40px;
+            background: #f8f9fa;
+        }
+
+        .search-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            gap: 20px;
+            align-items: end;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group input, .form-group select {
+            padding: 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .search-btn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            height: fit-content;
+        }
+
+        .search-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .results-section {
+            padding: 0 40px 40px 40px;
+            min-height: 200px;
+        }
+
+        .results-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .price-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .price-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .price-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .etf-symbol {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .price-date {
+            font-size: 1rem;
+            color: #6c757d;
+            background: #f8f9fa;
+            padding: 5px 12px;
+            border-radius: 20px;
+        }
+
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .price-item {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .price-label {
+            font-size: 0.8rem;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .price-value {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .price-value.positive {
+            color: #27ae60;
+        }
+
+        .price-value.negative {
+            color: #e74c3c;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+            font-size: 1.1rem;
+        }
+
+        .no-results .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            opacity: 0.3;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.1rem;
+            color: #667eea;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #f5c6cb;
+        }
+
+        .etf-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .etf-chip {
+            background: #e9ecef;
+            color: #495057;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .etf-chip:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .search-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .price-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ETF Price Search</h1>
+            <p>Search historical prices by date and ETF symbol</p>
+        </div>
+
+        <div class="search-section">
+            <form class="search-form" id="searchForm">
+                <div class="form-group">
+                    <label for="dateInput">Date</label>
+                    <input type="date" id="dateInput" required>
+                </div>
+                <div class="form-group">
+                    <label for="symbolInput">ETF Symbol</label>
+                    <input type="text" id="symbolInput" placeholder="e.g., UPRO, SOXL, NUGT" style="text-transform: uppercase;">
+                </div>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+
+            <div class="etf-list">
+                <p style="margin-bottom: 10px; color: #6c757d; font-size: 0.9rem;">Quick select popular ETFs:</p>
+                <span class="etf-chip" onclick="setSymbol('UPRO')">UPRO</span>
+                <span class="etf-chip" onclick="setSymbol('SOXL')">SOXL</span>
+                <span class="etf-chip" onclick="setSymbol('NUGT')">NUGT</span>
+                <span class="etf-chip" onclick="setSymbol('TMF')">TMF</span>
+                <span class="etf-chip" onclick="setSymbol('LABD')">LABD</span>
+                <span class="etf-chip" onclick="setSymbol('LABU')">LABU</span>
+                <span class="etf-chip" onclick="setSymbol('FAS')">FAS</span>
+                <span class="etf-chip" onclick="setSymbol('FAZ')">FAZ</span>
+                <span class="etf-chip" onclick="setSymbol('DRN')">DRN</span>
+                <span class="etf-chip" onclick="setSymbol('SOXS')">SOXS</span>
+                <span class="etf-chip" onclick="setSymbol('TMV')">TMV</span>
+                <span class="etf-chip" onclick="setSymbol('TECL')">TECL</span>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <div class="results-title">Search Results</div>
+            <div id="resultsContainer">
+                <div class="no-results">
+                    <div class="icon">📊</div>
+                    <p>Enter a date and ETF symbol to search for historical prices</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Set default date to today
+        document.getElementById('dateInput').valueAsDate = new Date();
+
+        // Set symbol from chip click
+        function setSymbol(symbol) {
+            document.getElementById('symbolInput').value = symbol;
+        }
+
+        // Handle form submission
+        document.getElementById('searchForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const date = document.getElementById('dateInput').value;
+            const symbol = document.getElementById('symbolInput').value.toUpperCase().trim();
+            
+            if (!date || !symbol) {
+                showError('Please enter both date and ETF symbol');
+                return;
+            }
+            
+            await searchPrice(date, symbol);
+        });
+
+        // Search for price data
+        async function searchPrice(date, symbol) {
+            const resultsContainer = document.getElementById('resultsContainer');
+            
+            // Show loading
+            resultsContainer.innerHTML = '<div class="loading">Searching for price data...</div>';
+            
+            try {
+                const response = await fetch('/search_price', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ date, symbol })
+                });
+                
+                const data = await response.json();
+                
+                if (data.error) {
+                    showError(data.error);
+                    return;
+                }
+                
+                if (data.results && data.results.length > 0) {
+                    displayResults(data.results);
+                } else {
+                    showNoResults(date, symbol);
+                }
+                
+            } catch (error) {
+                console.error('Search error:', error);
+                showError('Failed to search price data. Please try again.');
+            }
+        }
+
+        // Display search results
+        function displayResults(results) {
+            const resultsContainer = document.getElementById('resultsContainer');
+            
+            const resultsHtml = results.map(result => {
+                const changePercent = ((result.close - result.open) / result.open * 100).toFixed(2);
+                const changeClass = changePercent >= 0 ? 'positive' : 'negative';
+                const changeSign = changePercent >= 0 ? '+' : '';
+                
+                return `
+                    <div class="price-card">
+                        <div class="price-header">
+                            <div class="etf-symbol">${result.symbol}</div>
+                            <div class="price-date">${result.date}</div>
+                        </div>
+                        <div class="price-grid">
+                            <div class="price-item">
+                                <div class="price-label">Open</div>
+                                <div class="price-value">$${parseFloat(result.open).toFixed(2)}</div>
+                            </div>
+                            <div class="price-item">
+                                <div class="price-label">High</div>
+                                <div class="price-value">$${parseFloat(result.high).toFixed(2)}</div>
+                            </div>
+                            <div class="price-item">
+                                <div class="price-label">Low</div>
+                                <div class="price-value">$${parseFloat(result.low).toFixed(2)}</div>
+                            </div>
+                            <div class="price-item">
+                                <div class="price-label">Close</div>
+                                <div class="price-value">$${parseFloat(result.close).toFixed(2)}</div>
+                            </div>
+                            <div class="price-item">
+                                <div class="price-label">Volume</div>
+                                <div class="price-value">${parseInt(result.volume).toLocaleString()}</div>
+                            </div>
+                            <div class="price-item">
+                                <div class="price-label">Daily Change</div>
+                                <div class="price-value ${changeClass}">${changeSign}${changePercent}%</div>
+                            </div>
+                            ${result.monthly_trend !== null ? `
+                            <div class="price-item">
+                                <div class="price-label">Monthly Return</div>
+                                <div class="price-value ${result.monthly_trend >= 0 ? 'positive' : 'negative'}">
+                                    ${result.monthly_trend >= 0 ? '+' : ''}${parseFloat(result.monthly_trend).toFixed(2)}%
+                                </div>
+                            </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            resultsContainer.innerHTML = resultsHtml;
+        }
+
+        // Show no results message
+        function showNoResults(date, symbol) {
+            const resultsContainer = document.getElementById('resultsContainer');
+            resultsContainer.innerHTML = `
+                <div class="no-results">
+                    <div class="icon">❌</div>
+                    <p>No price data found for <strong>${symbol}</strong> on <strong>${date}</strong></p>
+                    <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">
+                        Try a different date or check if the ETF symbol is correct
+                    </p>
+                </div>
+            `;
+        }
+
+        // Show error message
+        function showError(message) {
+            const resultsContainer = document.getElementById('resultsContainer');
+            resultsContainer.innerHTML = `
+                <div class="error">
+                    <strong>Error:</strong> ${message}
+                </div>
+                <div class="no-results">
+                    <div class="icon">⚠️</div>
+                    <p>Please try again with different search parameters</p>
+                </div>
+            `;
+        }
+
+        // Auto-uppercase symbol input
+        document.getElementById('symbolInput').addEventListener('input', function(e) {
+            e.target.value = e.target.value.toUpperCase();
+        });
+    </script>
+</body>
+</html>

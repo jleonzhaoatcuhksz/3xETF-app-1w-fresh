@@ -1,0 +1,1008 @@
+{
+  "model_performance": {
+    "xgboost_accuracy": 0.9917293233082707,
+    "lightgbm_accuracy": 0.9917293233082707,
+    "random_forest_accuracy": 0.9917293233082707
+  },
+  "monthly_strategies": {
+    "xgboost": {
+      "strategy_return": 0.0,
+      "upro_return": 215.49586248419996,
+      "outperformance": -215.49586248419996,
+      "final_portfolio_value": 10000,
+      "initial_capital": 10000,
+      "total_trades": 0,
+      "trades": [],
+      "portfolio_history": [
+        {
+          "date": "2020-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-08-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-11-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-01-04",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-05-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-06-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-08-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-01-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-05-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-06-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-10-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-01-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-04-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-05-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-06-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-07-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-10-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-01-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-05-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-06-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-09-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-12-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-01-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-02-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-03-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-05-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-06-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-09-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        }
+      ],
+      "annualized_return": 0.0,
+      "trades_per_year": 0.0
+    },
+    "lightgbm": {
+      "strategy_return": 0.0,
+      "upro_return": 215.49586248419996,
+      "outperformance": -215.49586248419996,
+      "final_portfolio_value": 10000,
+      "initial_capital": 10000,
+      "total_trades": 0,
+      "trades": [],
+      "portfolio_history": [
+        {
+          "date": "2020-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-08-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-11-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-01-04",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-05-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-06-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-08-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-01-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-05-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-06-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-10-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-01-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-04-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-05-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-06-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-07-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-10-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-01-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-05-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-06-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-09-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-12-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-01-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-02-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-03-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-05-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-06-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-09-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        }
+      ],
+      "annualized_return": 0.0,
+      "trades_per_year": 0.0
+    },
+    "random_forest": {
+      "strategy_return": 0.0,
+      "upro_return": 215.49586248419996,
+      "outperformance": -215.49586248419996,
+      "final_portfolio_value": 10000,
+      "initial_capital": 10000,
+      "total_trades": 0,
+      "trades": [],
+      "portfolio_history": [
+        {
+          "date": "2020-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-08-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-11-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2020-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-01-04",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-05-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-06-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-08-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2021-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-01-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-05-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-06-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-10-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2022-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-01-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-04-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-05-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-06-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-07-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-09-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-10-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2023-12-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-01-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-02-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-03-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-05-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-06-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-09-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-11-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2024-12-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-01-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-02-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-03-03",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-04-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-05-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-06-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-07-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-08-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-09-02",
+          "portfolio_value": 10000,
+          "current_etf": null
+        },
+        {
+          "date": "2025-10-01",
+          "portfolio_value": 10000,
+          "current_etf": null
+        }
+      ],
+      "annualized_return": 0.0,
+      "trades_per_year": 0.0
+    }
+  }
+}

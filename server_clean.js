@@ -25,6 +25,91 @@ app.get('/api/etfs', (req, res) => {
     });
 });
 
+// API endpoint to get all symbols
+app.get('/api/symbols', (req, res) => {
+    db.all("SELECT DISTINCT symbol FROM prices ORDER BY symbol", (err, rows) => {
+        if (err) {
+            console.log('Database error:', err);
+            res.status(500).json({ error: err.message });
+            return;
+        }
+        console.log(`Found ${rows.length} unique symbols`);
+        res.json(rows);
+    });
+});
+
+// API endpoint to get detailed statistics
+app.get('/api/detailed-stats', (req, res) => {
+    db.get(`
+        SELECT 
+            COUNT(*) as total_records,
+            MIN(date) as earliest_date,
+            MAX(date) as latest_date,
+            AVG(close) as avg_price,
+            COUNT(DISTINCT symbol) as symbol_count
+        FROM prices
+    `, (err, row) => {
+        if (err) {
+            console.log('Detailed stats error:', err);
+            res.status(500).json({ error: err.message });
+            return;
+        }
+        console.log('Detailed stats retrieved:', row);
+        res.json(row);
+    });
+});
+
+// API endpoint to get prices data with pagination and filtering
+app.get('/api/prices-data', (req, res) => {
+    const { symbol, limit = 500, sort = 'date DESC', offset = 0 } = req.query;
+    
+    let baseQuery = `
+        SELECT p.*, e.name, e.sector, e.category 
+        FROM prices p 
+        LEFT JOIN etfs e ON p.symbol = e.symbol
+    `;
+    
+    let countQuery = 'SELECT COUNT(*) as total FROM prices';
+    let params = [];
+    let countParams = [];
+    
+    if (symbol) {
+        baseQuery += ' WHERE p.symbol = ?';
+        countQuery += ' WHERE symbol = ?';
+        params.push(symbol);
+        countParams.push(symbol);
+    }
+    
+    const dataQuery = `${baseQuery} ORDER BY ${sort} LIMIT ? OFFSET ?`;
+    params.push(parseInt(limit), parseInt(offset));
+    
+    // Get total count first
+    db.get(countQuery, countParams, (err, countRow) => {
+        if (err) {
+            console.log('Count query error:', err);
+            res.status(500).json({ error: err.message });
+            return;
+        }
+        
+        // Get data
+        db.all(dataQuery, params, (err, rows) => {
+            if (err) {
+                console.log('Data query error:', err);
+                res.status(500).json({ error: err.message });
+                return;
+            }
+            
+            console.log(`Found ${rows.length} records out of ${countRow.total} total`);
+            res.json({
+                records: rows,
+                total: countRow.total,
+                limit: parseInt(limit),
+                offset: parseInt(offset)
+            });
+        });
+    });
+});
+
 // API endpoint to get statistics
 app.get('/api/stats', (req, res) => {
     db.get(`
@@ -43,6 +128,27 @@ app.get('/api/stats', (req, res) => {
         console.log('Stats retrieved:', row);
         res.json(row);
     });
+});
+
+// API endpoint to get ML trading results
+app.get('/api/ml-trading-results', (req, res) => {
+    try {
+        const resultsPath = path.join(__dirname, 'aggressive_switching_results.json');
+        console.log('Loading trading results from:', resultsPath);
+        
+        if (fs.existsSync(resultsPath)) {
+            const data = fs.readFileSync(resultsPath, 'utf8');
+            const results = JSON.parse(data);
+            console.log('✅ Successfully loaded trading results');
+            res.json(results);
+        } else {
+            console.log('❌ Trading results file not found:', resultsPath);
+            res.status(404).json({ error: 'Trading results not found' });
+        }
+    } catch (error) {
+        console.error('❌ Error loading trading results:', error);
+        res.status(500).json({ error: 'Failed to load trading results' });
+    }
 });
 
 // API endpoint to get ML results

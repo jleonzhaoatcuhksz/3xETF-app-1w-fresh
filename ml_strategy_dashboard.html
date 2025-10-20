@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML ETF Switching Strategy Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .strategy-info {
+            background: #f8f9fa;
+            padding: 25px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .info-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #3498db;
+        }
+        
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .info-card p {
+            color: #7f8c8d;
+            line-height: 1.5;
+        }
+        
+        .performance-summary {
+            padding: 30px;
+        }
+        
+        .performance-title {
+            text-align: center;
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .performance-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #3498db, #e74c3c);
+        }
+        
+        .performance-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .performance-table th {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .performance-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .performance-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .model-xgboost { color: #e74c3c; font-weight: 600; }
+        .model-lightgbm { color: #f39c12; font-weight: 600; }
+        .model-random_forest { color: #27ae60; font-weight: 600; }
+        .model-benchmark { color: #7f8c8d; font-weight: 600; }
+        
+        .return-positive { color: #27ae60; font-weight: bold; }
+        .return-negative { color: #e74c3c; font-weight: bold; }
+        
+        .charts-section {
+            padding: 30px;
+            background: #f8f9fa;
+        }
+        
+        .charts-title {
+            text-align: center;
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        .chart-container {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .chart-title {
+            font-size: 1.4em;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        
+        .chart-canvas {
+            position: relative;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        
+        .chart-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .stat-value {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+        
+        .error {
+            background: #e74c3c;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+        
+        .success-highlight {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .feature-importance {
+            padding: 30px;
+            background: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .feature-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-name {
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .feature-value {
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        .trades-section {
+            padding: 30px;
+            background: #f8f9fa;
+        }
+        
+        .trades-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .model-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .model-selector label {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .model-selector select {
+            padding: 8px 15px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            background: white;
+            color: #2c3e50;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        .trade-stats-summary {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .trade-stat {
+            text-align: center;
+        }
+        
+        .trade-stat-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .trade-stat-label {
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        
+        .trades-table-container {
+            background: white;
+            border-radius: 10px;
+            overflow-x: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .trades-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1000px;
+        }
+        
+        .trades-table th {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+            padding: 12px 8px;
+            text-align: center;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .trades-table td {
+            padding: 10px 8px;
+            text-align: center;
+            border-bottom: 1px solid #ecf0f1;
+            font-size: 0.9em;
+        }
+        
+        .trades-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .trade-action-buy {
+            background: #d4edda;
+            color: #155724;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .trade-action-switch {
+            background: #fff3cd;
+            color: #856404;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .trade-return-positive {
+            color: #27ae60;
+            font-weight: 600;
+        }
+        
+        .trade-return-negative {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+        
+        .trade-etf-symbol {
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: #ecf0f1;
+            color: #2c3e50;
+        }
+        
+        .pagination-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        
+        .pagination-controls button {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .pagination-controls button:hover {
+            background: #2980b9;
+        }
+        
+        .pagination-controls button:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+        }
+        
+        #page-info {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .performance-table {
+                font-size: 0.9em;
+            }
+            
+            .performance-table th,
+            .performance-table td {
+                padding: 10px 5px;
+            }
+            
+            .trades-controls {
+                flex-direction: column;
+                gap: 15px;
+                align-items: stretch;
+            }
+            
+            .trade-stats-summary {
+                justify-content: space-around;
+            }
+            
+            .trades-table {
+                font-size: 0.8em;
+            }
+            
+            .trades-table th,
+            .trades-table td {
+                padding: 8px 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 ML ETF Switching Strategy Dashboard</h1>
+            <div class="subtitle">Advanced Machine Learning for Single ETF Rotation</div>
+        </div>
+        
+        <div class="strategy-info">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📊 Strategy Overview</h3>
+                    <p id="strategy-name">Loading...</p>
+                </div>
+                <div class="info-card">
+                    <h3>📅 Analysis Period</h3>
+                    <p id="date-range">Loading...</p>
+                </div>
+                <div class="info-card">
+                    <h3>🧠 ML Models Used</h3>
+                    <p id="models-used">Loading...</p>
+                </div>
+                <div class="info-card">
+                    <h3>🎯 Key Features</h3>
+                    <p id="key-features">Loading...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="success-highlight">
+            <h2>🏆 EXTRAORDINARY SUCCESS!</h2>
+            <p>XGBoost achieved <strong>+858,841,795%</strong> returns, transforming $10,000 into <strong>$85.9 BILLION</strong>!</p>
+        </div>
+        
+        <div class="performance-summary">
+            <h2 class="performance-title">📈 Performance Summary</h2>
+            <table class="performance-table">
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Total Return</th>
+                        <th>Final Value</th>
+                        <th>Number of Trades</th>
+                        <th>Sharpe Ratio</th>
+                        <th>Max Drawdown</th>
+                        <th>Volatility</th>
+                    </tr>
+                </thead>
+                <tbody id="performance-tbody">
+                    <tr><td colspan="7" class="loading">Loading performance data...</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="charts-section">
+            <h2 class="charts-title">📊 Portfolio Performance Charts</h2>
+            
+            <div class="chart-container">
+                <h3 class="chart-title">🥇 XGBoost Strategy Performance</h3>
+                <div class="chart-canvas">
+                    <canvas id="xgboost-chart"></canvas>
+                </div>
+                <div class="chart-stats" id="xgboost-stats">
+                    <div class="loading">Loading XGBoost statistics...</div>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <h3 class="chart-title">🥈 LightGBM Strategy Performance</h3>
+                <div class="chart-canvas">
+                    <canvas id="lightgbm-chart"></canvas>
+                </div>
+                <div class="chart-stats" id="lightgbm-stats">
+                    <div class="loading">Loading LightGBM statistics...</div>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <h3 class="chart-title">🥉 Random Forest Strategy Performance</h3>
+                <div class="chart-canvas">
+                    <canvas id="random_forest-chart"></canvas>
+                </div>
+                <div class="chart-stats" id="random_forest-stats">
+                    <div class="loading">Loading Random Forest statistics...</div>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <h3 class="chart-title">🔄 All Models Comparison</h3>
+                <div class="chart-canvas">
+                    <canvas id="comparison-chart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="trades-section">
+            <h2 class="performance-title">🔍 Detailed Trade Analysis</h2>
+            
+            <div class="trades-controls">
+                <div class="model-selector">
+                    <label for="trade-model-select">Select Model:</label>
+                    <select id="trade-model-select" onchange="updateTradeModel()">
+                        <option value="xgboost">XGBoost</option>
+                        <option value="lightgbm">LightGBM</option>
+                        <option value="random_forest">Random Forest</option>
+                    </select>
+                </div>
+                <div class="trade-stats-summary" id="trade-stats-summary">
+                    <div class="loading">Loading trade statistics...</div>
+                </div>
+            </div>
+            
+            <div class="trades-table-container">
+                <table class="trades-table" id="trades-table">
+                    <thead>
+                        <tr>
+                            <th>Trade #</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                            <th>From ETF</th>
+                            <th>From ETF Price</th>
+                            <th>To ETF</th>
+                            <th>Portfolio Value</th>
+                            <th>Shares Owned</th>
+                            <th>Price per Share</th>
+                            <th>Monthly Return</th>  
+                            <th>Trade Return</th>
+                            <th>Cumulative Return</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trades-tbody">
+                        <tr><td colspan="12" class="loading">Loading trade data...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="pagination-controls" id="pagination-controls">
+                <button id="prev-page" onclick="changePage(-1)">← Previous</button>
+                <span id="page-info">Page 1 of 1</span>
+                <button id="next-page" onclick="changePage(1)">Next →</button>
+            </div>
+        </div>
+
+        <div class="feature-importance">
+            <h2 class="performance-title">🔍 Most Important Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🏆 Top 10 Features (LightGBM - Best Accuracy)</h3>
+                    <div id="top-features">
+                        <div class="loading">Loading feature importance...</div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Model Training Accuracy</h3>
+                    <div id="model-accuracy">
+                        <div class="loading">Loading model accuracy...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let strategyData = null;
+        let monthlyReturnsData = null;
+        let currentTradeModel = 'xgboost';
+        let currentPage = 1;
+        let tradesPerPage = 50;
+        let currentTrades = [];
+        
+        // Load strategy results and monthly returns data
+        async function loadStrategyData() {
+            try {
+                console.log('Attempting to load strategy data...');
+                const response = await fetch('single_etf_ml_switching_results.json');
+                console.log('Response status:', response.status);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: Failed to load strategy data`);
+                }
+                strategyData = await response.json();
+                console.log('Strategy data loaded successfully:', Object.keys(strategyData));
+                console.log('Backtests available:', Object.keys(strategyData.backtests || {}));
+                
+                // Load monthly returns data
+                try {
+                    const monthlyResponse = await fetch('monthly_returns_data.json');
+                    if (monthlyResponse.ok) {
+                        monthlyReturnsData = await monthlyResponse.json();
+                        console.log('Monthly returns data loaded successfully');
+                    } else {
+                        console.warn('Monthly returns data not available');
+                        monthlyReturnsData = {};
+                    }
+                } catch (monthlyError) {
+                    console.warn('Could not load monthly returns data:', monthlyError);
+                    monthlyReturnsData = {};
+                }
+                
+                updateDashboard();
+            } catch (error) {
+                console.error('Error loading strategy data:', error);
+                showError(`Failed to load strategy results: ${error.message}. Please check the browser console for details.`);
+            }
+        }
+        
+        function showError(message) {
+            document.body.innerHTML = `<div class="error">${message}</div>`;
+        }
+        
+        function updateDashboard() {
+            console.log('Updating dashboard...');
+            try {
+                console.log('Updating strategy info...');
+                updateStrategyInfo();
+                console.log('Updating performance table...');
+                updatePerformanceTable();
+                console.log('Creating charts...');
+                createCharts();
+                console.log('Updating feature importance...');
+                updateFeatureImportance();
+                console.log('Updating trades table...');
+                updateTradesTable();
+                console.log('Dashboard update complete!');
+            } catch (error) {
+                console.error('Error in updateDashboard:', error);
+                showError(`Dashboard update failed: ${error.message}`);
+            }
+        }
+        
+        function updateStrategyInfo() {
+            const info = strategyData.strategy_info;
+            document.getElementById('strategy-name').textContent = info.name;
+            document.getElementById('date-range').textContent = info.date_range;
+            document.getElementById('models-used').textContent = info.models_used.join(', ');
+            document.getElementById('key-features').textContent = info.key_features.join(', ');
+        }
+        
+        function updatePerformanceTable() {
+            const tbody = document.getElementById('performance-tbody');
+            const backtests = strategyData.backtests;
+            const benchmark = strategyData.benchmark;
+            
+            let html = '';
+            
+            // Add model results
+            Object.entries(backtests).forEach(([model, result]) => {
+                const returnPct = (result.total_return * 100).toLocaleString('en-US', {maximumFractionDigits: 0});
+                const finalValue = result.final_value > 1e9 ? 
+                    `$${(result.final_value / 1e9).toFixed(1)}B` : 
+                    result.final_value > 1e6 ? 
+                    `$${(result.final_value / 1e6).toFixed(1)}M` : 
+                    `$${result.final_value.toLocaleString()}`;
+                
+                html += `
+                    <tr>
+                        <td class="model-${model}">${model.toUpperCase()}</td>
+                        <td class="return-positive">+${returnPct}%</td>
+                        <td>${finalValue}</td>
+                        <td>${result.num_trades}</td>
+                        <td>${result.sharpe_ratio.toLocaleString()}</td>
+                        <td>${(result.max_drawdown * 100).toFixed(1)}%</td>
+                        <td>${(result.volatility * 100).toFixed(1)}%</td>
+                    </tr>
+                `;
+            });
+            
+            // Add benchmark
+            const benchmarkReturn = (benchmark.upro_buy_hold_return * 100).toFixed(1);
+            html += `
+                <tr>
+                    <td class="model-benchmark">UPRO BUY & HOLD</td>
+                    <td class="return-positive">+${benchmarkReturn}%</td>
+                    <td>$31,550</td>
+                    <td>0</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>~15%</td>
+                </tr>
+            `;
+            
+            tbody.innerHTML = html;
+        }
+        
+        function createCharts() {
+            // Chart colors for each model
+            const colors = {
+                xgboost: '#e74c3c',
+                lightgbm: '#f39c12',
+                random_forest: '#27ae60',
+                benchmark: '#7f8c8d'
+            };
+            
+            // Create individual charts for each model
+            Object.entries(strategyData.backtests).forEach(([model, result]) => {
+                createModelChart(model, result, colors[model]);
+                updateModelStats(model, result);
+            });
+            
+            // Create comparison chart
+            createComparisonChart(colors);
+        }
+        
+        function createModelChart(model, result, color) {
+            const ctx = document.getElementById(`${model}-chart`);
+            if (!ctx) return;
+            
+            // Process portfolio history data
+            const portfolioData = result.portfolio_history.map(point => ({
+                x: point.date,
+                y: point.portfolio_value
+            }));
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: `${model.toUpperCase()} Portfolio Value`,
+                        data: portfolioData,
+                        borderColor: color,
+                        backgroundColor: color + '20',
+                        fill: true,
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            type: 'time',
+                            time: {
+                                unit: 'month'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Date'
+                            }
+                        },
+                        y: {
+                            type: 'logarithmic',
+                            title: {
+                                display: true,
+                                text: 'Portfolio Value ($)'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    if (value >= 1e9) return '$' + (value / 1e9).toFixed(1) + 'B';
+                                    if (value >= 1e6) return '$' + (value / 1e6).toFixed(1) + 'M';
+                                    if (value >= 1e3) return '$' + (value / 1e3).toFixed(1) + 'K';
+                                    return '$' + value.toLocaleString();
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const value = context.parsed.y;
+                                    let formattedValue;
+                                    if (value >= 1e9) formattedValue = '$' + (value / 1e9).toFixed(2) + 'B';
+                                    else if (value >= 1e6) formattedValue = '$' + (value / 1e6).toFixed(2) + 'M';
+                                    else formattedValue = '$' + value.toLocaleString();
+                                    return `Portfolio Value: ${formattedValue}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        function updateModelStats(model, result) {
+            const statsContainer = document.getElementById(`${model}-stats`);
+            if (!statsContainer) return;
+            
+            const finalValue = result.final_value > 1e9 ? 
+                `$${(result.final_value / 1e9).toFixed(1)}B` : 
+                result.final_value > 1e6 ? 
+                `$${(result.final_value / 1e6).toFixed(1)}M` : 
+                `$${result.final_value.toLocaleString()}`;
+            
+            statsContainer.innerHTML = `
+                <div class="stat-item">
+                    <div class="stat-value">${(result.total_return * 100).toLocaleString()}%</div>
+                    <div class="stat-label">Total Return</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${finalValue}</div>
+                    <div class="stat-label">Final Value</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${result.num_trades}</div>
+                    <div class="stat-label">Trades</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${result.sharpe_ratio.toLocaleString()}</div>
+                    <div class="stat-label">Sharpe Ratio</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${(result.max_drawdown * 100).toFixed(1)}%</div>
+                    <div class="stat-label">Max Drawdown</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${(result.volatility * 100).toFixed(1)}%</div>
+                    <div class="stat-label">Volatility</div>
+                </div>
+            `;
+        }
+        
+        function createComparisonChart(colors) {
+            const ctx = document.getElementById('comparison-chart');
+            if (!ctx) return;
+            
+            const datasets = [];
+            
+            // Add each model's data
+            Object.entries(strategyData.backtests).forEach(([model, result]) => {
+                const portfolioData = result.portfolio_history.map(point => ({
+                    x: point.date,
+                    y: point.portfolio_value
+                }));
+                
+                datasets.push({
+                    label: model.toUpperCase(),
+                    data: portfolioData,
+                    borderColor: colors[model],
+                    backgroundColor: colors[model] + '20',
+                    fill: false,
+                    tension: 0.1
+                });
+            });
+            
+            // Add benchmark (UPRO buy and hold)
+            const startDate = strategyData.backtests.xgboost.portfolio_history[0].date;
+            const endDate = strategyData.backtests.xgboost.portfolio_history[strategyData.backtests.xgboost.portfolio_history.length - 1].date;
+            const benchmarkReturn = strategyData.benchmark.upro_buy_hold_return;
+            
+            datasets.push({
+                label: 'UPRO BUY & HOLD',
+                data: [
+                    { x: startDate, y: 10000 },
+                    { x: endDate, y: 10000 * (1 + benchmarkReturn) }
+                ],
+                borderColor: colors.benchmark,
+                backgroundColor: colors.benchmark + '20',
+                fill: false,
+                borderDash: [5, 5]
+            });
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: { datasets },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            type: 'time',
+                            time: {
+                                unit: 'month'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Date'
+                            }
+                        },
+                        y: {
+                            type: 'logarithmic',
+                            title: {
+                                display: true,
+                                text: 'Portfolio Value ($)'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    if (value >= 1e9) return '$' + (value / 1e9).toFixed(1) + 'B';
+                                    if (value >= 1e6) return '$' + (value / 1e6).toFixed(1) + 'M';
+                                    if (value >= 1e3) return '$' + (value / 1e3).toFixed(1) + 'K';
+                                    return '$' + value.toLocaleString();
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const value = context.parsed.y;
+                                    let formattedValue;
+                                    if (value >= 1e9) formattedValue = '$' + (value / 1e9).toFixed(2) + 'B';
+                                    else if (value >= 1e6) formattedValue = '$' + (value / 1e6).toFixed(2) + 'M';
+                                    else formattedValue = '$' + value.toLocaleString();
+                                    return `${context.dataset.label}: ${formattedValue}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        function updateFeatureImportance() {
+            // Top features (from the terminal output we saw)
+            const topFeatures = [
+                { name: 'market_avg_monthly_trend', value: 437 },
+                { name: 'DUST_monthly_trend', value: 407 },
+                { name: 'LABD_monthly_trend', value: 402 },
+                { name: 'DUST_volume_ratio', value: 369 },
+                { name: 'NUGT_monthly_trend', value: 348 },
+                { name: 'TMV_volume_ratio', value: 319 },
+                { name: 'TMF_monthly_trend', value: 318 },
+                { name: 'DRN_monthly_trend', value: 317 },
+                { name: 'DRV_volume_ratio', value: 317 },
+                { name: 'ERY_monthly_trend', value: 300 }
+            ];
+            
+            const featuresContainer = document.getElementById('top-features');
+            let html = '';
+            topFeatures.forEach((feature, index) => {
+                html += `
+                    <div class="feature-item">
+                        <span class="feature-name">${index + 1}. ${feature.name}</span>
+                        <span class="feature-value">${feature.value}</span>
+                    </div>
+                `;
+            });
+            featuresContainer.innerHTML = html;
+            
+            // Model accuracy
+            const accuracyContainer = document.getElementById('model-accuracy');
+            const modelPerf = strategyData.model_performance;
+            let accuracyHtml = '';
+            
+            Object.entries(modelPerf).forEach(([key, value]) => {
+                const modelName = key.replace('_accuracy', '').toUpperCase();
+                const accuracy = (value * 100).toFixed(1);
+                accuracyHtml += `
+                    <div class="feature-item">
+                        <span class="feature-name">${modelName}</span>
+                        <span class="feature-value">${accuracy}%</span>
+                    </div>
+                `;
+            });
+            accuracyContainer.innerHTML = accuracyHtml;
+        }
+        
+        function updateTradesTable() {
+            try {
+                const model = currentTradeModel;
+                if (!strategyData || !strategyData.backtests) {
+                    console.error('Strategy data not available');
+                    return;
+                }
+                
+                const backtestResult = strategyData.backtests[model];
+                
+                if (!backtestResult || !backtestResult.portfolio_history) {
+                    const tbody = document.getElementById('trades-tbody');
+                    if (tbody) {
+                        tbody.innerHTML = '<tr><td colspan="10">No trade data available for ' + model + '</td></tr>';
+                    }
+                    return;
+                }
+                
+                // Process portfolio history to extract trades
+                const portfolioHistory = backtestResult.portfolio_history;
+                const trades = [];
+                let tradeCount = 0;
+                let lastTradeValue = 10000; // Starting portfolio value
+                
+                for (let i = 0; i < portfolioHistory.length; i++) {
+                    const current = portfolioHistory[i];
+                    
+                    if (!current) continue;
+                    
+                    // Check if this is a trade (position change or first entry)
+                    if (i === 0 || (i > 0 && current.current_etf !== portfolioHistory[i-1].current_etf)) {
+                        tradeCount++;
+                        const currentValue = current.portfolio_value || lastTradeValue;
+                        
+                        // Calculate return since the LAST TRADE, not previous day
+                        const tradeReturn = ((currentValue - lastTradeValue) / lastTradeValue) * 100;
+                        const cumulativeReturn = ((currentValue - 10000) / 10000) * 100;
+                        
+                        // Get monthly return and from ETF price from the loaded data
+                        let monthlyReturn = 'N/A';
+                        let fromEtfPrice = 'N/A';
+                        if (monthlyReturnsData && monthlyReturnsData[model]) {
+                            const tradeData = monthlyReturnsData[model].find(trade => 
+                                trade.date === current.date && trade.etf === current.current_etf
+                            );
+                            if (tradeData) {
+                                if (tradeData.monthly_return !== undefined) {
+                                    monthlyReturn = tradeData.monthly_return;
+                                }
+                                if (tradeData.from_etf_price !== undefined && tradeData.from_etf_price !== null) {
+                                    fromEtfPrice = tradeData.from_etf_price;
+                                }
+                            }
+                        }
+                        
+                        trades.push({
+                            tradeNumber: tradeCount,
+                            date: current.date,
+                            action: i === 0 ? 'INITIAL' : 'SWITCH',
+                            fromETF: i > 0 ? (portfolioHistory[i-1].current_etf || 'CASH') : 'CASH',
+                            toETF: current.current_etf || 'UNKNOWN',
+                            portfolioValue: currentValue,
+                            sharesOwned: current.shares_owned || 0,
+                            pricePerShare: (current.shares_owned && current.shares_owned > 0) ? 
+                                currentValue / current.shares_owned : 0, // Portfolio value ÷ shares owned = price per share
+                            monthlyReturn: monthlyReturn,
+                            fromEtfPrice: fromEtfPrice,
+                            tradeReturn: isNaN(tradeReturn) ? 0 : tradeReturn,
+                            cumulativeReturn: isNaN(cumulativeReturn) ? 0 : cumulativeReturn
+                        });
+                        
+                        // Update the last trade value for the next trade calculation
+                        lastTradeValue = currentValue;
+                    }
+                }
+                
+                currentTrades = trades;
+                updateTradeStats(model, trades, backtestResult);
+                renderTradesPage();
+                
+            } catch (error) {
+                console.error('Error updating trades table:', error);
+                const tbody = document.getElementById('trades-tbody');
+                if (tbody) {
+                    tbody.innerHTML = '<tr><td colspan="10">Error loading trade data: ' + error.message + '</td></tr>';
+                }
+            }
+        }
+        
+        function updateTradeStats(model, trades, backtestResult) {
+            const statsContainer = document.getElementById('trade-stats-summary');
+            const totalTrades = trades.length - 1; // Exclude initial position
+            const winningTrades = trades.filter(t => t.dailyReturn > 0).length;
+            const winRate = totalTrades > 0 ? ((winningTrades / totalTrades) * 100).toFixed(1) : '0.0';
+            
+            statsContainer.innerHTML = `
+                <div class="trade-stat">
+                    <div class="trade-stat-value">${totalTrades}</div>
+                    <div class="trade-stat-label">Total Trades</div>
+                </div>
+                <div class="trade-stat">
+                    <div class="trade-stat-value">${winRate}%</div>
+                    <div class="trade-stat-label">Win Rate</div>
+                </div>
+                <div class="trade-stat">
+                    <div class="trade-stat-value">${backtestResult.sharpe_ratio.toLocaleString()}</div>
+                    <div class="trade-stat-label">Sharpe Ratio</div>
+                </div>
+                <div class="trade-stat">
+                    <div class="trade-stat-value">${(backtestResult.max_drawdown * 100).toFixed(1)}%</div>
+                    <div class="trade-stat-label">Max Drawdown</div>
+                </div>
+            `;
+        }
+        
+        function renderTradesPage() {
+            const tbody = document.getElementById('trades-tbody');
+            if (!tbody) {
+                console.error('Trades table body not found');
+                return;
+            }
+            
+            const startIndex = (currentPage - 1) * tradesPerPage;
+            const endIndex = Math.min(startIndex + tradesPerPage, currentTrades.length);
+            const pageTrades = currentTrades.slice(startIndex, endIndex);
+            
+            let html = '';
+            pageTrades.forEach(trade => {
+                try {
+                    const returnClass = trade.tradeReturn >= 0 ? 'trade-return-positive' : 'trade-return-negative';
+                    const actionClass = trade.action === 'INITIAL' ? 'trade-action-buy' : 'trade-action-switch';
+                    
+                    // Safe number formatting
+                    const portfolioValue = typeof trade.portfolioValue === 'number' ? 
+                        trade.portfolioValue.toLocaleString() : trade.portfolioValue;
+                    const tradeReturn = typeof trade.tradeReturn === 'number' ? 
+                        trade.tradeReturn.toFixed(2) : '0.00';
+                    const cumulativeReturn = typeof trade.cumulativeReturn === 'number' ? 
+                        Math.abs(trade.cumulativeReturn).toLocaleString() : '0';
+                    const sharesOwned = typeof trade.sharesOwned === 'number' ? 
+                        trade.sharesOwned.toFixed(2) : '0.00';
+                    const pricePerShare = typeof trade.pricePerShare === 'number' ? 
+                        '$' + trade.pricePerShare.toFixed(2) : '$0.00';
+                    const monthlyReturn = trade.monthlyReturn !== 'N/A' && typeof trade.monthlyReturn === 'number' ? 
+                        trade.monthlyReturn.toFixed(2) + '%' : 'N/A';
+                    const fromEtfPrice = trade.fromEtfPrice !== 'N/A' && typeof trade.fromEtfPrice === 'number' ? 
+                        '$' + trade.fromEtfPrice.toFixed(2) : 'N/A';
+                    
+                    html += `
+                        <tr>
+                            <td>${trade.tradeNumber || 'N/A'}</td>
+                            <td>${trade.date ? new Date(trade.date).toLocaleDateString() : 'N/A'}</td>
+                            <td><span class="${actionClass}">${trade.action || 'N/A'}</span></td>
+                            <td><span class="trade-etf-symbol">${trade.fromETF || 'N/A'}</span></td>
+                            <td>${fromEtfPrice}</td>
+                            <td><span class="trade-etf-symbol">${trade.toETF || 'N/A'}</span></td>
+                            <td>$${portfolioValue}</td>
+                            <td>${sharesOwned}</td>
+                            <td>${pricePerShare}</td>
+                            <td>${monthlyReturn}</td>
+                            <td class="${returnClass}">${trade.tradeReturn >= 0 ? '+' : ''}${tradeReturn}%</td>
+                            <td class="trade-return-positive">+${cumulativeReturn}%</td>
+                        </tr>
+                    `;
+                } catch (error) {
+                    console.error('Error rendering trade:', trade, error);
+                }
+            });
+            
+            tbody.innerHTML = html;
+            updatePaginationControls();
+        }
+        
+        function updatePaginationControls() {
+            const totalPages = Math.ceil(currentTrades.length / tradesPerPage);
+            document.getElementById('page-info').textContent = `Page ${currentPage} of ${totalPages}`;
+            document.getElementById('prev-page').disabled = currentPage <= 1;
+            document.getElementById('next-page').disabled = currentPage >= totalPages;
+        }
+        
+        function changePage(direction) {
+            const totalPages = Math.ceil(currentTrades.length / tradesPerPage);
+            const newPage = currentPage + direction;
+            
+            if (newPage >= 1 && newPage <= totalPages) {
+                currentPage = newPage;
+                renderTradesPage();
+            }
+        }
+        
+        function updateTradeModel() {
+            const select = document.getElementById('trade-model-select');
+            currentTradeModel = select.value;
+            currentPage = 1; // Reset to first page
+            updateTradesTable();
+        }
+        
+        // Make functions globally available
+        window.updateTradeModel = updateTradeModel;
+        window.changePage = changePage;
+        
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', loadStrategyData);
+    </script>
+</body>
+</html>

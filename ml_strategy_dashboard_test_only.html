@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML ETF Strategy Dashboard - TEST PERIOD ONLY</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .test-period-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        .performance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .performance-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid;
+            transition: transform 0.3s ease;
+        }
+
+        .performance-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .performance-card.xgboost { border-left-color: #e74c3c; }
+        .performance-card.lightgbm { border-left-color: #f39c12; }
+        .performance-card.random_forest { border-left-color: #27ae60; }
+        .performance-card.benchmark { border-left-color: #95a5a6; }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .model-name {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        .model-badge {
+            padding: 5px 12px;
+            border-radius: 15px;
+            color: white;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .badge-xgboost { background: #e74c3c; }
+        .badge-lightgbm { background: #f39c12; }
+        .badge-random_forest { background: #27ae60; }
+        .badge-benchmark { background: #95a5a6; }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .metric:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .metric-label {
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+
+        .metric-value {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .metric-value.positive { color: #27ae60; }
+        .metric-value.negative { color: #e74c3c; }
+
+        .charts-section {
+            padding: 30px;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-title {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .model-selector {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .model-selector button {
+            background: #ecf0f1;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .model-selector button.active {
+            background: #3498db;
+            color: white;
+        }
+
+        .model-selector button:hover {
+            background: #bdc3c7;
+        }
+
+        .model-selector button.active:hover {
+            background: #2980b9;
+        }
+
+        .trades-section {
+            padding: 30px;
+        }
+
+        .trades-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .trades-table th {
+            background: #34495e;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .trades-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .trades-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .trades-table tr:hover {
+            background: #e3f2fd;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+
+        .error {
+            text-align: center;
+            padding: 50px;
+            color: #e74c3c;
+            font-size: 1.2em;
+        }
+
+        .winner-crown {
+            font-size: 1.2em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 ML ETF Switching Strategy Dashboard</h1>
+            <p>Machine Learning-Based Single ETF Switching Strategy</p>
+            <div class="test-period-badge">
+                📅 TEST PERIOD ONLY: 2024-08-20 to 2025-10-17
+            </div>
+        </div>
+
+        <div id="loading" class="loading">
+            🔄 Loading strategy data...
+        </div>
+
+        <div id="error" class="error" style="display: none;">
+            ❌ Failed to load strategy data. Please check the server connection.
+        </div>
+
+        <div id="content" style="display: none;">
+            <div class="performance-grid" id="performanceGrid">
+                <!-- Performance cards will be inserted here -->
+            </div>
+
+            <div class="charts-section">
+                <h2 class="section-title">📈 Portfolio Performance Charts</h2>
+                
+                <div class="chart-container">
+                    <h3 class="chart-title">Portfolio Value Over Time (Test Period Only)</h3>
+                    <div class="model-selector" id="modelSelector">
+                        <!-- Model buttons will be inserted here -->
+                    </div>
+                    <canvas id="portfolioChart" width="400" height="200"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h3 class="chart-title">Cumulative Returns Comparison (Test Period Only)</h3>
+                    <canvas id="returnsChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+
+            <div class="trades-section">
+                <h2 class="section-title">📋 Detailed Trade Analysis (Test Period Only)</h2>
+                <div class="model-selector" id="tradeModelSelector">
+                    <!-- Model buttons will be inserted here -->
+                </div>
+                <div class="chart-container">
+                    <table class="trades-table" id="tradesTable">
+                        <thead>
+                            <tr>
+                                <th>Trade #</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                                <th>From ETF</th>
+                                <th>From ETF Price</th>
+                                <th>To ETF</th>
+                                <th>To ETF Price</th>
+                                <th>Shares Owned</th>
+                                <th>Portfolio Value</th>
+                                <th>From Monthly Return</th>
+                                <th>To Monthly Return</th>
+                                <th>Trade Return</th>
+                                <th>Cumulative Return</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tradesTableBody">
+                            <!-- Trade data will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let strategyData = null;
+        let monthlyReturnsData = null;
+        let portfolioChart = null;
+        let returnsChart = null;
+        let currentModel = 'xgboost';
+
+        // Load strategy data
+        async function loadStrategyData() {
+            try {
+                // Load test-period-only results
+                const response = await fetch('/single_etf_ml_switching_results_test_only.json');
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                strategyData = await response.json();
+                
+                // Load monthly returns data
+                try {
+                    const monthlyResponse = await fetch('/monthly_returns_data.json');
+                    if (monthlyResponse.ok) {
+                        monthlyReturnsData = await monthlyResponse.json();
+                    }
+                } catch (e) {
+                    console.warn('Monthly returns data not available:', e);
+                }
+                
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+                
+                renderPerformanceCards();
+                renderModelSelectors();
+                renderPortfolioChart();
+                renderReturnsChart();
+                renderTradesTable();
+                
+            } catch (error) {
+                console.error('Error loading strategy data:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').innerHTML = `❌ Error loading strategy data: ${error.message}`;
+            }
+        }
+
+        // Render performance cards
+        function renderPerformanceCards() {
+            const grid = document.getElementById('performanceGrid');
+            grid.innerHTML = '';
+            
+            // Find best performer
+            const models = Object.keys(strategyData).filter(key => key !== 'upro_benchmark');
+            let bestReturn = -Infinity;
+            let bestModel = '';
+            
+            models.forEach(model => {
+                const return_pct = strategyData[model].total_return_pct || 0;
+                if (return_pct > bestReturn) {
+                    bestReturn = return_pct;
+                    bestModel = model;
+                }
+            });
+
+            // Render model cards
+            models.forEach(model => {
+                const data = strategyData[model];
+                const isWinner = model === bestModel;
+                
+                const card = document.createElement('div');
+                card.className = `performance-card ${model}`;
+                card.innerHTML = `
+                    <div class="card-header">
+                        <div class="model-name">${data.model}${isWinner ? '<span class="winner-crown">👑</span>' : ''}</div>
+                        <div class="model-badge badge-${model}">${model.toUpperCase()}</div>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Total Return</span>
+                        <span class="metric-value positive">+${data.total_return_pct.toFixed(2)}%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Number of Trades</span>
+                        <span class="metric-value">${data.num_trades}</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Sharpe Ratio</span>
+                        <span class="metric-value ${data.sharpe_ratio > 1 ? 'positive' : 'negative'}">${data.sharpe_ratio.toFixed(2)}</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Max Drawdown</span>
+                        <span class="metric-value negative">${(data.max_drawdown * 100).toFixed(1)}%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Volatility</span>
+                        <span class="metric-value">${(data.volatility * 100).toFixed(1)}%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Final Value</span>
+                        <span class="metric-value positive">$${data.final_value.toLocaleString()}</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Test Period</span>
+                        <span class="metric-value">${data.period}</span>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+            // Add benchmark card if available
+            if (strategyData.upro_benchmark) {
+                const benchmarkData = strategyData.upro_benchmark;
+                const card = document.createElement('div');
+                card.className = 'performance-card benchmark';
+                card.innerHTML = `
+                    <div class="card-header">
+                        <div class="model-name">UPRO Benchmark</div>
+                        <div class="model-badge badge-benchmark">BUY & HOLD</div>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Total Return</span>
+                        <span class="metric-value positive">+${benchmarkData.total_return_pct.toFixed(2)}%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Strategy</span>
+                        <span class="metric-value">Buy and Hold</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Test Period</span>
+                        <span class="metric-value">${benchmarkData.period}</span>
+                    </div>
+                `;
+                grid.appendChild(card);
+            }
+        }
+
+        // Render model selectors
+        function renderModelSelectors() {
+            const models = Object.keys(strategyData).filter(key => key !== 'upro_benchmark');
+            
+            // Portfolio chart selector
+            const portfolioSelector = document.getElementById('modelSelector');
+            portfolioSelector.innerHTML = '';
+            models.forEach(model => {
+                const button = document.createElement('button');
+                button.textContent = strategyData[model].model;
+                button.className = model === currentModel ? 'active' : '';
+                button.onclick = () => {
+                    currentModel = model;
+                    updateModelSelector();
+                    renderPortfolioChart();
+                };
+                portfolioSelector.appendChild(button);
+            });
+
+            // Trades table selector
+            const tradesSelector = document.getElementById('tradeModelSelector');
+            tradesSelector.innerHTML = '';
+            models.forEach(model => {
+                const button = document.createElement('button');
+                button.textContent = strategyData[model].model;
+                button.className = model === currentModel ? 'active' : '';
+                button.onclick = () => {
+                    currentModel = model;
+                    updateTradeModelSelector();
+                    renderTradesTable();
+                };
+                tradesSelector.appendChild(button);
+            });
+        }
+
+        // Update model selector active state
+        function updateModelSelector() {
+            const buttons = document.querySelectorAll('#modelSelector button');
+            const models = Object.keys(strategyData).filter(key => key !== 'upro_benchmark');
+            
+            buttons.forEach((button, index) => {
+                button.className = models[index] === currentModel ? 'active' : '';
+            });
+        }
+
+        // Update trade model selector active state
+        function updateTradeModelSelector() {
+            const buttons = document.querySelectorAll('#tradeModelSelector button');
+            const models = Object.keys(strategyData).filter(key => key !== 'upro_benchmark');
+            
+            buttons.forEach((button, index) => {
+                button.className = models[index] === currentModel ? 'active' : '';
+            });
+        }
+
+        // Render portfolio chart
+        function renderPortfolioChart() {
+            const ctx = document.getElementById('portfolioChart').getContext('2d');
+            
+            if (portfolioChart) {
+                portfolioChart.destroy();
+            }
+
+            const modelData = strategyData[currentModel];
+            if (!modelData || !modelData.portfolio_history) return;
+
+            const portfolioHistory = modelData.portfolio_history;
+            const labels = portfolioHistory.map(entry => entry.date);
+            const portfolioValues = portfolioHistory.map(entry => entry.portfolio_value);
+
+            portfolioChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: `${modelData.model} Portfolio Value`,
+                        data: portfolioValues,
+                        borderColor: getModelColor(currentModel),
+                        backgroundColor: getModelColor(currentModel, 0.1),
+                        fill: true,
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value.toLocaleString();
+                                }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                maxTicksLimit: 10
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `Portfolio Value: $${context.parsed.y.toLocaleString()}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Render returns comparison chart
+        function renderReturnsChart() {
+            const ctx = document.getElementById('returnsChart').getContext('2d');
+            
+            if (returnsChart) {
+                returnsChart.destroy();
+            }
+
+            const datasets = [];
+            const models = Object.keys(strategyData).filter(key => key !== 'upro_benchmark');
+
+            models.forEach(model => {
+                const modelData = strategyData[model];
+                if (!modelData.portfolio_history) return;
+
+                const portfolioHistory = modelData.portfolio_history;
+                const initialValue = portfolioHistory[0].portfolio_value;
+                
+                const cumulativeReturns = portfolioHistory.map(entry => {
+                    return ((entry.portfolio_value / initialValue) - 1) * 100;
+                });
+
+                datasets.push({
+                    label: modelData.model,
+                    data: cumulativeReturns,
+                    borderColor: getModelColor(model),
+                    backgroundColor: getModelColor(model, 0.1),
+                    fill: false,
+                    tension: 0.1
+                });
+            });
+
+            // Add benchmark if available
+            if (strategyData.upro_benchmark) {
+                const benchmarkHistory = strategyData.upro_benchmark.portfolio_history;
+                const benchmarkInitialValue = strategyData.upro_benchmark.initial_value;
+                
+                const benchmarkReturns = benchmarkHistory.map(entry => {
+                    return ((entry.portfolio_value / benchmarkInitialValue) - 1) * 100;
+                });
+
+                datasets.push({
+                    label: 'UPRO Benchmark',
+                    data: benchmarkReturns,
+                    borderColor: '#95a5a6',
+                    backgroundColor: 'rgba(149, 165, 166, 0.1)',
+                    fill: false,
+                    borderDash: [5, 5]
+                });
+            }
+
+            const labels = strategyData[models[0]]?.portfolio_history?.map(entry => entry.date) || [];
+
+            returnsChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            ticks: {
+                                callback: function(value) {
+                                    return value.toFixed(1) + '%';
+                                }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                maxTicksLimit: 10
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.dataset.label}: ${context.parsed.y.toFixed(2)}%`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Render trades table
+        function renderTradesTable() {
+            const tbody = document.getElementById('tradesTableBody');
+            tbody.innerHTML = '';
+
+            const modelData = strategyData[currentModel];
+            if (!modelData || !modelData.trades) {
+                tbody.innerHTML = '<tr><td colspan="12" style="text-align: center;">No trade data available</td></tr>';
+                return;
+            }
+
+            const trades = modelData.trades;
+            const portfolioHistory = modelData.portfolio_history || [];
+            
+            let tradeNumber = 1;
+            let lastTradeValue = modelData.initial_value || 10000;
+
+            trades.forEach((trade, index) => {
+                const portfolioEntry = portfolioHistory.find(p => p.date === trade.date);
+                const portfolioValue = portfolioEntry ? portfolioEntry.portfolio_value : 0;
+                const sharesOwned = portfolioEntry ? portfolioEntry.shares_owned : 0;
+                
+                // Calculate trade return
+                const tradeReturn = lastTradeValue > 0 ? ((portfolioValue / lastTradeValue) - 1) * 100 : 0;
+                const cumulativeReturn = ((portfolioValue / modelData.initial_value) - 1) * 100;
+                
+                // Get monthly return data if available
+                let toMonthlyReturn = 'N/A';
+                let fromMonthlyReturn = 'N/A';
+                
+                if (monthlyReturnsData && monthlyReturnsData[currentModel]) {
+                    const monthlyTrade = monthlyReturnsData[currentModel].find(t => t.date === trade.date);
+                    if (monthlyTrade && monthlyTrade.monthly_return !== null) {
+                        toMonthlyReturn = (monthlyTrade.monthly_return * 100).toFixed(2) + '%';
+                    }
+                    
+                    // Get from ETF monthly return by looking for a trade where the from_etf was the to_etf
+                    if (trade.from_etf && trade.from_etf !== 'CASH') {
+                        // Find the most recent trade where this ETF was the "to_etf" to get its monthly return
+                        const fromEtfTrades = monthlyReturnsData[currentModel].filter(t => t.etf === trade.from_etf);
+                        if (fromEtfTrades.length > 0) {
+                            // Get the trade closest to or before the current trade date
+                            const sortedTrades = fromEtfTrades
+                                .filter(t => t.date <= trade.date)
+                                .sort((a, b) => new Date(b.date) - new Date(a.date));
+                            
+                            if (sortedTrades.length > 0 && sortedTrades[0].monthly_return !== null) {
+                                fromMonthlyReturn = (sortedTrades[0].monthly_return * 100).toFixed(2) + '%';
+                            }
+                        }
+                    }
+                }
+
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${tradeNumber}</td>
+                    <td>${trade.date}</td>
+                    <td>${trade.action}</td>
+                    <td>${trade.from_etf || 'CASH'}</td>
+                    <td>${trade.from_etf_price !== undefined ? (trade.from_etf_price === 'N/A' ? 'N/A' : '$' + parseFloat(trade.from_etf_price).toFixed(2)) : 'N/A'}</td>
+                    <td>${trade.to_etf}</td>
+                    <td>$${trade.price ? trade.price.toFixed(2) : '0.00'}</td>
+                    <td>${sharesOwned.toFixed(2)}</td>
+                    <td>$${portfolioValue.toLocaleString()}</td>
+                    <td>${fromMonthlyReturn}</td>
+                    <td>${toMonthlyReturn}</td>
+                    <td class="${tradeReturn >= 0 ? 'metric-value positive' : 'metric-value negative'}">${tradeReturn >= 0 ? '+' : ''}${tradeReturn.toFixed(2)}%</td>
+                    <td class="metric-value positive">+${cumulativeReturn.toFixed(2)}%</td>
+                `;
+                tbody.appendChild(row);
+
+                lastTradeValue = portfolioValue;
+                tradeNumber++;
+            });
+        }
+
+        // Get model color
+        function getModelColor(model, alpha = 1) {
+            const colors = {
+                xgboost: `rgba(231, 76, 60, ${alpha})`,
+                lightgbm: `rgba(243, 156, 18, ${alpha})`,
+                random_forest: `rgba(39, 174, 96, ${alpha})`
+            };
+            return colors[model] || `rgba(149, 165, 166, ${alpha})`;
+        }
+
+        // Initialize dashboard
+        loadStrategyData();
+    </script>
+</body>
+</html>

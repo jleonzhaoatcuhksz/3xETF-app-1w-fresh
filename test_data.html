@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Loading Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Data Loading Test</h1>
+        <div id="status">Loading...</div>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        async function testDataLoading() {
+            const statusDiv = document.getElementById('status');
+            const resultsDiv = document.getElementById('results');
+            
+            try {
+                statusDiv.innerHTML = '<div class="info">📡 Attempting to fetch JSON data...</div>';
+                
+                const response = await fetch('single_etf_ml_switching_results.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                statusDiv.innerHTML = '<div class="success">✅ HTTP request successful!</div>';
+                
+                const data = await response.json();
+                
+                statusDiv.innerHTML = '<div class="success">✅ JSON data loaded successfully!</div>';
+                
+                // Display basic info about the data
+                resultsDiv.innerHTML = `
+                    <h2>📊 Data Summary</h2>
+                    <div class="info">
+                        <strong>Main Keys:</strong> ${Object.keys(data).join(', ')}<br>
+                        <strong>Models Available:</strong> ${Object.keys(data.backtests || {}).join(', ')}<br>
+                        <strong>Strategy Name:</strong> ${data.strategy_info?.name || 'N/A'}<br>
+                        <strong>Date Range:</strong> ${data.strategy_info?.date_range || 'N/A'}
+                    </div>
+                    
+                    <h3>🏆 Performance Results</h3>
+                    <pre>${JSON.stringify({
+                        xgboost_return: data.backtests?.xgboost?.total_return,
+                        lightgbm_return: data.backtests?.lightgbm?.total_return,
+                        random_forest_return: data.backtests?.random_forest?.total_return,
+                        xgboost_final_value: data.backtests?.xgboost?.final_value,
+                        lightgbm_final_value: data.backtests?.lightgbm?.final_value,
+                        random_forest_final_value: data.backtests?.random_forest?.final_value
+                    }, null, 2)}</pre>
+                    
+                    <h3>📈 Sample Portfolio History (First 3 entries)</h3>
+                    <pre>${JSON.stringify(data.backtests?.xgboost?.portfolio_history?.slice(0, 3) || [], null, 2)}</pre>
+                `;
+                
+            } catch (error) {
+                statusDiv.innerHTML = `<div class="error">❌ Error: ${error.message}</div>`;
+                resultsDiv.innerHTML = `
+                    <h2>🔍 Debugging Info</h2>
+                    <pre>Error Details: ${error.stack || error.message}</pre>
+                    <div class="info">
+                        <strong>Possible Issues:</strong><br>
+                        • JSON file doesn't exist<br>
+                        • Server not serving JSON files correctly<br>
+                        • CORS issues<br>
+                        • Invalid JSON format
+                    </div>
+                `;
+            }
+        }
+        
+        // Start the test when page loads
+        document.addEventListener('DOMContentLoaded', testDataLoading);
+    </script>
+</body>
+</html>

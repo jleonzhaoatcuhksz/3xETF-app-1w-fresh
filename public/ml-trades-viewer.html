@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Trading Strategy Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .strategy-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 3px solid #e9ecef;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 20px;
+            background: none;
+            border: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .tab-button:hover {
+            background: #e9ecef;
+        }
+
+        .tab-button.active {
+            background: #007bff;
+            color: white;
+        }
+
+        .tab-button.active::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #007bff;
+        }
+
+        .strategy-content {
+            display: none;
+            padding: 30px;
+        }
+
+        .strategy-content.active {
+            display: block;
+        }
+
+        .strategy-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .summary-card {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .summary-card.positive {
+            background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+        }
+
+        .summary-card.neutral {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+        }
+
+        .summary-card h3 {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .summary-card .value {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .trades-section {
+            margin-top: 30px;
+        }
+
+        .trades-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .trades-header h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+        }
+
+        .trade-count {
+            background: #3498db;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .trades-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .trades-table th {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 15px 10px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .trades-table td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 0.85em;
+        }
+
+        .trades-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .etf-switch {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .etf-from {
+            background: #dc3545;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .etf-to {
+            background: #28a745;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .arrow {
+            color: #6c757d;
+            font-weight: bold;
+        }
+
+        .positive-value {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .negative-value {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .confidence-bar {
+            width: 60px;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b 0%, #feca57 50%, #48ca6a 100%);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #6c757d;
+        }
+
+        .no-trades {
+            text-align: center;
+            padding: 50px;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .strategy-tabs {
+                flex-direction: column;
+            }
+            
+            .trades-table {
+                font-size: 0.7em;
+            }
+            
+            .trades-table th,
+            .trades-table td {
+                padding: 8px 5px;
+            }
+            
+            .strategy-summary {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .portfolio-chart {
+            margin: 30px 0;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 ML Trading Strategy Analysis</h1>
+            <p>Comprehensive Trade Analysis for 3X Leveraged ETF Switching Strategies</p>
+        </div>
+
+        <div class="strategy-tabs">
+            <button class="tab-button active" onclick="showStrategy('xgboost')">
+                XGBoost Strategy
+            </button>
+            <button class="tab-button" onclick="showStrategy('lightgbm')">
+                LightGBM Strategy
+            </button>
+            <button class="tab-button" onclick="showStrategy('random_forest')">
+                Random Forest Strategy
+            </button>
+        </div>
+
+        <div id="xgboost" class="strategy-content active">
+            <div class="loading">Loading XGBoost strategy data...</div>
+        </div>
+
+        <div id="lightgbm" class="strategy-content">
+            <div class="loading">Loading LightGBM strategy data...</div>
+        </div>
+
+        <div id="random_forest" class="strategy-content">
+            <div class="loading">Loading Random Forest strategy data...</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        let tradingData = null;
+
+        // Load trading data
+        async function loadTradingData() {
+            try {
+                const response = await fetch('/api/ml-trading-results');
+                tradingData = await response.json();
+                
+                // Initialize all strategies
+                showStrategy('xgboost');
+                
+            } catch (error) {
+                console.error('Error loading trading data:', error);
+                document.querySelectorAll('.loading').forEach(el => {
+                    el.innerHTML = '❌ Error loading data. Please ensure the server is running.';
+                });
+            }
+        }
+
+        function showStrategy(strategyName) {
+            // Update tab buttons
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Show content
+            document.querySelectorAll('.strategy-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(strategyName).classList.add('active');
+            
+            if (tradingData) {
+                renderStrategy(strategyName);
+            }
+        }
+
+        function renderStrategy(strategyName) {
+            const container = document.getElementById(strategyName);
+            const data = tradingData.backtests[strategyName];
+            
+            if (!data) {
+                container.innerHTML = '<div class="no-trades">No data available for this strategy.</div>';
+                return;
+            }
+
+            const totalReturn = data.total_return * 100;
+            const isPositive = totalReturn > 0;
+            
+            container.innerHTML = `
+                <div class="strategy-summary">
+                    <div class="summary-card ${isPositive ? 'positive' : ''}">
+                        <h3>Total Return</h3>
+                        <div class="value">${totalReturn > 0 ? '+' : ''}${totalReturn.toFixed(1)}%</div>
+                    </div>
+                    <div class="summary-card neutral">
+                        <h3>Final Value</h3>
+                        <div class="value">$${data.final_value.toLocaleString()}</div>
+                    </div>
+                    <div class="summary-card neutral">
+                        <h3>Total Trades</h3>
+                        <div class="value">${data.num_trades}</div>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Transaction Costs</h3>
+                        <div class="value">$${data.total_transaction_costs.toFixed(0)}</div>
+                    </div>
+                    <div class="summary-card neutral">
+                        <h3>Avg Return/Trade</h3>
+                        <div class="value">${data.num_trades > 0 ? (totalReturn / data.num_trades).toFixed(1) : '0'}%</div>
+                    </div>
+                    <div class="summary-card neutral">
+                        <h3>Model Accuracy</h3>
+                        <div class="value">${(tradingData.model_performance[strategyName + '_accuracy'] * 100).toFixed(1)}%</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-chart">
+                    <h3>Portfolio Value Over Time</h3>
+                    <div class="chart-container">
+                        <canvas id="chart-${strategyName}"></canvas>
+                    </div>
+                </div>
+
+                <div class="trades-section">
+                    <div class="trades-header">
+                        <h2>Trade History</h2>
+                        <span class="trade-count">${data.trades.length} Trades</span>
+                    </div>
+                    
+                    ${data.trades.length > 0 ? `
+                        <table class="trades-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>ETF Switch</th>
+                                    <th>Prices</th>
+                                    <th>Shares</th>
+                                    <th>Portfolio Value</th>
+                                    <th>Confidence</th>
+                                    <th>Monthly Trend</th>
+                                    <th>Momentum</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${data.trades.map((trade, index) => `
+                                    <tr>
+                                        <td>${new Date(trade.date).toLocaleDateString()}</td>
+                                        <td>
+                                            <div class="etf-switch">
+                                                <span class="etf-from">${trade.from_etf}</span>
+                                                <span class="arrow">→</span>
+                                                <span class="etf-to">${trade.to_etf}</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>From: $${trade.from_price.toFixed(2)}</div>
+                                            <div>To: $${trade.to_price.toFixed(2)}</div>
+                                        </td>
+                                        <td>
+                                            <div>Sold: ${trade.shares_sold.toFixed(0)}</div>
+                                            <div>Bought: ${trade.shares_bought.toFixed(0)}</div>
+                                        </td>
+                                        <td class="${trade.portfolio_value > 10000 ? 'positive-value' : 'negative-value'}">
+                                            $${trade.portfolio_value.toLocaleString()}
+                                        </td>
+                                        <td>
+                                            <div class="confidence-bar">
+                                                <div class="confidence-fill" style="width: ${trade.confidence * 100}%"></div>
+                                            </div>
+                                            <div style="font-size: 0.8em; margin-top: 2px;">${(trade.confidence * 100).toFixed(1)}%</div>
+                                        </td>
+                                        <td class="${trade.monthly_trend > 0 ? 'positive-value' : 'negative-value'}">
+                                            ${(trade.monthly_trend * 100).toFixed(1)}%
+                                        </td>
+                                        <td class="${trade.momentum_10d > 0 ? 'positive-value' : 'negative-value'}">
+                                            ${(trade.momentum_10d * 100).toFixed(1)}%
+                                        </td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    ` : '<div class="no-trades">No trades executed by this strategy.</div>'}
+                </div>
+            `;
+
+            // Render portfolio chart
+            renderPortfolioChart(strategyName, data.portfolio_history);
+        }
+
+        function renderPortfolioChart(strategyName, portfolioHistory) {
+            const ctx = document.getElementById(`chart-${strategyName}`).getContext('2d');
+            
+            const dates = portfolioHistory.map(p => new Date(p.date).toLocaleDateString());
+            const values = portfolioHistory.map(p => p.portfolio_value);
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dates,
+                    datasets: [{
+                        label: 'Portfolio Value',
+                        data: values,
+                        borderColor: '#3498db',
+                        backgroundColor: 'rgba(52, 152, 219, 0.1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value.toLocaleString();
+                                }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                maxTicksLimit: 10
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return 'Portfolio Value: $' + context.parsed.y.toLocaleString();
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', loadTradingData);
+
+        // Handle tab switching without event parameter
+        function showStrategy(strategyName) {
+            // Update tab buttons
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[onclick="showStrategy('${strategyName}')"]`).classList.add('active');
+            
+            // Show content
+            document.querySelectorAll('.strategy-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(strategyName).classList.add('active');
+            
+            if (tradingData) {
+                renderStrategy(strategyName);
+            }
+        }
+    </script>
+</body>
+</html>
