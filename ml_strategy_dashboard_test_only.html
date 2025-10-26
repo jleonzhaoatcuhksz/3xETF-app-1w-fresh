@@ -193,6 +193,44 @@
             padding: 30px;
         }
 
+        .trades-summary {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 18px 24px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.12), rgba(46, 204, 113, 0.12));
+            border: 1px solid rgba(52, 152, 219, 0.25);
+        }
+
+        .trades-summary-label {
+            font-size: 1.1em;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .trades-summary-value {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .trades-summary-change {
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .trades-summary-change.positive {
+            color: #27ae60;
+        }
+
+        .trades-summary-change.negative {
+            color: #e74c3c;
+        }
+
         .trades-table {
             width: 100%;
             border-collapse: collapse;
@@ -241,6 +279,14 @@
             font-size: 1.2em;
             margin-left: 10px;
         }
+
+        .trades-scroll-container {
+            max-height: 420px;
+            overflow-y: auto;
+            overflow-x: auto;
+            border-radius: 10px;
+            padding-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -288,29 +334,41 @@
                 <div class="model-selector" id="tradeModelSelector">
                     <!-- Model buttons will be inserted here -->
                 </div>
+                <div class="trades-summary" id="tradesSummary" style="display: none;">
+                    <div>
+                        <div class="trades-summary-label">Last Day Portfolio Balance</div>
+                        <div class="trades-summary-value" id="lastDayBalance">—</div>
+                    </div>
+                    <div id="lastDayChangeWrapper" style="display: none;">
+                        <div class="trades-summary-label">Change vs Initial Capital</div>
+                        <div class="trades-summary-change" id="lastDayChange">—</div>
+                    </div>
+                </div>
                 <div class="chart-container">
-                    <table class="trades-table" id="tradesTable">
-                        <thead>
-                            <tr>
-                                <th>Trade #</th>
-                                <th>Date</th>
-                                <th>Action</th>
-                                <th>From ETF</th>
-                                <th>From ETF Price</th>
-                                <th>To ETF</th>
-                                <th>To ETF Price</th>
-                                <th>Shares Owned</th>
-                                <th>Portfolio Value</th>
-                                <th>From Monthly Return</th>
-                                <th>To Monthly Return</th>
-                                <th>Trade Return</th>
-                                <th>Cumulative Return</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tradesTableBody">
-                            <!-- Trade data will be inserted here -->
-                        </tbody>
-                    </table>
+                    <div class="trades-scroll-container">
+                        <table class="trades-table" id="tradesTable">
+                            <thead>
+                                <tr>
+                                    <th>Trade #</th>
+                                    <th>Date</th>
+                                    <th>Action</th>
+                                    <th>From ETF</th>
+                                    <th>From ETF Price</th>
+                                    <th>To ETF</th>
+                                    <th>To ETF Price</th>
+                                    <th>Shares Owned</th>
+                                    <th>Portfolio Value</th>
+                                    <th>From Monthly Return</th>
+                                    <th>To Monthly Return</th>
+                                    <th>Trade Return</th>
+                                    <th>Cumulative Return</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tradesTableBody">
+                                <!-- Trade data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -362,6 +420,8 @@
         function renderPerformanceCards() {
             const grid = document.getElementById('performanceGrid');
             grid.innerHTML = '';
+
+            updateTradesSummary();
             
             // Find best performer
             const models = Object.keys(strategyData).filter(key => key !== 'upro_benchmark');
@@ -380,6 +440,10 @@
             models.forEach(model => {
                 const data = strategyData[model];
                 const isWinner = model === bestModel;
+                
+                if (model === currentModel) {
+                    updateTradesSummary();
+                }
                 
                 const card = document.createElement('div');
                 card.className = `performance-card ${model}`;
@@ -462,6 +526,7 @@
                     currentModel = model;
                     updateModelSelector();
                     renderPortfolioChart();
+                    renderTradesTable();
                 };
                 portfolioSelector.appendChild(button);
             });
@@ -500,6 +565,70 @@
             buttons.forEach((button, index) => {
                 button.className = models[index] === currentModel ? 'active' : '';
             });
+        }
+
+        function updateTradesSummary() {
+            const summaryContainer = document.getElementById('tradesSummary');
+            const balanceElement = document.getElementById('lastDayBalance');
+            const changeWrapper = document.getElementById('lastDayChangeWrapper');
+            const changeElement = document.getElementById('lastDayChange');
+
+            if (!summaryContainer || !balanceElement) {
+                return;
+            }
+
+            if (!strategyData || !strategyData[currentModel]) {
+                summaryContainer.style.display = 'none';
+                return;
+            }
+
+            const modelData = strategyData[currentModel];
+            const portfolioHistory = Array.isArray(modelData.portfolio_history) ? modelData.portfolio_history : [];
+
+            if (!portfolioHistory.length) {
+                summaryContainer.style.display = 'none';
+                return;
+            }
+
+            const lastEntry = portfolioHistory[portfolioHistory.length - 1];
+            const lastValue = Number(lastEntry?.portfolio_value);
+
+            if (!Number.isFinite(lastValue)) {
+                summaryContainer.style.display = 'none';
+                return;
+            }
+
+            const formattedBalance = lastValue.toLocaleString(undefined, {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+            const tradeDate = lastEntry?.date || '';
+            balanceElement.textContent = tradeDate ? `$${formattedBalance} (${tradeDate})` : `$${formattedBalance}`;
+
+            const initialValue = Number.isFinite(modelData.initial_value)
+                ? Number(modelData.initial_value)
+                : (Number.isFinite(portfolioHistory[0]?.portfolio_value) ? Number(portfolioHistory[0].portfolio_value) : null);
+
+            if (Number.isFinite(initialValue) && initialValue !== 0) {
+                const absoluteChange = lastValue - initialValue;
+                const percentChange = ((lastValue / initialValue) - 1) * 100;
+
+                changeElement.className = 'trades-summary-change';
+                changeElement.classList.add(absoluteChange >= 0 ? 'positive' : 'negative');
+
+                const formattedAbsolute = Math.abs(absoluteChange).toLocaleString(undefined, {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                });
+
+                const sign = absoluteChange >= 0 ? '+' : '-';
+                changeElement.textContent = `${sign}$${formattedAbsolute} (${absoluteChange >= 0 ? '+' : ''}${percentChange.toFixed(2)}%)`;
+                changeWrapper.style.display = 'block';
+            } else {
+                changeWrapper.style.display = 'none';
+            }
+
+            summaryContainer.style.display = 'flex';
         }
 
         // Render portfolio chart
@@ -655,9 +784,12 @@
 
             const modelData = strategyData[currentModel];
             if (!modelData || !modelData.trades) {
-                tbody.innerHTML = '<tr><td colspan="12" style="text-align: center;">No trade data available</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="13" style="text-align: center;">No trade data available</td></tr>';
+                updateTradesSummary();
                 return;
             }
+
+            updateTradesSummary();
 
             const trades = modelData.trades;
             const portfolioHistory = modelData.portfolio_history || [];

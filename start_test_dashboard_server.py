@@ -104,6 +104,9 @@ def start_test_dashboard_server():
         print("\n🛑 Server stopped by user")
     except Exception as e:
         print(f"❌ Server error: {e}")
+    finally:
+        if 'httpd' in locals():
+            httpd.server_close()
 
 if __name__ == "__main__":
     start_test_dashboard_server()
