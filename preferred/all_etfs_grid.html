@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All ETFs Grid Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+        }
+        .modal-content {
+            position: relative;
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+        }
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        .modal-chart {
+            width: 100%;
+            height: 100%;
+        }
+        .chart-container {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .chart-container:hover {
+            transform: scale(1.02);
+        }
+        .legend {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            justify-content: center;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .color-box {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #333;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);  /* 6 charts per row */
+            gap: 5px;
+        }
+        .chart-container {
+            width: 100%;
+            min-height: 350px;  /* Fixed height for consistency */
+            border: 1px solid #ddd;
+            padding: 0;
+            margin: 0;
+            border-radius: 5px;
+        }
+        .chart {
+            width: 100%;
+            height: 350px;
+            padding: 0;
+            margin: 0;
+        }
+        .loading {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>All ETFs with 5-Day Moving Averages</h1>
+        <div class="legend">
+            <div class="legend-item"><span class="color-box" style="background: #1f77b4"></span> Price</div>
+            <div class="legend-item"><span class="color-box" style="background: #ff7f0e; border-style: dashed"></span> 5-Day Average</div>
+        </div>
+        <div id="loading" class="loading">Loading ETF data...</div>
+        <div id="grid" class="grid"></div>
+    </div>
+
+    <!-- Modal for enlarged chart -->
+    <div id="chartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalChart" class="modal-chart"></div>
+        </div>
+    </div>
+
+    <script>
+        // Modal functionality
+        const modal = document.getElementById('chartModal');
+        const closeBtn = document.querySelector('.close');
+        const modalChart = document.getElementById('modalChart');
+        
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+            Plotly.purge(modalChart);
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+                Plotly.purge(modalChart);
+            }
+        }
+
+        // Function to open enlarged chart
+        function openEnlargedChart(symbol, data) {
+            modal.style.display = 'block';
+            
+            Plotly.newPlot(modalChart, [
+                {
+                    x: data.dates,
+                    y: data.close,
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: 'Price',
+                    line: { color: '#1f77b4' }
+                },
+                {
+                    x: data.dates,
+                    y: data.sma_5d,
+                    type: 'scatter',
+                    mode: 'lines',
+                    name: '5-Day Average',
+                    line: { color: '#ff7f0e', dash: 'dash' }
+                }
+            ], {
+                title: `${symbol} - Enlarged View`,
+                titlefont: { size: 28 },
+                xaxis: { 
+                    title: 'Date',
+                    titlefont: { size: 20 },
+                    tickfont: { size: 16 }
+                },
+                yaxis: { 
+                    title: 'Price ($)',
+                    titlefont: { size: 20 },
+                    tickfont: { size: 16 }
+                },
+                showlegend: true,
+                legend: { font: { size: 18 } },
+                margin: { l: 50, r: 50, b: 50, t: 80, pad: 0 }
+            });
+        }
+
+        fetch('/api/symbols')
+            .then(response => response.json())
+            .then(symbols => {
+                document.getElementById('loading').style.display = 'none';
+                // Sort symbols alphabetically
+                symbols.sort((a, b) => a.symbol.localeCompare(b.symbol));
+                symbols.forEach(symbol => {
+                    fetch(`/api/etf_data?symbol=${symbol.symbol}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            const chartDiv = document.createElement('div');
+                            chartDiv.className = 'chart-container';
+                            chartDiv.innerHTML = `<div id="chart-${symbol.symbol}" class="chart"></div>`;
+                            document.getElementById('grid').appendChild(chartDiv);
+
+                            Plotly.newPlot(`chart-${symbol.symbol}`, [
+                                {
+                                    x: data.dates,
+                                    y: data.close,
+                                    type: 'scatter',
+                                    mode: 'lines',
+                                    showlegend: false,  // Hide individual legends
+                                    line: { color: '#1f77b4' }
+                                },
+                                {
+                                    x: data.dates,
+                                    y: data.sma_5d,
+                                    type: 'scatter',
+                                    mode: 'lines',
+                                    showlegend: false,  // Hide individual legends
+                                    line: { color: '#ff7f0e', dash: 'dash' }
+                                }
+                            ], {
+                                title: `${symbol.symbol}`,
+                                xaxis: { 
+                                    title: 'Date', 
+                                    automargin: true,
+                                    showticklabels: false
+                                },
+                                yaxis: { 
+                                    title: 'Price ($)', 
+                                    automargin: true,
+                                    showticklabels: false
+                                },
+                                xaxis: { 
+                                    title: 'Date', 
+                                    automargin: true,
+                                    showticklabels: true
+                                },
+                                showlegend: false,  // Hide chart-level legends
+                                margin: { l: 0, r: 0, b: 0, t: 45, pad: 0 },
+                                hovermode: false,
+                                displayModeBar: false,
+                                displaylogo: false,
+                                modeBarButtonsToRemove: ['zoom2d', 'pan2d', 'select2d', 'lasso2d', 'zoomIn2d', 'zoomOut2d', 'autoScale2d', 'resetScale2d', 'hoverClosestCartesian', 'hoverCompareCartesian'],
+                                modeBarButtonsToAdd: []
+                            });
+                            
+                            // Add click event to open enlarged chart
+                            chartDiv.onclick = function() {
+                                openEnlargedChart(symbol.symbol, data);
+                            };
+                        })
+                        .catch(error => console.error(`Error loading ${symbol.symbol}:`, error));
+                });
+            })
+            .catch(error => {
+                document.getElementById('loading').textContent = 'Failed to load ETF symbols.';
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>

@@ -236,6 +236,70 @@ app.get('/api/trading-performance', (req, res) => {
     }
 });
 
+// API endpoint to fetch ETF price and SMA data
+app.get('/api/etf_data', (req, res) => {
+    const { symbol } = req.query;
+    if (!symbol) {
+        return res.status(400).json({ error: 'Symbol parameter is required' });
+    }
+
+    const query = `
+        SELECT date, close, sma_5d 
+        FROM prices 
+        WHERE symbol = ? 
+        ORDER BY date ASC
+    `;
+
+    db.all(query, [symbol], (err, rows) => {
+        if (err) {
+            console.error('Database error:', err);
+            return res.status(500).json({ error: err.message });
+        }
+
+        if (rows.length === 0) {
+            return res.status(404).json({ error: 'No data found for this symbol' });
+        }
+
+        // Format data for Plotly
+        const result = {
+            dates: rows.map(row => row.date),
+            close: rows.map(row => row.close),
+            sma_5d: rows.map(row => row.sma_5d)
+        };
+
+        res.json(result);
+    });
+});
+
+// API endpoint to get all ETFs with statistics
+app.get('/api/all_etfs', (req, res) => {
+    const query = `
+        SELECT 
+            e.symbol,
+            e.name,
+            e.sector,
+            e.category,
+            COUNT(p.date) as record_count,
+            MIN(p.date) as first_date,
+            MAX(p.date) as last_date,
+            AVG(p.close) as avg_price
+        FROM etfs e
+        LEFT JOIN prices p ON e.symbol = p.symbol
+        GROUP BY e.symbol, e.name, e.sector, e.category
+        ORDER BY e.symbol
+    `;
+    
+    db.all(query, (err, rows) => {
+        if (err) {
+            console.log('All ETFs query error:', err);
+            res.status(500).json({ error: err.message });
+            return;
+        }
+        console.log(`Found ${rows.length} ETFs with statistics`);
+        res.json(rows);
+    });
+});
+
 // Main route
 app.get('/', (req, res) => {
     res.send(`

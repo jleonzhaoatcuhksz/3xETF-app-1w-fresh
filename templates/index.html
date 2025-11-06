@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3xETF Data Browser</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .controls { background: #f5f5f5; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+        .chart-container { margin: 20px 0; }
+        select, input, button { margin: 5px; padding: 8px; }
+        .stats { background: #e8f4fd; padding: 15px; border-radius: 5px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>3xETF Data Browser</h1>
+        
+        <div class="controls">
+            <label for="etfSelect">Select ETF:</label>
+            <select id="etfSelect" onchange="loadETFData()">
+                {% for etf in etfs %}
+                <option value="{{ etf }}">{{ etf }}</option>
+                {% endfor %}
+            </select>
+            
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" value="{{ min_date }}" onchange="loadETFData()">
+            
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" value="{{ max_date }}" onchange="loadETFData()">
+            
+            <button onclick="window.location.href='/dashboard'">View Dashboard</button>
+        </div>
+        
+        <div id="stats" class="stats"></div>
+        
+        <div id="priceChart" class="chart-container"></div>
+        <div id="volumeChart" class="chart-container"></div>
+    </div>
+    
+    <script>
+        function loadETFData() {
+            const symbol = document.getElementById('etfSelect').value;
+            const startDate = document.getElementById('startDate').value;
+            const endDate = document.getElementById('endDate').value;
+            
+            // Load statistics
+            fetch(`/api/etf_stats?symbol=${symbol}`)
+                .then(response => response.json())
+                .then(stats => {
+                    document.getElementById('stats').innerHTML = `
+                        <h3>${stats.symbol} Statistics</h3>
+                        <p><strong>Date Range:</strong> ${stats.date_range}</p>
+                        <p><strong>Total Trading Days:</strong> ${stats.total_days}</p>
+                        <p><strong>Price Stats:</strong> Avg: $${stats.price_stats.average} | 
+                        Min: $${stats.price_stats.minimum} | Max: $${stats.price_stats.maximum}</p>
+                        <p><strong>Average Volume:</strong> ${stats.avg_volume.toLocaleString()}</p>
+                    `;
+                });
+            
+            // Load chart data
+            fetch(`/api/etf_data?symbol=${symbol}&start_date=${startDate}&end_date=${endDate}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Price chart with SMA
+                    Plotly.newPlot('priceChart', [
+                        {
+                            x: data.dates,
+                            y: data.close,
+                            type: 'scatter',
+                            mode: 'lines',
+                            name: 'Close Price',
+                            line: {color: '#1f77b4'}
+                        },
+                        {
+                            x: data.dates,
+                            y: data.sma_5d,
+                            type: 'scatter',
+                            mode: 'lines',
+                            name: '5-Day SMA',
+                            line: {color: '#ff7f0e', dash: 'dash'}
+                        }
+                    ], {
+                        title: `${symbol} Price Chart with 5-Day SMA`,
+                        xaxis: {title: 'Date'},
+                        yaxis: {title: 'Price ($)'}
+                    });
+                    
+                    // Volume chart
+                    Plotly.newPlot('volumeChart', [
+                        {
+                            x: data.dates,
+                            y: data.volume,
+                            type: 'bar',
+                            name: 'Volume',
+                            marker: {color: '#2ca02c'}
+                        }
+                    ], {
+                        title: `${symbol} Trading Volume`,
+                        xaxis: {title: 'Date'},
+                        yaxis: {title: 'Volume'}
+                    });
+                });
+        }
+        
+        // Load initial data
+        window.onload = loadETFData;
+    </script>
+</body>
+</html>

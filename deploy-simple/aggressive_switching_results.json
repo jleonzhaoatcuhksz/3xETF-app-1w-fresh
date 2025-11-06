@@ -1,0 +1,2538 @@
+{
+  "model_performance": {
+    "xgboost_accuracy": 0.7557251908396947,
+    "lightgbm_accuracy": 0.753493834409865,
+    "random_forest_accuracy": 0.7443922489724016
+  },
+  "backtests": {
+    "xgboost": {
+      "total_return": 7.0460679873639895,
+      "final_value": 80460.67987363989,
+      "num_trades": 32,
+      "total_transaction_costs": 320.0,
+      "trades": [
+        {
+          "date": "2020-05-01",
+          "from_etf": "UPRO",
+          "to_etf": "LABU",
+          "from_price": 16.889368057250977,
+          "to_price": 669.1184692382812,
+          "shares_sold": 861.3017542469082,
+          "shares_bought": 21.74030908516389,
+          "confidence": 0.9523415565490723,
+          "monthly_trend": 0.7836841964824959,
+          "momentum_10d": -0.04184330658210034,
+          "relative_strength": 0.7361382601777173,
+          "portfolio_value": 14546.842335831961
+        },
+        {
+          "date": "2020-06-01",
+          "from_etf": "LABU",
+          "to_etf": "SOXL",
+          "from_price": 972.186279296875,
+          "to_price": 9.833908081054688,
+          "shares_sold": 21.718568776078726,
+          "shares_bought": 2147.111239604421,
+          "confidence": 0.7892279028892517,
+          "monthly_trend": 0.16174331799867314,
+          "momentum_10d": 0.2527783734267528,
+          "relative_strength": 0.17367176465387787,
+          "portfolio_value": 21114.494570069262
+        },
+        {
+          "date": "2020-07-01",
+          "from_etf": "SOXL",
+          "to_etf": "TECL",
+          "from_price": 11.657981872558594,
+          "to_price": 22.815942764282227,
+          "shares_sold": 2144.9641283648166,
+          "shares_bought": 1095.9859596471138,
+          "confidence": 0.46119725704193115,
+          "monthly_trend": 0.16493765184835762,
+          "momentum_10d": 0.0638579343833654,
+          "relative_strength": 0.19884650606166296,
+          "portfolio_value": 25005.952925765476
+        },
+        {
+          "date": "2020-10-01",
+          "from_etf": "TECL",
+          "to_etf": "LABU",
+          "from_price": 30.822080612182617,
+          "to_price": 1099.5340576171875,
+          "shares_sold": 1094.8899736874666,
+          "shares_bought": 30.691897896822443,
+          "confidence": 0.4484434425830841,
+          "monthly_trend": 0.05613530245082843,
+          "momentum_10d": -0.06591747591290575,
+          "relative_strength": 0.08064943378967154,
+          "portfolio_value": 33746.7870304656
+        },
+        {
+          "date": "2020-12-01",
+          "from_etf": "LABU",
+          "to_etf": "TNA",
+          "from_price": 1697.377197265625,
+          "to_price": 51.49398422241211,
+          "shares_sold": 30.661205998925624,
+          "shares_bought": 1010.6740173464574,
+          "confidence": 0.7468122839927673,
+          "monthly_trend": 0.6607642744047386,
+          "momentum_10d": 0.0815295874258728,
+          "relative_strength": 0.5912809331417023,
+          "portfolio_value": 52043.63190324034
+        },
+        {
+          "date": "2021-03-01",
+          "from_etf": "TNA",
+          "to_etf": "FAS",
+          "from_price": 94.59342956542969,
+          "to_price": 80.20196533203125,
+          "shares_sold": 1009.6633433291111,
+          "shares_bought": 1190.8376304321623,
+          "confidence": 0.4943167567253113,
+          "monthly_trend": 0.4060586119022134,
+          "momentum_10d": 0.160699699209633,
+          "relative_strength": 0.40400781042883394,
+          "portfolio_value": 95507.51835199851
+        },
+        {
+          "date": "2021-06-01",
+          "from_etf": "FAS",
+          "to_etf": "DRN",
+          "from_price": 116.79107666015625,
+          "to_price": 18.39710235595703,
+          "shares_sold": 1189.64679280173,
+          "shares_bought": 7552.28334812339,
+          "confidence": 0.7562881708145142,
+          "monthly_trend": 0.06676785723370626,
+          "momentum_10d": 0.13938399377988175,
+          "relative_strength": 0.07195366420909353,
+          "portfolio_value": 138940.12977661588
+        },
+        {
+          "date": "2021-07-01",
+          "from_etf": "DRN",
+          "to_etf": "TMF",
+          "from_price": 19.031797409057617,
+          "to_price": 239.7853546142578,
+          "shares_sold": 7544.7310647752665,
+          "shares_bought": 598.8263685312183,
+          "confidence": 0.44394662976264954,
+          "monthly_trend": 0.12359148635566086,
+          "momentum_10d": 0.024131447437819364,
+          "relative_strength": 0.12290554454301081,
+          "portfolio_value": 143589.79313062644
+        },
+        {
+          "date": "2021-09-01",
+          "from_etf": "TMF",
+          "to_etf": "TECL",
+          "from_price": 263.05755615234375,
+          "to_price": 67.24390411376953,
+          "shares_sold": 598.2275421626872,
+          "shares_bought": 2340.260836106263,
+          "confidence": 0.7599004507064819,
+          "monthly_trend": 0.09587080506246015,
+          "momentum_10d": 0.1328592753039297,
+          "relative_strength": 0.09953937189544979,
+          "portfolio_value": 157368.27526433967
+        },
+        {
+          "date": "2021-12-01",
+          "from_etf": "TECL",
+          "to_etf": "LABD",
+          "from_price": 75.49348449707031,
+          "to_price": 252.32144165039062,
+          "shares_sold": 2337.920575270157,
+          "shares_bought": 699.4957287422666,
+          "confidence": 0.6839995980262756,
+          "monthly_trend": 0.4899256512040717,
+          "momentum_10d": 0.34385463476040856,
+          "relative_strength": 0.49189731561952077,
+          "portfolio_value": 176497.7707045393
+        },
+        {
+          "date": "2022-01-03",
+          "from_etf": "LABD",
+          "to_etf": "TECL",
+          "from_price": 209.6692657470703,
+          "to_price": 87.37408447265625,
+          "shares_sold": 698.7962330135243,
+          "shares_bought": 1676.8827274936032,
+          "confidence": 0.4203963875770569,
+          "monthly_trend": 0.126024907396874,
+          "momentum_10d": 0.14307821249626085,
+          "relative_strength": 0.13301565379372457,
+          "portfolio_value": 146516.0930827643
+        },
+        {
+          "date": "2022-02-01",
+          "from_etf": "TECL",
+          "to_etf": "ERX",
+          "from_price": 67.73755645751953,
+          "to_price": 39.97679138183594,
+          "shares_sold": 1675.2058447661095,
+          "shares_bought": 2838.5057070730754,
+          "confidence": 0.4961138665676117,
+          "monthly_trend": 0.4976385026181618,
+          "momentum_10d": 0.10477863157129041,
+          "relative_strength": 0.49970615332018464,
+          "portfolio_value": 113474.35048781104
+        },
+        {
+          "date": "2022-04-01",
+          "from_etf": "ERX",
+          "to_etf": "LABU",
+          "from_price": 51.12264633178711,
+          "to_price": 342.9503173828125,
+          "shares_sold": 2835.6672013660027,
+          "shares_bought": 422.70499282922646,
+          "confidence": 0.4008588492870331,
+          "monthly_trend": 0.17364838953050699,
+          "momentum_10d": 0.014010343851212248,
+          "relative_strength": 0.19372336159159587,
+          "portfolio_value": 144966.8114500827
+        },
+        {
+          "date": "2022-05-02",
+          "from_etf": "LABU",
+          "to_etf": "SOXS",
+          "from_price": 180.4586181640625,
+          "to_price": 446.853271484375,
+          "shares_sold": 422.28228783639724,
+          "shares_bought": 170.53579553077023,
+          "confidence": 0.44280487298965454,
+          "monthly_trend": 0.34642106871851874,
+          "momentum_10d": 0.0031842261560366403,
+          "relative_strength": 0.34577967222816525,
+          "portfolio_value": 76204.47813811514
+        },
+        {
+          "date": "2022-07-01",
+          "from_etf": "SOXS",
+          "to_etf": "LABU",
+          "from_price": 650.9998779296875,
+          "to_price": 145.5120391845703,
+          "shares_sold": 170.36525973523945,
+          "shares_bought": 762.1896024041201,
+          "confidence": 0.7820168733596802,
+          "monthly_trend": 0.3424407654308457,
+          "momentum_10d": 0.6524665413836752,
+          "relative_strength": 0.35334198644256076,
+          "portfolio_value": 110907.76329110039
+        },
+        {
+          "date": "2022-09-01",
+          "from_etf": "LABU",
+          "to_etf": "ERX",
+          "from_price": 182.43299865722656,
+          "to_price": 50.234622955322266,
+          "shares_sold": 761.4274128017161,
+          "shares_bought": 2765.2140696024426,
+          "confidence": 0.6534485220909119,
+          "monthly_trend": 0.10170166482069565,
+          "momentum_10d": -0.028768250092357173,
+          "relative_strength": 0.11144549128732312,
+          "portfolio_value": 138909.48617723095
+        },
+        {
+          "date": "2022-12-01",
+          "from_etf": "ERX",
+          "to_etf": "SOXL",
+          "from_price": 65.76168060302734,
+          "to_price": 13.162999153137207,
+          "shares_sold": 2762.4488555328403,
+          "shares_bought": 13801.055307099394,
+          "confidence": 0.7026278972625732,
+          "monthly_trend": 0.48351670202481944,
+          "momentum_10d": 0.1129432501875749,
+          "relative_strength": 0.4905200482981318,
+          "portfolio_value": 181663.27931974907
+        },
+        {
+          "date": "2023-01-03",
+          "from_etf": "SOXL",
+          "to_etf": "ERY",
+          "from_price": 9.158903121948242,
+          "to_price": 27.977645874023438,
+          "shares_sold": 13787.254251792296,
+          "shares_bought": 4513.465020553389,
+          "confidence": 0.46179288625717163,
+          "monthly_trend": 0.12436367973495432,
+          "momentum_10d": -0.024875916907921347,
+          "relative_strength": 0.12926291529519984,
+          "portfolio_value": 126276.12600983462
+        },
+        {
+          "date": "2023-02-01",
+          "from_etf": "ERY",
+          "to_etf": "NUGT",
+          "from_price": 25.45536231994629,
+          "to_price": 42.7880744934082,
+          "shares_sold": 4508.951555532835,
+          "shares_bought": 2682.4529238130576,
+          "confidence": 0.5883022546768188,
+          "monthly_trend": 0.2886568789758426,
+          "momentum_10d": 0.09570780648452981,
+          "relative_strength": 0.2573366613837816,
+          "portfolio_value": 114776.99552917374
+        },
+        {
+          "date": "2023-06-01",
+          "from_etf": "NUGT",
+          "to_etf": "SOXL",
+          "from_price": 38.50579833984375,
+          "to_price": 21.716585159301758,
+          "shares_sold": 2679.7704708892447,
+          "shares_bought": 4751.51597694594,
+          "confidence": 0.413451224565506,
+          "monthly_trend": 0.5442509137067748,
+          "momentum_10d": 0.37298638824622077,
+          "relative_strength": 0.5390189618301441,
+          "portfolio_value": 103186.70134912938
+        },
+        {
+          "date": "2023-09-01",
+          "from_etf": "SOXL",
+          "to_etf": "DRV",
+          "from_price": 23.57571029663086,
+          "to_price": 44.63043212890625,
+          "shares_sold": 4746.764460968994,
+          "shares_bought": 2507.4447734434398,
+          "confidence": 0.4713039994239807,
+          "monthly_trend": 0.0456591506526387,
+          "momentum_10d": -0.05830104617476861,
+          "relative_strength": 0.05421287284937929,
+          "portfolio_value": 111908.34377814815
+        },
+        {
+          "date": "2024-01-02",
+          "from_etf": "DRV",
+          "to_etf": "DRN",
+          "from_price": 31.25583839416504,
+          "to_price": 10.473213195800781,
+          "shares_sold": 2504.937328669996,
+          "shares_bought": 7475.634732978863,
+          "confidence": 0.7505818605422974,
+          "monthly_trend": 0.292469554416497,
+          "momentum_10d": 0.058380569673344596,
+          "relative_strength": 0.27206565623180157,
+          "portfolio_value": 78293.91633242088
+        },
+        {
+          "date": "2024-02-01",
+          "from_etf": "DRN",
+          "to_etf": "FAS",
+          "from_price": 9.119664192199707,
+          "to_price": 87.75186157226562,
+          "shares_sold": 7468.159098245884,
+          "shares_bought": 776.1328579204637,
+          "confidence": 0.5819913744926453,
+          "monthly_trend": 0.07147992782157742,
+          "momentum_10d": 0.11828763660405239,
+          "relative_strength": 0.0730916172068722,
+          "portfolio_value": 68107.10310992344
+        },
+        {
+          "date": "2024-06-03",
+          "from_etf": "FAS",
+          "to_etf": "SOXL",
+          "from_price": 101.92047882080078,
+          "to_price": 47.917110443115234,
+          "shares_sold": 775.3567250625432,
+          "shares_bought": 1649.196454972312,
+          "confidence": 0.646333634853363,
+          "monthly_trend": 0.333058999497603,
+          "momentum_10d": 0.07026423920197833,
+          "relative_strength": 0.3296334264969848,
+          "portfolio_value": 79024.7286753024
+        },
+        {
+          "date": "2024-08-01",
+          "from_etf": "SOXL",
+          "to_etf": "LABU",
+          "from_price": 34.61220932006836,
+          "to_price": 132.8416290283203,
+          "shares_sold": 1647.5472585173397,
+          "shares_bought": 429.27244263430265,
+          "confidence": 0.40385717153549194,
+          "monthly_trend": 0.23225800972540012,
+          "momentum_10d": 0.02846148657357017,
+          "relative_strength": 0.23030197730709254,
+          "portfolio_value": 57025.25057650694
+        },
+        {
+          "date": "2024-09-03",
+          "from_etf": "LABU",
+          "to_etf": "FAS",
+          "from_price": 129.0362091064453,
+          "to_price": 129.646240234375,
+          "shares_sold": 428.8431701916684,
+          "shares_bought": 426.8253123475532,
+          "confidence": 0.5728146433830261,
+          "monthly_trend": 0.2355436849204342,
+          "momentum_10d": 0.09224889222783528,
+          "relative_strength": 0.24701975666266826,
+          "portfolio_value": 55336.29698272303
+        },
+        {
+          "date": "2024-10-01",
+          "from_etf": "FAS",
+          "to_etf": "UPRO",
+          "from_price": 126.50071716308594,
+          "to_price": 82.99063110351562,
+          "shares_sold": 426.3984870352057,
+          "shares_bought": 649.9494423645049,
+          "confidence": 0.5648560523986816,
+          "monthly_trend": 0.02209824209687783,
+          "momentum_10d": 0.033667181294960935,
+          "relative_strength": 0.032051274860007625,
+          "portfolio_value": 53939.71440720832
+        },
+        {
+          "date": "2024-11-01",
+          "from_etf": "UPRO",
+          "to_etf": "FAS",
+          "from_price": 82.85198211669922,
+          "to_price": 137.49647521972656,
+          "shares_sold": 649.2994929221404,
+          "shares_bought": 391.2518476564481,
+          "confidence": 0.41970258951187134,
+          "monthly_trend": 0.10088824553105447,
+          "momentum_10d": -0.07107482404121468,
+          "relative_strength": 0.10548345087807189,
+          "portfolio_value": 53795.749975967046
+        },
+        {
+          "date": "2025-01-02",
+          "from_etf": "FAS",
+          "to_etf": "SQQQ",
+          "from_price": 148.46176147460938,
+          "to_price": 30.037988662719727,
+          "shares_sold": 390.86059580879163,
+          "shares_bought": 1931.8155152247973,
+          "confidence": 0.44379812479019165,
+          "monthly_trend": 0.02110383852865616,
+          "momentum_10d": 0.14696845212730425,
+          "relative_strength": 0.025694717668646512,
+          "portfolio_value": 58027.852544788526
+        },
+        {
+          "date": "2025-06-02",
+          "from_etf": "SQQQ",
+          "to_etf": "TECL",
+          "from_price": 22.54112434387207,
+          "to_price": 73.36289978027344,
+          "shares_sold": 1929.8836997095723,
+          "shares_bought": 592.9665890341828,
+          "confidence": 0.4902450144290924,
+          "monthly_trend": 0.2782896444458476,
+          "momentum_10d": -0.032877445019281915,
+          "relative_strength": 0.27179179381952157,
+          "portfolio_value": 43501.74844436534
+        },
+        {
+          "date": "2025-07-01",
+          "from_etf": "TECL",
+          "to_etf": "SOXL",
+          "from_price": 91.12000274658203,
+          "to_price": 24.702821731567383,
+          "shares_sold": 592.3736224451486,
+          "shares_bought": 2185.0575084395377,
+          "confidence": 0.8496556878089905,
+          "monthly_trend": 0.5329690191284489,
+          "momentum_10d": 0.1318770191890637,
+          "relative_strength": 0.515850230156957,
+          "portfolio_value": 53977.08610420469
+        },
+        {
+          "date": "2025-10-01",
+          "from_etf": "SOXL",
+          "to_etf": "NUGT",
+          "from_price": 36.86000061035156,
+          "to_price": 157.60000610351562,
+          "shares_sold": 2182.8724509310982,
+          "shares_bought": 510.5372890708602,
+          "confidence": 0.7277899384498596,
+          "monthly_trend": 0.40138722556041206,
+          "momentum_10d": 0.2555768827151357,
+          "relative_strength": 0.38187560011142835,
+          "portfolio_value": 80460.67987363989
+        }
+      ],
+      "portfolio_history": [
+        {
+          "date": "2020-04-01",
+          "etf": "UPRO",
+          "shares": 862.1639181650733,
+          "price": 11.598722457885742,
+          "portfolio_value": 10000.0
+        },
+        {
+          "date": "2020-05-01",
+          "etf": "LABU",
+          "shares": 21.74030908516389,
+          "price": 669.1184692382812,
+          "portfolio_value": 14546.842335831961
+        },
+        {
+          "date": "2020-06-01",
+          "etf": "SOXL",
+          "shares": 2147.111239604421,
+          "price": 9.833908081054688,
+          "portfolio_value": 21114.494570069262
+        },
+        {
+          "date": "2020-07-01",
+          "etf": "TECL",
+          "shares": 1095.9859596471138,
+          "price": 22.815942764282227,
+          "portfolio_value": 25005.952925765476
+        },
+        {
+          "date": "2020-08-03",
+          "etf": "TECL",
+          "shares": 1095.9859596471138,
+          "price": 28.336036682128906,
+          "portfolio_value": 31055.89835565887
+        },
+        {
+          "date": "2020-09-01",
+          "etf": "TECL",
+          "shares": 1095.9859596471138,
+          "price": 38.817474365234375,
+          "portfolio_value": 42543.40689325864
+        },
+        {
+          "date": "2020-10-01",
+          "etf": "LABU",
+          "shares": 30.691897896822443,
+          "price": 1099.5340576171875,
+          "portfolio_value": 33746.7870304656
+        },
+        {
+          "date": "2020-11-02",
+          "etf": "LABU",
+          "shares": 30.691897896822443,
+          "price": 1063.7974853515625,
+          "portfolio_value": 32649.963803306626
+        },
+        {
+          "date": "2020-12-01",
+          "etf": "TNA",
+          "shares": 1010.6740173464574,
+          "price": 51.49398422241211,
+          "portfolio_value": 52043.63190324034
+        },
+        {
+          "date": "2021-01-04",
+          "etf": "TNA",
+          "shares": 1010.6740173464574,
+          "price": 61.24151611328125,
+          "portfolio_value": 61895.20911859776
+        },
+        {
+          "date": "2021-02-01",
+          "etf": "TNA",
+          "shares": 1010.6740173464574,
+          "price": 77.87893676757812,
+          "portfolio_value": 78710.21788955892
+        },
+        {
+          "date": "2021-03-01",
+          "etf": "FAS",
+          "shares": 1190.8376304321623,
+          "price": 80.20196533203125,
+          "portfolio_value": 95507.51835199851
+        },
+        {
+          "date": "2021-04-01",
+          "etf": "FAS",
+          "shares": 1190.8376304321623,
+          "price": 88.87696075439453,
+          "portfolio_value": 105838.02934477547
+        },
+        {
+          "date": "2021-05-03",
+          "etf": "FAS",
+          "shares": 1190.8376304321623,
+          "price": 103.85526275634766,
+          "portfolio_value": 123674.75500867864
+        },
+        {
+          "date": "2021-06-01",
+          "etf": "DRN",
+          "shares": 7552.28334812339,
+          "price": 18.39710235595703,
+          "portfolio_value": 138940.12977661588
+        },
+        {
+          "date": "2021-07-01",
+          "etf": "TMF",
+          "shares": 598.8263685312183,
+          "price": 239.7853546142578,
+          "portfolio_value": 143589.79313062644
+        },
+        {
+          "date": "2021-08-02",
+          "etf": "TMF",
+          "shares": 598.8263685312183,
+          "price": 272.65618896484375,
+          "portfolio_value": 163273.71549537903
+        },
+        {
+          "date": "2021-09-01",
+          "etf": "TECL",
+          "shares": 2340.260836106263,
+          "price": 67.24390411376953,
+          "portfolio_value": 157368.27526433967
+        },
+        {
+          "date": "2021-10-01",
+          "etf": "TECL",
+          "shares": 2340.260836106263,
+          "price": 58.06132507324219,
+          "portfolio_value": 135878.6451613433
+        },
+        {
+          "date": "2021-11-01",
+          "etf": "TECL",
+          "shares": 2340.260836106263,
+          "price": 69.75804901123047,
+          "portfolio_value": 163252.0301041639
+        },
+        {
+          "date": "2021-12-01",
+          "etf": "LABD",
+          "shares": 699.4957287422666,
+          "price": 252.32144165039062,
+          "portfolio_value": 176497.7707045393
+        },
+        {
+          "date": "2022-01-03",
+          "etf": "TECL",
+          "shares": 1676.8827274936032,
+          "price": 87.37408447265625,
+          "portfolio_value": 146516.0930827643
+        },
+        {
+          "date": "2022-02-01",
+          "etf": "ERX",
+          "shares": 2838.5057070730754,
+          "price": 39.97679138183594,
+          "portfolio_value": 113474.35048781104
+        },
+        {
+          "date": "2022-03-01",
+          "etf": "ERX",
+          "shares": 2838.5057070730754,
+          "price": 43.3809814453125,
+          "portfolio_value": 123137.16341095073
+        },
+        {
+          "date": "2022-04-01",
+          "etf": "LABU",
+          "shares": 422.70499282922646,
+          "price": 342.9503173828125,
+          "portfolio_value": 144966.8114500827
+        },
+        {
+          "date": "2022-05-02",
+          "etf": "SOXS",
+          "shares": 170.53579553077023,
+          "price": 446.853271484375,
+          "portfolio_value": 76204.47813811514
+        },
+        {
+          "date": "2022-06-01",
+          "etf": "SOXS",
+          "shares": 170.53579553077023,
+          "price": 378.154296875,
+          "portfolio_value": 64488.843850957186
+        },
+        {
+          "date": "2022-07-01",
+          "etf": "LABU",
+          "shares": 762.1896024041201,
+          "price": 145.5120391845703,
+          "portfolio_value": 110907.76329110039
+        },
+        {
+          "date": "2022-08-01",
+          "etf": "LABU",
+          "shares": 762.1896024041201,
+          "price": 155.38392639160156,
+          "portfolio_value": 118432.01307640587
+        },
+        {
+          "date": "2022-09-01",
+          "etf": "ERX",
+          "shares": 2765.2140696024426,
+          "price": 50.234622955322266,
+          "portfolio_value": 138909.48617723095
+        },
+        {
+          "date": "2022-10-03",
+          "etf": "ERX",
+          "shares": 2765.2140696024426,
+          "price": 47.18946838378906,
+          "portfolio_value": 130488.98191191316
+        },
+        {
+          "date": "2022-11-01",
+          "etf": "ERX",
+          "shares": 2765.2140696024426,
+          "price": 66.5987777709961,
+          "portfolio_value": 184159.8773106848
+        },
+        {
+          "date": "2022-12-01",
+          "etf": "SOXL",
+          "shares": 13801.055307099394,
+          "price": 13.162999153137207,
+          "portfolio_value": 181663.27931974907
+        },
+        {
+          "date": "2023-01-03",
+          "etf": "ERY",
+          "shares": 4513.465020553389,
+          "price": 27.977645874023438,
+          "portfolio_value": 126276.12600983462
+        },
+        {
+          "date": "2023-02-01",
+          "etf": "NUGT",
+          "shares": 2682.4529238130576,
+          "price": 42.7880744934082,
+          "portfolio_value": 114776.99552917374
+        },
+        {
+          "date": "2023-03-01",
+          "etf": "NUGT",
+          "shares": 2682.4529238130576,
+          "price": 31.219308853149414,
+          "portfolio_value": 83744.32631255352
+        },
+        {
+          "date": "2023-04-03",
+          "etf": "NUGT",
+          "shares": 2682.4529238130576,
+          "price": 42.06507873535156,
+          "portfolio_value": 112837.59344407027
+        },
+        {
+          "date": "2023-05-01",
+          "etf": "NUGT",
+          "shares": 2682.4529238130576,
+          "price": 42.54737091064453,
+          "portfolio_value": 114131.31949981707
+        },
+        {
+          "date": "2023-06-01",
+          "etf": "SOXL",
+          "shares": 4751.51597694594,
+          "price": 21.716585159301758,
+          "portfolio_value": 103186.70134912938
+        },
+        {
+          "date": "2023-07-03",
+          "etf": "SOXL",
+          "shares": 4751.51597694594,
+          "price": 25.018518447875977,
+          "portfolio_value": 118875.89012459943
+        },
+        {
+          "date": "2023-08-01",
+          "etf": "SOXL",
+          "shares": 4751.51597694594,
+          "price": 28.002290725708008,
+          "portfolio_value": 133053.33177428672
+        },
+        {
+          "date": "2023-09-01",
+          "etf": "DRV",
+          "shares": 2507.4447734434398,
+          "price": 44.63043212890625,
+          "portfolio_value": 111908.34377814815
+        },
+        {
+          "date": "2023-10-02",
+          "etf": "DRV",
+          "shares": 2507.4447734434398,
+          "price": 58.808204650878906,
+          "portfolio_value": 147458.3253874385
+        },
+        {
+          "date": "2023-11-01",
+          "etf": "DRV",
+          "shares": 2507.4447734434398,
+          "price": 59.16791915893555,
+          "portfolio_value": 148360.2896505969
+        },
+        {
+          "date": "2023-12-01",
+          "etf": "DRV",
+          "shares": 2507.4447734434398,
+          "price": 38.913394927978516,
+          "portfolio_value": 97573.18872910019
+        },
+        {
+          "date": "2024-01-02",
+          "etf": "DRN",
+          "shares": 7475.634732978863,
+          "price": 10.473213195800781,
+          "portfolio_value": 78293.91633242088
+        },
+        {
+          "date": "2024-02-01",
+          "etf": "FAS",
+          "shares": 776.1328579204637,
+          "price": 87.75186157226562,
+          "portfolio_value": 68107.10310992344
+        },
+        {
+          "date": "2024-03-01",
+          "etf": "FAS",
+          "shares": 776.1328579204637,
+          "price": 96.90619659423828,
+          "portfolio_value": 75212.08331288847
+        },
+        {
+          "date": "2024-04-01",
+          "etf": "FAS",
+          "shares": 776.1328579204637,
+          "price": 108.62318420410156,
+          "portfolio_value": 84306.02239275031
+        },
+        {
+          "date": "2024-05-01",
+          "etf": "FAS",
+          "shares": 776.1328579204637,
+          "price": 95.90777587890625,
+          "portfolio_value": 74437.17618969083
+        },
+        {
+          "date": "2024-06-03",
+          "etf": "SOXL",
+          "shares": 1649.196454972312,
+          "price": 47.917110443115234,
+          "portfolio_value": 79024.7286753024
+        },
+        {
+          "date": "2024-07-01",
+          "etf": "SOXL",
+          "shares": 1649.196454972312,
+          "price": 54.74663162231445,
+          "portfolio_value": 90287.95079319607
+        },
+        {
+          "date": "2024-08-01",
+          "etf": "LABU",
+          "shares": 429.27244263430265,
+          "price": 132.8416290283203,
+          "portfolio_value": 57025.25057650694
+        },
+        {
+          "date": "2024-09-03",
+          "etf": "FAS",
+          "shares": 426.8253123475532,
+          "price": 129.646240234375,
+          "portfolio_value": 55336.29698272303
+        },
+        {
+          "date": "2024-10-01",
+          "etf": "UPRO",
+          "shares": 649.9494423645049,
+          "price": 82.99063110351562,
+          "portfolio_value": 53939.71440720832
+        },
+        {
+          "date": "2024-11-01",
+          "etf": "FAS",
+          "shares": 391.2518476564481,
+          "price": 137.49647521972656,
+          "portfolio_value": 53795.749975967046
+        },
+        {
+          "date": "2024-12-02",
+          "etf": "FAS",
+          "shares": 391.2518476564481,
+          "price": 175.0009307861328,
+          "portfolio_value": 68469.43751167266
+        },
+        {
+          "date": "2025-01-02",
+          "etf": "SQQQ",
+          "shares": 1931.8155152247973,
+          "price": 30.037988662719727,
+          "portfolio_value": 58027.852544788526
+        },
+        {
+          "date": "2025-02-03",
+          "etf": "SQQQ",
+          "shares": 1931.8155152247973,
+          "price": 28.48529052734375,
+          "portfolio_value": 55028.326196408605
+        },
+        {
+          "date": "2025-03-03",
+          "etf": "SQQQ",
+          "shares": 1931.8155152247973,
+          "price": 32.041160583496094,
+          "portfolio_value": 61897.61114100697
+        },
+        {
+          "date": "2025-04-01",
+          "etf": "SQQQ",
+          "shares": 1931.8155152247973,
+          "price": 36.4080924987793,
+          "portfolio_value": 70333.7179688814
+        },
+        {
+          "date": "2025-05-01",
+          "etf": "SQQQ",
+          "shares": 1931.8155152247973,
+          "price": 29.182878494262695,
+          "portfolio_value": 56375.93745413674
+        },
+        {
+          "date": "2025-06-02",
+          "etf": "TECL",
+          "shares": 592.9665890341828,
+          "price": 73.36289978027344,
+          "portfolio_value": 43501.74844436534
+        },
+        {
+          "date": "2025-07-01",
+          "etf": "SOXL",
+          "shares": 2185.0575084395377,
+          "price": 24.702821731567383,
+          "portfolio_value": 53977.08610420469
+        },
+        {
+          "date": "2025-08-01",
+          "etf": "SOXL",
+          "shares": 2185.0575084395377,
+          "price": 24.07300567626953,
+          "portfolio_value": 52600.90180364035
+        },
+        {
+          "date": "2025-09-02",
+          "etf": "SOXL",
+          "shares": 2185.0575084395377,
+          "price": 25.242666244506836,
+          "portfolio_value": 55156.67741059293
+        },
+        {
+          "date": "2025-10-01",
+          "etf": "NUGT",
+          "shares": 510.5372890708602,
+          "price": 157.60000610351562,
+          "portfolio_value": 80460.67987363989
+        }
+      ]
+    },
+    "lightgbm": {
+      "total_return": 1.794558508742508,
+      "final_value": 27945.58508742508,
+      "num_trades": 28,
+      "total_transaction_costs": 280.0,
+      "trades": [
+        {
+          "date": "2020-05-01",
+          "from_etf": "UPRO",
+          "to_etf": "SOXL",
+          "from_price": 16.889368057250977,
+          "to_price": 7.178365230560303,
+          "shares_sold": 861.3017542469082,
+          "shares_bought": 2026.4840069577397,
+          "confidence": 0.8369943939637206,
+          "monthly_trend": 0.39906841057777775,
+          "momentum_10d": -0.13513922340801765,
+          "relative_strength": 0.3515224742729992,
+          "portfolio_value": 14546.842335831961
+        },
+        {
+          "date": "2020-07-01",
+          "from_etf": "SOXL",
+          "to_etf": "TQQQ",
+          "from_price": 11.657981872558594,
+          "to_price": 24.22824478149414,
+          "shares_sold": 2024.4575229507818,
+          "shares_bought": 974.1146879262141,
+          "confidence": 0.42693149590495894,
+          "monthly_trend": 0.18347775508715292,
+          "momentum_10d": 0.08368144866482563,
+          "relative_strength": 0.21738660930045825,
+          "portfolio_value": 23601.08910432509
+        },
+        {
+          "date": "2020-12-01",
+          "from_etf": "TQQQ",
+          "to_etf": "SOXL",
+          "from_price": 39.34154510498047,
+          "to_price": 27.636140823364258,
+          "shares_sold": 973.1405732382879,
+          "shares_bought": 1385.3183771293318,
+          "confidence": 0.5231543510521983,
+          "monthly_trend": 0.717252253602938,
+          "momentum_10d": 0.1675177577672302,
+          "relative_strength": 0.6477689123399016,
+          "portfolio_value": 38284.85375554065
+        },
+        {
+          "date": "2021-01-04",
+          "from_etf": "SOXL",
+          "to_etf": "TNA",
+          "from_price": 29.74245262145996,
+          "to_price": 61.24151611328125,
+          "shares_sold": 1383.9330587522027,
+          "shares_bought": 672.118622195295,
+          "confidence": 0.6486580910085282,
+          "monthly_trend": 0.1846410807663743,
+          "momentum_10d": -0.04649516907237017,
+          "relative_strength": 0.19044523679034908,
+          "portfolio_value": 41161.56343120955
+        },
+        {
+          "date": "2021-04-01",
+          "from_etf": "TNA",
+          "to_etf": "SOXL",
+          "from_price": 89.66096496582031,
+          "to_price": 41.14609146118164,
+          "shares_sold": 671.4465035730997,
+          "shares_bought": 1463.141195077714,
+          "confidence": 0.5272247528007871,
+          "monthly_trend": 0.2118921186683862,
+          "momentum_10d": 0.25862778754721516,
+          "relative_strength": 0.2244735745942813,
+          "portfolio_value": 60202.54143329023
+        },
+        {
+          "date": "2021-05-03",
+          "from_etf": "SOXL",
+          "to_etf": "TMF",
+          "from_price": 34.54874801635742,
+          "to_price": 213.04771423339844,
+          "shares_sold": 1461.678053882636,
+          "shares_bought": 237.03209840265163,
+          "confidence": 0.4597934400137074,
+          "monthly_trend": 0.024814941577167238,
+          "momentum_10d": -0.0033868570332191705,
+          "relative_strength": 0.02775987866958038,
+          "portfolio_value": 50499.1467646309
+        },
+        {
+          "date": "2021-06-01",
+          "from_etf": "TMF",
+          "to_etf": "DRN",
+          "from_price": 211.96168518066406,
+          "to_price": 18.39710235595703,
+          "shares_sold": 236.79506630424893,
+          "shares_bought": 2728.2275395974816,
+          "confidence": 0.5034271852181351,
+          "monthly_trend": 0.06676785723370626,
+          "momentum_10d": 0.13938399377988175,
+          "relative_strength": 0.07195366420909353,
+          "portfolio_value": 50191.48129631569
+        },
+        {
+          "date": "2021-07-01",
+          "from_etf": "DRN",
+          "to_etf": "TQQQ",
+          "from_price": 19.031797409057617,
+          "to_price": 58.7188720703125,
+          "shares_sold": 2725.4993120578843,
+          "shares_bought": 883.3812523424975,
+          "confidence": 0.4076610064244324,
+          "monthly_trend": 0.2001564675691958,
+          "momentum_10d": 0.08373860530118615,
+          "relative_strength": 0.19947052575654575,
+          "portfolio_value": 51871.15074561156
+        },
+        {
+          "date": "2021-09-01",
+          "from_etf": "TQQQ",
+          "to_etf": "TECL",
+          "from_price": 72.01398468017578,
+          "to_price": 67.24390411376953,
+          "shares_sold": 882.4978710901551,
+          "shares_bought": 945.0996191632571,
+          "confidence": 0.7185264987246603,
+          "monthly_trend": 0.09587080506246015,
+          "momentum_10d": 0.1328592753039297,
+          "relative_strength": 0.09953937189544979,
+          "portfolio_value": 63552.188168974164
+        },
+        {
+          "date": "2021-12-01",
+          "from_etf": "TECL",
+          "to_etf": "LABD",
+          "from_price": 75.49348449707031,
+          "to_price": 252.32144165039062,
+          "shares_sold": 944.1545195440938,
+          "shares_bought": 282.48695044633183,
+          "confidence": 0.5552162775814017,
+          "monthly_trend": 0.4899256512040717,
+          "momentum_10d": 0.34385463476040856,
+          "relative_strength": 0.49189731561952077,
+          "portfolio_value": 71277.51458404091
+        },
+        {
+          "date": "2022-01-03",
+          "from_etf": "LABD",
+          "to_etf": "SOXL",
+          "from_price": 209.6692657470703,
+          "to_price": 69.9682846069336,
+          "shares_sold": 282.20446349588553,
+          "shares_bought": 845.6631884593143,
+          "confidence": 0.423786079445574,
+          "monthly_trend": 0.14019831572744046,
+          "momentum_10d": 0.2231604810759149,
+          "relative_strength": 0.14718906212429103,
+          "portfolio_value": 59169.60265172822
+        },
+        {
+          "date": "2022-02-01",
+          "from_etf": "SOXL",
+          "to_etf": "TMV",
+          "from_price": 44.55261993408203,
+          "to_price": 13.763209342956543,
+          "shares_sold": 844.817525270855,
+          "shares_bought": 2734.7425429016075,
+          "confidence": 0.4099282104943422,
+          "monthly_trend": 0.12210800103224373,
+          "momentum_10d": -0.04336257292885237,
+          "relative_strength": 0.12417565173426659,
+          "portfolio_value": 37638.83411704414
+        },
+        {
+          "date": "2022-04-01",
+          "from_etf": "TMV",
+          "to_etf": "NUGT",
+          "from_price": 16.04469108581543,
+          "to_price": 71.67303466796875,
+          "shares_sold": 2732.007800358706,
+          "shares_bought": 611.585952846272,
+          "confidence": 0.38114808343764334,
+          "monthly_trend": 0.1934404228955977,
+          "momentum_10d": 0.11813837056482712,
+          "relative_strength": 0.2135153949566866,
+          "portfolio_value": 43834.22120079355
+        },
+        {
+          "date": "2022-05-02",
+          "from_etf": "NUGT",
+          "to_etf": "LABD",
+          "from_price": 54.251983642578125,
+          "to_price": 452.02349853515625,
+          "shares_sold": 610.9743668934257,
+          "shares_bought": 73.32931023752667,
+          "confidence": 0.434259806307911,
+          "monthly_trend": 0.4350059383774778,
+          "momentum_10d": 0.21947674466471412,
+          "relative_strength": 0.4343645418871243,
+          "portfolio_value": 33146.571358736655
+        },
+        {
+          "date": "2022-07-01",
+          "from_etf": "LABD",
+          "to_etf": "LABU",
+          "from_price": 317.0630187988281,
+          "to_price": 145.5120391845703,
+          "shares_sold": 73.25598092728913,
+          "shares_bought": 159.62089864203188,
+          "confidence": 0.5958368464738992,
+          "monthly_trend": 0.3424407654308457,
+          "momentum_10d": 0.6524665413836752,
+          "relative_strength": 0.35334198644256076,
+          "portfolio_value": 23226.76245787567
+        },
+        {
+          "date": "2022-10-03",
+          "from_etf": "LABU",
+          "to_etf": "SOXS",
+          "from_price": 141.56326293945312,
+          "to_price": 555.8850708007812,
+          "shares_sold": 159.46127774338984,
+          "shares_bought": 40.60885959273892,
+          "confidence": 0.6279138920484277,
+          "monthly_trend": 0.2320236675264451,
+          "momentum_10d": 0.20572962519417848,
+          "relative_strength": 0.2509942247838639,
+          "portfolio_value": 22573.858789848662
+        },
+        {
+          "date": "2022-12-01",
+          "from_etf": "SOXS",
+          "to_etf": "SOXL",
+          "from_price": 272.2249755859375,
+          "to_price": 13.162999153137207,
+          "shares_sold": 40.568250733146186,
+          "shares_bought": 838.9950448916355,
+          "confidence": 0.6327600983376218,
+          "monthly_trend": 0.48351670202481944,
+          "momentum_10d": 0.1129432501875749,
+          "relative_strength": 0.4905200482981318,
+          "portfolio_value": 11043.69106539491
+        },
+        {
+          "date": "2023-01-03",
+          "from_etf": "SOXL",
+          "to_etf": "DUST",
+          "from_price": 9.158903121948242,
+          "to_price": 121.88945770263672,
+          "shares_sold": 838.1560498467438,
+          "shares_bought": 62.97993449399922,
+          "confidence": 0.5034059432143376,
+          "monthly_trend": -0.028429408757668972,
+          "momentum_10d": -0.10828455110301427,
+          "relative_strength": -0.023530173197423444,
+          "portfolio_value": 7676.590061621148
+        },
+        {
+          "date": "2023-02-01",
+          "from_etf": "DUST",
+          "to_etf": "NUGT",
+          "from_price": 98.52806091308594,
+          "to_price": 42.7880744934082,
+          "shares_sold": 62.91695455950522,
+          "shares_bought": 144.8788150600187,
+          "confidence": 0.4857453197470059,
+          "monthly_trend": 0.2886568789758426,
+          "momentum_10d": 0.09570780648452981,
+          "relative_strength": 0.2573366613837816,
+          "portfolio_value": 6199.0855313047905
+        },
+        {
+          "date": "2023-07-03",
+          "from_etf": "NUGT",
+          "to_etf": "SOXL",
+          "from_price": 34.935829162597656,
+          "to_price": 25.018518447875977,
+          "shares_sold": 144.73393624495867,
+          "shares_bought": 202.10629503176898,
+          "confidence": 0.45133209799459806,
+          "monthly_trend": 0.15204661618541437,
+          "momentum_10d": 0.011464162559002844,
+          "relative_strength": 0.14527472396842722,
+          "portfolio_value": 5056.400070684177
+        },
+        {
+          "date": "2024-07-01",
+          "from_etf": "SOXL",
+          "to_etf": "UPRO",
+          "from_price": 54.74663162231445,
+          "to_price": 76.33641815185547,
+          "shares_sold": 201.90418873673718,
+          "shares_bought": 144.80079772388075,
+          "confidence": 0.441866449039839,
+          "monthly_trend": 0.13358454696291888,
+          "momentum_10d": 0.018706380354956087,
+          "relative_strength": 0.13098188110057726,
+          "portfolio_value": 11053.574243772402
+        },
+        {
+          "date": "2024-09-03",
+          "from_etf": "UPRO",
+          "to_etf": "TECL",
+          "from_price": 76.1981201171875,
+          "to_price": 71.28453826904297,
+          "shares_sold": 144.6559969261569,
+          "shares_bought": 154.62701024799372,
+          "confidence": 0.6176521836011765,
+          "monthly_trend": 0.043054517346793775,
+          "momentum_10d": -0.19930759363206896,
+          "relative_strength": 0.054530589089027824,
+          "portfolio_value": 11022.515029450808
+        },
+        {
+          "date": "2024-10-01",
+          "from_etf": "TECL",
+          "to_etf": "UPRO",
+          "from_price": 80.76793670654297,
+          "to_price": 82.99063110351562,
+          "shares_sold": 154.47238323774573,
+          "shares_bought": 150.3352306924025,
+          "confidence": 0.525406216668641,
+          "monthly_trend": 0.02209824209687783,
+          "momentum_10d": 0.033667181294960935,
+          "relative_strength": 0.032051274860007625,
+          "portfolio_value": 12476.415672255096
+        },
+        {
+          "date": "2025-01-02",
+          "from_etf": "UPRO",
+          "to_etf": "ERY",
+          "from_price": 87.29435729980469,
+          "to_price": 23.929651260375977,
+          "shares_sold": 150.18489546171008,
+          "shares_bought": 547.868156657054,
+          "confidence": 0.41390831196884587,
+          "monthly_trend": 0.1724626302931831,
+          "momentum_10d": -0.01727588345291764,
+          "relative_strength": 0.17705350943317344,
+          "portfolio_value": 13110.293925468335
+        },
+        {
+          "date": "2025-02-03",
+          "from_etf": "ERY",
+          "to_etf": "TECS",
+          "from_price": 23.210695266723633,
+          "to_price": 48.56048583984375,
+          "shares_sold": 547.3202885003969,
+          "shares_bought": 261.6053816177975,
+          "confidence": 0.4082312251013451,
+          "monthly_trend": 0.04322291585535187,
+          "momentum_10d": 0.06809891609671315,
+          "relative_strength": 0.04532288362722357,
+          "portfolio_value": 12703.684429677976
+        },
+        {
+          "date": "2025-05-01",
+          "from_etf": "TECS",
+          "to_etf": "TECL",
+          "from_price": 45.226688385009766,
+          "to_price": 57.39145278930664,
+          "shares_sold": 261.3437762361797,
+          "shares_bought": 205.94902123470388,
+          "confidence": 0.9041762808126583,
+          "monthly_trend": -0.03699369810819064,
+          "momentum_10d": 0.30276260756792217,
+          "relative_strength": 0.053588855395760845,
+          "portfolio_value": 11819.713529195418
+        },
+        {
+          "date": "2025-07-01",
+          "from_etf": "TECL",
+          "to_etf": "SOXL",
+          "from_price": 91.12000274658203,
+          "to_price": 24.702821731567383,
+          "shares_sold": 205.7430722134692,
+          "shares_bought": 758.9136783197775,
+          "confidence": 0.8382497545307493,
+          "monthly_trend": 0.5329690191284489,
+          "momentum_10d": 0.1318770191890637,
+          "relative_strength": 0.515850230156957,
+          "portfolio_value": 18747.309305181538
+        },
+        {
+          "date": "2025-10-01",
+          "from_etf": "SOXL",
+          "to_etf": "NUGT",
+          "from_price": 36.86000061035156,
+          "to_price": 157.60000610351562,
+          "shares_sold": 758.1547646414577,
+          "shares_bought": 177.31969546415957,
+          "confidence": 0.8139645341734093,
+          "monthly_trend": 0.40138722556041206,
+          "momentum_10d": 0.2555768827151357,
+          "relative_strength": 0.38187560011142835,
+          "portfolio_value": 27945.58508742508
+        }
+      ],
+      "portfolio_history": [
+        {
+          "date": "2020-04-01",
+          "etf": "UPRO",
+          "shares": 862.1639181650733,
+          "price": 11.598722457885742,
+          "portfolio_value": 10000.0
+        },
+        {
+          "date": "2020-05-01",
+          "etf": "SOXL",
+          "shares": 2026.4840069577397,
+          "price": 7.178365230560303,
+          "portfolio_value": 14546.842335831961
+        },
+        {
+          "date": "2020-06-01",
+          "etf": "SOXL",
+          "shares": 2026.4840069577397,
+          "price": 9.833908081054688,
+          "portfolio_value": 19928.2574521498
+        },
+        {
+          "date": "2020-07-01",
+          "etf": "TQQQ",
+          "shares": 974.1146879262141,
+          "price": 24.22824478149414,
+          "portfolio_value": 23601.08910432509
+        },
+        {
+          "date": "2020-08-03",
+          "etf": "TQQQ",
+          "shares": 974.1146879262141,
+          "price": 29.66366958618164,
+          "portfolio_value": 28895.816241689656
+        },
+        {
+          "date": "2020-09-01",
+          "etf": "TQQQ",
+          "shares": 974.1146879262141,
+          "price": 40.661476135253906,
+          "portfolio_value": 39608.94113611206
+        },
+        {
+          "date": "2020-10-01",
+          "etf": "TQQQ",
+          "shares": 974.1146879262141,
+          "price": 32.82575225830078,
+          "portfolio_value": 31976.04741703788
+        },
+        {
+          "date": "2020-11-02",
+          "etf": "TQQQ",
+          "shares": 974.1146879262141,
+          "price": 28.144908905029297,
+          "portfolio_value": 27416.369154734337
+        },
+        {
+          "date": "2020-12-01",
+          "etf": "SOXL",
+          "shares": 1385.3183771293318,
+          "price": 27.636140823364258,
+          "portfolio_value": 38284.85375554065
+        },
+        {
+          "date": "2021-01-04",
+          "etf": "TNA",
+          "shares": 672.118622195295,
+          "price": 61.24151611328125,
+          "portfolio_value": 41161.56343120955
+        },
+        {
+          "date": "2021-02-01",
+          "etf": "TNA",
+          "shares": 672.118622195295,
+          "price": 77.87893676757812,
+          "portfolio_value": 52343.88367825911
+        },
+        {
+          "date": "2021-03-01",
+          "etf": "TNA",
+          "shares": 672.118622195295,
+          "price": 94.59342956542969,
+          "portfolio_value": 63578.005548244284
+        },
+        {
+          "date": "2021-04-01",
+          "etf": "SOXL",
+          "shares": 1463.141195077714,
+          "price": 41.14609146118164,
+          "portfolio_value": 60202.54143329023
+        },
+        {
+          "date": "2021-05-03",
+          "etf": "TMF",
+          "shares": 237.03209840265163,
+          "price": 213.04771423339844,
+          "portfolio_value": 50499.1467646309
+        },
+        {
+          "date": "2021-06-01",
+          "etf": "DRN",
+          "shares": 2728.2275395974816,
+          "price": 18.39710235595703,
+          "portfolio_value": 50191.48129631569
+        },
+        {
+          "date": "2021-07-01",
+          "etf": "TQQQ",
+          "shares": 883.3812523424975,
+          "price": 58.7188720703125,
+          "portfolio_value": 51871.15074561156
+        },
+        {
+          "date": "2021-08-02",
+          "etf": "TQQQ",
+          "shares": 883.3812523424975,
+          "price": 63.57698440551758,
+          "portfolio_value": 56162.71610430555
+        },
+        {
+          "date": "2021-09-01",
+          "etf": "TECL",
+          "shares": 945.0996191632571,
+          "price": 67.24390411376953,
+          "portfolio_value": 63552.188168974164
+        },
+        {
+          "date": "2021-10-01",
+          "etf": "TECL",
+          "shares": 945.0996191632571,
+          "price": 58.06132507324219,
+          "portfolio_value": 54873.73621483526
+        },
+        {
+          "date": "2021-11-01",
+          "etf": "TECL",
+          "shares": 945.0996191632571,
+          "price": 69.75804901123047,
+          "portfolio_value": 65928.30555408575
+        },
+        {
+          "date": "2021-12-01",
+          "etf": "LABD",
+          "shares": 282.48695044633183,
+          "price": 252.32144165039062,
+          "portfolio_value": 71277.51458404091
+        },
+        {
+          "date": "2022-01-03",
+          "etf": "SOXL",
+          "shares": 845.6631884593143,
+          "price": 69.9682846069336,
+          "portfolio_value": 59169.60265172822
+        },
+        {
+          "date": "2022-02-01",
+          "etf": "TMV",
+          "shares": 2734.7425429016075,
+          "price": 13.763209342956543,
+          "portfolio_value": 37638.83411704414
+        },
+        {
+          "date": "2022-03-01",
+          "etf": "TMV",
+          "shares": 2734.7425429016075,
+          "price": 13.598799705505371,
+          "portfolio_value": 37189.21608704339
+        },
+        {
+          "date": "2022-04-01",
+          "etf": "NUGT",
+          "shares": 611.585952846272,
+          "price": 71.67303466796875,
+          "portfolio_value": 43834.22120079355
+        },
+        {
+          "date": "2022-05-02",
+          "etf": "LABD",
+          "shares": 73.32931023752667,
+          "price": 452.02349853515625,
+          "portfolio_value": 33146.571358736655
+        },
+        {
+          "date": "2022-06-01",
+          "etf": "LABD",
+          "shares": 73.32931023752667,
+          "price": 536.340087890625,
+          "portfolio_value": 39329.448697753964
+        },
+        {
+          "date": "2022-07-01",
+          "etf": "LABU",
+          "shares": 159.62089864203188,
+          "price": 145.5120391845703,
+          "portfolio_value": 23226.76245787567
+        },
+        {
+          "date": "2022-08-01",
+          "etf": "LABU",
+          "shares": 159.62089864203188,
+          "price": 155.38392639160156,
+          "portfolio_value": 24802.521965154774
+        },
+        {
+          "date": "2022-09-01",
+          "etf": "LABU",
+          "shares": 159.62089864203188,
+          "price": 182.43299865722656,
+          "portfolio_value": 29120.119187627097
+        },
+        {
+          "date": "2022-10-03",
+          "etf": "SOXS",
+          "shares": 40.60885959273892,
+          "price": 555.8850708007812,
+          "portfolio_value": 22573.858789848662
+        },
+        {
+          "date": "2022-11-01",
+          "etf": "SOXS",
+          "shares": 40.60885959273892,
+          "price": 514.5770263671875,
+          "portfolio_value": 20896.38621339423
+        },
+        {
+          "date": "2022-12-01",
+          "etf": "SOXL",
+          "shares": 838.9950448916355,
+          "price": 13.162999153137207,
+          "portfolio_value": 11043.69106539491
+        },
+        {
+          "date": "2023-01-03",
+          "etf": "DUST",
+          "shares": 62.97993449399922,
+          "price": 121.88945770263672,
+          "portfolio_value": 7676.590061621148
+        },
+        {
+          "date": "2023-02-01",
+          "etf": "NUGT",
+          "shares": 144.8788150600187,
+          "price": 42.7880744934082,
+          "portfolio_value": 6199.0855313047905
+        },
+        {
+          "date": "2023-03-01",
+          "etf": "NUGT",
+          "shares": 144.8788150600187,
+          "price": 31.219308853149414,
+          "portfolio_value": 4523.016473637038
+        },
+        {
+          "date": "2023-04-03",
+          "etf": "NUGT",
+          "shares": 144.8788150600187,
+          "price": 42.06507873535156,
+          "portfolio_value": 6094.338762584124
+        },
+        {
+          "date": "2023-05-01",
+          "etf": "NUGT",
+          "shares": 144.8788150600187,
+          "price": 42.54737091064453,
+          "portfolio_value": 6164.2126814532885
+        },
+        {
+          "date": "2023-06-01",
+          "etf": "NUGT",
+          "shares": 144.8788150600187,
+          "price": 38.50579833984375,
+          "portfolio_value": 5578.674436416598
+        },
+        {
+          "date": "2023-07-03",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 25.018518447875977,
+          "portfolio_value": 5056.400070684177
+        },
+        {
+          "date": "2023-08-01",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 28.002290725708008,
+          "portfolio_value": 5659.439230975311
+        },
+        {
+          "date": "2023-09-01",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 23.57571029663086,
+          "portfolio_value": 4764.79946079439
+        },
+        {
+          "date": "2023-10-02",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 18.75814437866211,
+          "portfolio_value": 3791.139062042403
+        },
+        {
+          "date": "2023-11-01",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 15.680941581726074,
+          "portfolio_value": 3169.217005692264
+        },
+        {
+          "date": "2023-12-01",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 22.680837631225586,
+          "portfolio_value": 4583.940061864127
+        },
+        {
+          "date": "2024-01-02",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 27.62894630432129,
+          "portfolio_value": 5583.983973198062
+        },
+        {
+          "date": "2024-02-01",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 31.974292755126953,
+          "portfolio_value": 6462.205844999841
+        },
+        {
+          "date": "2024-03-01",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 47.62149429321289,
+          "portfolio_value": 9624.603775477788
+        },
+        {
+          "date": "2024-04-01",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 47.32542037963867,
+          "portfolio_value": 9564.765373749746
+        },
+        {
+          "date": "2024-05-01",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 33.89403533935547,
+          "portfolio_value": 6850.1979061129805
+        },
+        {
+          "date": "2024-06-03",
+          "etf": "SOXL",
+          "shares": 202.10629503176898,
+          "price": 47.917110443115234,
+          "portfolio_value": 9684.349660286107
+        },
+        {
+          "date": "2024-07-01",
+          "etf": "UPRO",
+          "shares": 144.80079772388075,
+          "price": 76.33641815185547,
+          "portfolio_value": 11053.574243772402
+        },
+        {
+          "date": "2024-08-01",
+          "etf": "UPRO",
+          "shares": 144.80079772388075,
+          "price": 74.09413146972656,
+          "portfolio_value": 10728.889343474502
+        },
+        {
+          "date": "2024-09-03",
+          "etf": "TECL",
+          "shares": 154.62701024799372,
+          "price": 71.28453826904297,
+          "portfolio_value": 11022.515029450808
+        },
+        {
+          "date": "2024-10-01",
+          "etf": "UPRO",
+          "shares": 150.3352306924025,
+          "price": 82.99063110351562,
+          "portfolio_value": 12476.415672255096
+        },
+        {
+          "date": "2024-11-01",
+          "etf": "UPRO",
+          "shares": 150.3352306924025,
+          "price": 82.85198211669922,
+          "portfolio_value": 12455.571844836782
+        },
+        {
+          "date": "2024-12-02",
+          "etf": "UPRO",
+          "shares": 150.3352306924025,
+          "price": 96.67715454101562,
+          "portfolio_value": 14533.982330608631
+        },
+        {
+          "date": "2025-01-02",
+          "etf": "ERY",
+          "shares": 547.868156657054,
+          "price": 23.929651260375977,
+          "portfolio_value": 13110.293925468335
+        },
+        {
+          "date": "2025-02-03",
+          "etf": "TECS",
+          "shares": 261.6053816177975,
+          "price": 48.56048583984375,
+          "portfolio_value": 12703.684429677976
+        },
+        {
+          "date": "2025-03-03",
+          "etf": "TECS",
+          "shares": 261.6053816177975,
+          "price": 54.03965377807617,
+          "portfolio_value": 14137.064249107269
+        },
+        {
+          "date": "2025-04-01",
+          "etf": "TECS",
+          "shares": 261.6053816177975,
+          "price": 60.89988327026367,
+          "portfolio_value": 15931.73720339665
+        },
+        {
+          "date": "2025-05-01",
+          "etf": "TECL",
+          "shares": 205.94902123470388,
+          "price": 57.39145278930664,
+          "portfolio_value": 11819.713529195418
+        },
+        {
+          "date": "2025-06-02",
+          "etf": "TECL",
+          "shares": 205.94902123470388,
+          "price": 73.36289978027344,
+          "portfolio_value": 15109.017404686987
+        },
+        {
+          "date": "2025-07-01",
+          "etf": "SOXL",
+          "shares": 758.9136783197775,
+          "price": 24.702821731567383,
+          "portfolio_value": 18747.309305181538
+        },
+        {
+          "date": "2025-08-01",
+          "etf": "SOXL",
+          "shares": 758.9136783197775,
+          "price": 24.07300567626953,
+          "portfolio_value": 18269.333285990593
+        },
+        {
+          "date": "2025-09-02",
+          "etf": "SOXL",
+          "shares": 758.9136783197775,
+          "price": 25.242666244506836,
+          "portfolio_value": 19157.004690217167
+        },
+        {
+          "date": "2025-10-01",
+          "etf": "NUGT",
+          "shares": 177.31969546415957,
+          "price": 157.60000610351562,
+          "portfolio_value": 27945.58508742508
+        }
+      ]
+    },
+    "random_forest": {
+      "total_return": -0.4142732573230078,
+      "final_value": 5857.267426769922,
+      "num_trades": 18,
+      "total_transaction_costs": 180.00000000000003,
+      "trades": [
+        {
+          "date": "2020-05-01",
+          "from_etf": "UPRO",
+          "to_etf": "LABU",
+          "from_price": 16.889368057250977,
+          "to_price": 669.1184692382812,
+          "shares_sold": 861.3017542469082,
+          "shares_bought": 21.74030908516389,
+          "confidence": 0.6899539515293647,
+          "monthly_trend": 0.7836841964824959,
+          "momentum_10d": -0.04184330658210034,
+          "relative_strength": 0.7361382601777173,
+          "portfolio_value": 14546.842335831961
+        },
+        {
+          "date": "2020-12-01",
+          "from_etf": "LABU",
+          "to_etf": "TNA",
+          "from_price": 1697.377197265625,
+          "to_price": 51.49398422241211,
+          "shares_sold": 21.718568776078726,
+          "shares_bought": 715.9011669894513,
+          "confidence": 0.4842756781064124,
+          "monthly_trend": 0.6607642744047386,
+          "momentum_10d": 0.0815295874258728,
+          "relative_strength": 0.5912809331417023,
+          "portfolio_value": 36864.603397761224
+        },
+        {
+          "date": "2021-04-01",
+          "from_etf": "TNA",
+          "to_etf": "SOXL",
+          "from_price": 89.66096496582031,
+          "to_price": 41.14609146118164,
+          "shares_sold": 715.1852658224619,
+          "shares_bought": 1558.451818527531,
+          "confidence": 0.4538159206141677,
+          "monthly_trend": 0.2118921186683862,
+          "momentum_10d": 0.25862778754721516,
+          "relative_strength": 0.2244735745942813,
+          "portfolio_value": 64124.201062978645
+        },
+        {
+          "date": "2021-10-01",
+          "from_etf": "SOXL",
+          "to_etf": "DUST",
+          "from_price": 38.87583541870117,
+          "to_price": 217.4750518798828,
+          "shares_sold": 1556.8933667090034,
+          "shares_bought": 278.3102234737097,
+          "confidence": 0.32074558814891185,
+          "monthly_trend": 0.2002952472419841,
+          "momentum_10d": 0.08063800841266944,
+          "relative_strength": 0.20613454076121412,
+          "portfolio_value": 60525.53028864679
+        },
+        {
+          "date": "2021-12-01",
+          "from_etf": "DUST",
+          "to_etf": "SRTY",
+          "from_price": 191.52784729003906,
+          "to_price": 42.935691833496094,
+          "shares_sold": 278.03191325023596,
+          "shares_bought": 1240.2467865023468,
+          "confidence": 0.429248505651853,
+          "monthly_trend": 0.28978005404883245,
+          "momentum_10d": 0.3828015551295132,
+          "relative_strength": 0.2917517184642815,
+          "portfolio_value": 53250.853822748584
+        },
+        {
+          "date": "2022-01-03",
+          "from_etf": "SRTY",
+          "to_etf": "DRN",
+          "from_price": 34.83949661254883,
+          "to_price": 27.141578674316406,
+          "shares_sold": 1239.0065397158444,
+          "shares_bought": 1590.4146424689573,
+          "confidence": 0.3266839109841111,
+          "monthly_trend": 0.23095259268127522,
+          "momentum_10d": 0.1164536984107134,
+          "relative_strength": 0.2379433390781258,
+          "portfolio_value": 43166.364143356004
+        },
+        {
+          "date": "2022-05-02",
+          "from_etf": "DRN",
+          "to_etf": "LABD",
+          "from_price": 18.808759689331055,
+          "to_price": 452.02349853515625,
+          "shares_sold": 1588.8242278264884,
+          "shares_bought": 66.11119374682502,
+          "confidence": 0.32799990156038883,
+          "monthly_trend": 0.4350059383774778,
+          "momentum_10d": 0.21947674466471412,
+          "relative_strength": 0.4343645418871243,
+          "portfolio_value": 29883.813089775394
+        },
+        {
+          "date": "2022-07-01",
+          "from_etf": "LABD",
+          "to_etf": "LABU",
+          "from_price": 317.0630187988281,
+          "to_price": 145.5120391845703,
+          "shares_sold": 66.0450825530782,
+          "shares_bought": 143.908733383466,
+          "confidence": 0.46394759802820124,
+          "monthly_trend": 0.3424407654308457,
+          "momentum_10d": 0.6524665413836752,
+          "relative_strength": 0.35334198644256076,
+          "portfolio_value": 20940.453251096787
+        },
+        {
+          "date": "2022-08-01",
+          "from_etf": "LABU",
+          "to_etf": "SOXL",
+          "from_price": 155.38392639160156,
+          "to_price": 19.446834564208984,
+          "shares_sold": 143.76482465008255,
+          "shares_bought": 1148.7084367058571,
+          "confidence": 0.5054848747370823,
+          "monthly_trend": 0.5274810472049432,
+          "momentum_10d": 0.3411528892473805,
+          "relative_strength": 0.5091422948896881,
+          "portfolio_value": 22338.74293112993
+        },
+        {
+          "date": "2022-09-01",
+          "from_etf": "SOXL",
+          "to_etf": "SRTY",
+          "from_price": 12.847933769226074,
+          "to_price": 48.422157287597656,
+          "shares_sold": 1147.5597282691513,
+          "shares_bought": 304.4839844177996,
+          "confidence": 0.35913772329503596,
+          "monthly_trend": 0.11658379094646865,
+          "momentum_10d": 0.2992834153353703,
+          "relative_strength": 0.12632761741309612,
+          "portfolio_value": 14743.771385033126
+        },
+        {
+          "date": "2022-12-01",
+          "from_etf": "SRTY",
+          "to_etf": "SOXL",
+          "from_price": 38.896217346191406,
+          "to_price": 13.162999153137207,
+          "shares_sold": 304.1795004333818,
+          "shares_bought": 898.840136922207,
+          "confidence": 0.47861765307026466,
+          "monthly_trend": 0.48351670202481944,
+          "momentum_10d": 0.1129432501875749,
+          "relative_strength": 0.4905200482981318,
+          "portfolio_value": 11831.431961112741
+        },
+        {
+          "date": "2023-01-03",
+          "from_etf": "SOXL",
+          "to_etf": "SOXS",
+          "from_price": 9.158903121948242,
+          "to_price": 363.1838684082031,
+          "shares_sold": 897.9412967852847,
+          "shares_bought": 22.64461079314623,
+          "confidence": 0.33825827054349256,
+          "monthly_trend": 0.3341313287896732,
+          "momentum_10d": 0.1390370068065756,
+          "relative_strength": 0.33903056434991874,
+          "portfolio_value": 8224.157346452997
+        },
+        {
+          "date": "2023-02-01",
+          "from_etf": "SOXS",
+          "to_etf": "NUGT",
+          "from_price": 180.3928985595703,
+          "to_price": 42.7880744934082,
+          "shares_sold": 22.621966182353084,
+          "shares_bought": 95.37335108126756,
+          "confidence": 0.38705497319640797,
+          "monthly_trend": 0.2886568789758426,
+          "momentum_10d": 0.09570780648452981,
+          "relative_strength": 0.2573366613837816,
+          "portfolio_value": 4080.84205075125
+        },
+        {
+          "date": "2023-06-01",
+          "from_etf": "NUGT",
+          "to_etf": "SOXL",
+          "from_price": 38.50579833984375,
+          "to_price": 21.716585159301758,
+          "shares_sold": 95.2779777301863,
+          "shares_bought": 168.9379140318135,
+          "confidence": 0.3284409251196957,
+          "monthly_trend": 0.5442509137067748,
+          "momentum_10d": 0.37298638824622077,
+          "relative_strength": 0.5390189618301441,
+          "portfolio_value": 3668.754596706677
+        },
+        {
+          "date": "2024-01-02",
+          "from_etf": "SOXL",
+          "to_etf": "LABU",
+          "from_price": 27.62894630432129,
+          "to_price": 124.61373138427734,
+          "shares_sold": 168.7689761177817,
+          "shares_bought": 37.418901811183524,
+          "confidence": 0.5254920949898009,
+          "monthly_trend": 0.6322417025933895,
+          "momentum_10d": 0.13798474467617705,
+          "relative_strength": 0.6118378044086941,
+          "portfolio_value": 4662.908978993472
+        },
+        {
+          "date": "2024-04-01",
+          "from_etf": "LABU",
+          "to_etf": "SOXL",
+          "from_price": 126.90733337402344,
+          "to_price": 47.32542037963867,
+          "shares_sold": 37.38148290937234,
+          "shares_bought": 100.24177863692323,
+          "confidence": 0.3450446497950566,
+          "monthly_trend": 0.1211373140004135,
+          "momentum_10d": 0.12376035878228442,
+          "relative_strength": 0.11712842828565063,
+          "portfolio_value": 4743.984313595075
+        },
+        {
+          "date": "2024-09-03",
+          "from_etf": "SOXL",
+          "to_etf": "FAS",
+          "from_price": 29.736833572387695,
+          "to_price": 129.646240234375,
+          "shares_sold": 100.1415368582863,
+          "shares_bought": 22.969368103961536,
+          "confidence": 0.37586228306742325,
+          "monthly_trend": 0.2355436849204342,
+          "momentum_10d": 0.09224889222783528,
+          "relative_strength": 0.24701975666266826,
+          "portfolio_value": 2977.892215237988
+        },
+        {
+          "date": "2025-07-01",
+          "from_etf": "FAS",
+          "to_etf": "SOXL",
+          "from_price": 171.0691680908203,
+          "to_price": 24.702821731567383,
+          "shares_sold": 22.946398735857574,
+          "shares_bought": 158.9057875686795,
+          "confidence": 0.5887198039869072,
+          "monthly_trend": 0.5329690191284489,
+          "momentum_10d": 0.1318770191890637,
+          "relative_strength": 0.515850230156957,
+          "portfolio_value": 3925.421342423406
+        }
+      ],
+      "portfolio_history": [
+        {
+          "date": "2020-04-01",
+          "etf": "UPRO",
+          "shares": 862.1639181650733,
+          "price": 11.598722457885742,
+          "portfolio_value": 10000.0
+        },
+        {
+          "date": "2020-05-01",
+          "etf": "LABU",
+          "shares": 21.74030908516389,
+          "price": 669.1184692382812,
+          "portfolio_value": 14546.842335831961
+        },
+        {
+          "date": "2020-06-01",
+          "etf": "LABU",
+          "shares": 21.74030908516389,
+          "price": 972.186279296875,
+          "portfolio_value": 21135.63020026953
+        },
+        {
+          "date": "2020-07-01",
+          "etf": "LABU",
+          "shares": 21.74030908516389,
+          "price": 1184.8272705078125,
+          "portfolio_value": 25758.51107337093
+        },
+        {
+          "date": "2020-08-03",
+          "etf": "LABU",
+          "shares": 21.74030908516389,
+          "price": 1192.52734375,
+          "portfolio_value": 25925.913045634486
+        },
+        {
+          "date": "2020-09-01",
+          "etf": "LABU",
+          "shares": 21.74030908516389,
+          "price": 1041.092041015625,
+          "portfolio_value": 22633.662757783808
+        },
+        {
+          "date": "2020-10-01",
+          "etf": "LABU",
+          "shares": 21.74030908516389,
+          "price": 1099.5340576171875,
+          "portfolio_value": 23904.21026226206
+        },
+        {
+          "date": "2020-11-02",
+          "etf": "LABU",
+          "shares": 21.74030908516389,
+          "price": 1063.7974853515625,
+          "portfolio_value": 23127.286135563074
+        },
+        {
+          "date": "2020-12-01",
+          "etf": "TNA",
+          "shares": 715.9011669894513,
+          "price": 51.49398422241211,
+          "portfolio_value": 36864.603397761224
+        },
+        {
+          "date": "2021-01-04",
+          "etf": "TNA",
+          "shares": 715.9011669894513,
+          "price": 61.24151611328125,
+          "portfolio_value": 43842.87285370134
+        },
+        {
+          "date": "2021-02-01",
+          "etf": "TNA",
+          "shares": 715.9011669894513,
+          "price": 77.87893676757812,
+          "portfolio_value": 55753.62171580687
+        },
+        {
+          "date": "2021-03-01",
+          "etf": "TNA",
+          "shares": 715.9011669894513,
+          "price": 94.59342956542969,
+          "portfolio_value": 67719.54661542558
+        },
+        {
+          "date": "2021-04-01",
+          "etf": "SOXL",
+          "shares": 1558.451818527531,
+          "price": 41.14609146118164,
+          "portfolio_value": 64124.201062978645
+        },
+        {
+          "date": "2021-05-03",
+          "etf": "SOXL",
+          "shares": 1558.451818527531,
+          "price": 34.54874801635742,
+          "portfolio_value": 53842.559173941656
+        },
+        {
+          "date": "2021-06-01",
+          "etf": "SOXL",
+          "shares": 1558.451818527531,
+          "price": 37.197383880615234,
+          "portfolio_value": 57970.33055321148
+        },
+        {
+          "date": "2021-07-01",
+          "etf": "SOXL",
+          "shares": 1558.451818527531,
+          "price": 41.30131530761719,
+          "portfolio_value": 64366.109948734964
+        },
+        {
+          "date": "2021-08-02",
+          "etf": "SOXL",
+          "shares": 1558.451818527531,
+          "price": 43.862640380859375,
+          "portfolio_value": 68357.81166696941
+        },
+        {
+          "date": "2021-09-01",
+          "etf": "SOXL",
+          "shares": 1558.451818527531,
+          "price": 44.59028625488281,
+          "portfolio_value": 69491.81270258529
+        },
+        {
+          "date": "2021-10-01",
+          "etf": "DUST",
+          "shares": 278.3102234737097,
+          "price": 217.4750518798828,
+          "portfolio_value": 60525.53028864679
+        },
+        {
+          "date": "2021-11-01",
+          "etf": "DUST",
+          "shares": 278.3102234737097,
+          "price": 182.3437957763672,
+          "portfolio_value": 50748.14255156524
+        },
+        {
+          "date": "2021-12-01",
+          "etf": "SRTY",
+          "shares": 1240.2467865023468,
+          "price": 42.935691833496094,
+          "portfolio_value": 53250.853822748584
+        },
+        {
+          "date": "2022-01-03",
+          "etf": "DRN",
+          "shares": 1590.4146424689573,
+          "price": 27.141578674316406,
+          "portfolio_value": 43166.364143356004
+        },
+        {
+          "date": "2022-02-01",
+          "etf": "DRN",
+          "shares": 1590.4146424689573,
+          "price": 20.949790954589844,
+          "portfolio_value": 33318.8542908434
+        },
+        {
+          "date": "2022-03-01",
+          "etf": "DRN",
+          "shares": 1590.4146424689573,
+          "price": 18.529701232910156,
+          "portfolio_value": 29469.908161395404
+        },
+        {
+          "date": "2022-04-01",
+          "etf": "DRN",
+          "shares": 1590.4146424689573,
+          "price": 24.518400192260742,
+          "portfolio_value": 38994.42267568518
+        },
+        {
+          "date": "2022-05-02",
+          "etf": "LABD",
+          "shares": 66.11119374682502,
+          "price": 452.02349853515625,
+          "portfolio_value": 29883.813089775394
+        },
+        {
+          "date": "2022-06-01",
+          "etf": "LABD",
+          "shares": 66.11119374682502,
+          "price": 536.340087890625,
+          "portfolio_value": 35458.08346472627
+        },
+        {
+          "date": "2022-07-01",
+          "etf": "LABU",
+          "shares": 143.908733383466,
+          "price": 145.5120391845703,
+          "portfolio_value": 20940.453251096787
+        },
+        {
+          "date": "2022-08-01",
+          "etf": "SOXL",
+          "shares": 1148.7084367058571,
+          "price": 19.446834564208984,
+          "portfolio_value": 22338.74293112993
+        },
+        {
+          "date": "2022-09-01",
+          "etf": "SRTY",
+          "shares": 304.4839844177996,
+          "price": 48.422157287597656,
+          "portfolio_value": 14743.771385033126
+        },
+        {
+          "date": "2022-10-03",
+          "etf": "SRTY",
+          "shares": 304.4839844177996,
+          "price": 56.48391342163086,
+          "portfolio_value": 17198.447014128193
+        },
+        {
+          "date": "2022-11-01",
+          "etf": "SRTY",
+          "shares": 304.4839844177996,
+          "price": 42.677310943603516,
+          "portfolio_value": 12994.55768034576
+        },
+        {
+          "date": "2022-12-01",
+          "etf": "SOXL",
+          "shares": 898.840136922207,
+          "price": 13.162999153137207,
+          "portfolio_value": 11831.431961112741
+        },
+        {
+          "date": "2023-01-03",
+          "etf": "SOXS",
+          "shares": 22.64461079314623,
+          "price": 363.1838684082031,
+          "portfolio_value": 8224.157346452997
+        },
+        {
+          "date": "2023-02-01",
+          "etf": "NUGT",
+          "shares": 95.37335108126756,
+          "price": 42.7880744934082,
+          "portfolio_value": 4080.84205075125
+        },
+        {
+          "date": "2023-03-01",
+          "etf": "NUGT",
+          "shares": 95.37335108126756,
+          "price": 31.219308853149414,
+          "portfolio_value": 2977.4901037659433
+        },
+        {
+          "date": "2023-04-03",
+          "etf": "NUGT",
+          "shares": 95.37335108126756,
+          "price": 42.06507873535156,
+          "portfolio_value": 4011.887522487847
+        },
+        {
+          "date": "2023-05-01",
+          "etf": "NUGT",
+          "shares": 95.37335108126756,
+          "price": 42.54737091064453,
+          "portfolio_value": 4057.8853434458115
+        },
+        {
+          "date": "2023-06-01",
+          "etf": "SOXL",
+          "shares": 168.9379140318135,
+          "price": 21.716585159301758,
+          "portfolio_value": 3668.754596706677
+        },
+        {
+          "date": "2023-07-03",
+          "etf": "SOXL",
+          "shares": 168.9379140318135,
+          "price": 25.018518447875977,
+          "portfolio_value": 4226.576318750612
+        },
+        {
+          "date": "2023-08-01",
+          "etf": "SOXL",
+          "shares": 168.9379140318135,
+          "price": 28.002290725708008,
+          "portfolio_value": 4730.648583313508
+        },
+        {
+          "date": "2023-09-01",
+          "etf": "SOXL",
+          "shares": 168.9379140318135,
+          "price": 23.57571029663086,
+          "portfolio_value": 3982.8313193311647
+        },
+        {
+          "date": "2023-10-02",
+          "etf": "SOXL",
+          "shares": 168.9379140318135,
+          "price": 18.75814437866211,
+          "portfolio_value": 3168.961782438765
+        },
+        {
+          "date": "2023-11-01",
+          "etf": "SOXL",
+          "shares": 168.9379140318135,
+          "price": 15.680941581726074,
+          "portfolio_value": 2649.105560871529
+        },
+        {
+          "date": "2023-12-01",
+          "etf": "SOXL",
+          "shares": 168.9379140318135,
+          "price": 22.680837631225586,
+          "portfolio_value": 3831.653397913509
+        },
+        {
+          "date": "2024-01-02",
+          "etf": "LABU",
+          "shares": 37.418901811183524,
+          "price": 124.61373138427734,
+          "portfolio_value": 4662.908978993472
+        },
+        {
+          "date": "2024-02-01",
+          "etf": "LABU",
+          "shares": 37.418901811183524,
+          "price": 115.60516357421875,
+          "portfolio_value": 4325.8182646495015
+        },
+        {
+          "date": "2024-03-01",
+          "etf": "LABU",
+          "shares": 37.418901811183524,
+          "price": 164.5626983642578,
+          "portfolio_value": 6157.755451875574
+        },
+        {
+          "date": "2024-04-01",
+          "etf": "SOXL",
+          "shares": 100.24177863692323,
+          "price": 47.32542037963867,
+          "portfolio_value": 4743.984313595075
+        },
+        {
+          "date": "2024-05-01",
+          "etf": "SOXL",
+          "shares": 100.24177863692323,
+          "price": 33.89403533935547,
+          "portfolio_value": 3397.598387599724
+        },
+        {
+          "date": "2024-06-03",
+          "etf": "SOXL",
+          "shares": 100.24177863692323,
+          "price": 47.917110443115234,
+          "portfolio_value": 4803.296377959759
+        },
+        {
+          "date": "2024-07-01",
+          "etf": "SOXL",
+          "shares": 100.24177863692323,
+          "price": 54.74663162231445,
+          "portfolio_value": 5487.899728201227
+        },
+        {
+          "date": "2024-08-01",
+          "etf": "SOXL",
+          "shares": 100.24177863692323,
+          "price": 34.61220932006836,
+          "portfolio_value": 3469.5894247971437
+        },
+        {
+          "date": "2024-09-03",
+          "etf": "FAS",
+          "shares": 22.969368103961536,
+          "price": 129.646240234375,
+          "portfolio_value": 2977.892215237988
+        },
+        {
+          "date": "2024-10-01",
+          "etf": "FAS",
+          "shares": 22.969368103961536,
+          "price": 126.50071716308594,
+          "portfolio_value": 2905.6415379340456
+        },
+        {
+          "date": "2024-11-01",
+          "etf": "FAS",
+          "shares": 22.969368103961536,
+          "price": 137.49647521972656,
+          "portfolio_value": 3158.207152319125
+        },
+        {
+          "date": "2024-12-02",
+          "etf": "FAS",
+          "shares": 22.969368103961536,
+          "price": 175.0009307861328,
+          "portfolio_value": 4019.6607977625795
+        },
+        {
+          "date": "2025-01-02",
+          "etf": "FAS",
+          "shares": 22.969368103961536,
+          "price": 148.46176147460938,
+          "portfolio_value": 3410.072848672838
+        },
+        {
+          "date": "2025-02-03",
+          "etf": "FAS",
+          "shares": 22.969368103961536,
+          "price": 175.7081756591797,
+          "portfolio_value": 4035.9057655912325
+        },
+        {
+          "date": "2025-03-03",
+          "etf": "FAS",
+          "shares": 22.969368103961536,
+          "price": 178.3167724609375,
+          "portfolio_value": 4095.8235857656246
+        },
+        {
+          "date": "2025-04-01",
+          "etf": "FAS",
+          "shares": 22.969368103961536,
+          "price": 156.58840942382812,
+          "portfolio_value": 3596.7368168697476
+        },
+        {
+          "date": "2025-05-01",
+          "etf": "FAS",
+          "shares": 22.969368103961536,
+          "price": 138.157470703125,
+          "portfolio_value": 3173.3898008923597
+        },
+        {
+          "date": "2025-06-02",
+          "etf": "FAS",
+          "shares": 22.969368103961536,
+          "price": 155.91204833984375,
+          "portfolio_value": 3581.201230160516
+        },
+        {
+          "date": "2025-07-01",
+          "etf": "SOXL",
+          "shares": 158.9057875686795,
+          "price": 24.702821731567383,
+          "portfolio_value": 3925.421342423406
+        },
+        {
+          "date": "2025-08-01",
+          "etf": "SOXL",
+          "shares": 158.9057875686795,
+          "price": 24.07300567626953,
+          "portfolio_value": 3825.339926132902
+        },
+        {
+          "date": "2025-09-02",
+          "etf": "SOXL",
+          "shares": 158.9057875686795,
+          "price": 25.242666244506836,
+          "portfolio_value": 4011.20575991668
+        },
+        {
+          "date": "2025-10-01",
+          "etf": "SOXL",
+          "shares": 158.9057875686795,
+          "price": 36.86000061035156,
+          "portfolio_value": 5857.267426769922
+        }
+      ]
+    }
+  }
+}

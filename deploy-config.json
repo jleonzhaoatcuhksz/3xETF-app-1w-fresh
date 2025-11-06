@@ -1,0 +1,34 @@
+{
+  "name": "3xETF-app-lean-fresh",
+  "description": "Leveraged ETF Analytics & ML Dashboard with enhanced charting features",
+  "version": "1.0.0",
+  "type": "nodejs",
+  "scripts": {
+    "start": "node server_clean.js",
+    "dev": "node server_clean.js",
+    "install": "npm install"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7",
+    "cors": "^2.8.5"
+  },
+  "port": 3022,
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "files": [
+    "server_clean.js",
+    "etf_data.db",
+    "package.json",
+    "public/",
+    "aggressive_switching_results.json",
+    "best_fast_ml_results.json",
+    "etf_switching_results.json",
+    "improved_strategy_results.json",
+    "random_forest_results.json",
+    "xgboost_results.json",
+    "lightgbm_results.json",
+    "single_etf_ml_switching_results.json"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "3xETF-app-lean-fresh",
+  "description": "Leveraged ETF Analytics & ML Dashboard",
+  "version": "1.0.0",
+  "type": "nodejs",
+  "scripts": {
+    "start": "node server_clean.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "port": 3022,
+  "env": {
+    "NODE_ENV": "production"
+  }
+}

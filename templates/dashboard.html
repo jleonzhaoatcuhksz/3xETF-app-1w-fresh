@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3xETF Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 30px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .chart { background: white; padding: 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .nav { margin: 20px 0; }
+        button { padding: 10px 15px; margin: 5px; background: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>3xETF Switching Strategy Dashboard</h1>
+            <div class="nav">
+                <button onclick="window.location.href='/'">Single ETF View</button>
+                <button onclick="loadAllETFs()">Refresh Data</button>
+            </div>
+        </div>
+        
+        <div class="grid">
+            <div class="chart">
+                <h3>Performance Comparison</h3>
+                <div id="performanceChart">{{ performance_chart|safe }}</div>
+            </div>
+            
+            <div class="chart">
+                <h3>ETF Overview</h3>
+                <div id="etfTable">Loading...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function loadAllETFs() {
+            fetch('/api/all_etfs')
+                .then(response => response.json())
+                .then(etfs => {
+                    let tableHtml = `
+                        <table border="1" style="width: 100%; border-collapse: collapse;">
+                        <thead><tr>
+                            <th>Symbol</th>
+                            <th>Records</th>
+                            <th>Date Range</th>
+                            <th>Last Date</th>
+                            <th>Avg Price</th>
+                            <th>Description</th>
+                        </tr></thead>
+                        <tbody>
+                    `;
+                    
+                    etfs.forEach(etf => {
+                        tableHtml += `
+                            <tr>
+                                <td><strong>${etf.symbol}</strong></td>
+                                <td>${etf.record_count}</td>
+                                <td>${etf.first_date} to ${etf.last_date}</td>
+                                <td>${etf.last_date}</td>
+                                <td>$${etf.avg_price.toFixed(2)}</td>
+                                <td>${etf.name || 'N/A'}</td>
+                            </tr>
+                        `;
+                    });
+                    
+                    tableHtml += '</tbody></table>';
+                    document.getElementById('etfTable').innerHTML = tableHtml;
+                });
+        }
+        
+        // Load initial data
+        window.onload = loadAllETFs;
+    </script>
+</body>
+</html>
