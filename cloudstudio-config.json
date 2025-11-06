@@ -1,0 +1,15 @@
+{
+  "name": "3xETF Dashboard",
+  "description": "Interactive ETF analytics dashboard with real market data",
+  "runtime": "python",
+  "startCommand": "python app.py",
+  "ports": [
+    {
+      "port": 5000,
+      "protocol": "http"
+    }
+  ],
+  "env": {
+    "FLASK_ENV": "production"
+  }
+}
